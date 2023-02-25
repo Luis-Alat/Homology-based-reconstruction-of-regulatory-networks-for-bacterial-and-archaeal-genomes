@@ -1,0 +1,14 @@
+# The adjacency matrix, the number of edges between 2 species
+# file	GCF_000005845.2_E_coli_K12_genomic.faa	GCF_000012125.1_ASM1212v1_protein.faa	
+GCF_000005845.2_E_coli_K12_genomic.faa	0	344
+GCF_000012125.1_ASM1212v1_protein.faa	344	0
+# file	average number of edges
+GCF_000005845.2_E_coli_K12_genomic.faa	172	
+GCF_000012125.1_ASM1212v1_protein.faa	172	
+# The 2-path matrix, the number of paths between 2 species of length 2
+# file	GCF_000005845.2_E_coli_K12_genomic.faa	GCF_000012125.1_ASM1212v1_protein.faa	
+GCF_000005845.2_E_coli_K12_genomic.faa(0)	118336	0
+GCF_000012125.1_ASM1212v1_protein.faa(1)	0	118336
+# file	average number of 2-paths
+GCF_000005845.2_E_coli_K12_genomic.faa(0)	59168
+GCF_000012125.1_ASM1212v1_protein.faa(1)	59168

@@ -1,0 +1,14 @@
+# The adjacency matrix, the number of edges between 2 species
+# file	GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa	GCF_001548255.1_ASM154825v1_protein.faa	
+GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa	0	1360
+GCF_001548255.1_ASM154825v1_protein.faa	1360	0
+# file	average number of edges
+GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa	680	
+GCF_001548255.1_ASM154825v1_protein.faa	680	
+# The 2-path matrix, the number of paths between 2 species of length 2
+# file	GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa	GCF_001548255.1_ASM154825v1_protein.faa	
+GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa(0)	1849600	0
+GCF_001548255.1_ASM154825v1_protein.faa(1)	0	1849600
+# file	average number of 2-paths
+GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa(0)	924800
+GCF_001548255.1_ASM154825v1_protein.faa(1)	924800

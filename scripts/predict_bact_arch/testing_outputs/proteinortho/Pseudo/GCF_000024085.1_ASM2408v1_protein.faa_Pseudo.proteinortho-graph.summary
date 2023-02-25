@@ -1,0 +1,14 @@
+# The adjacency matrix, the number of edges between 2 species
+# file	GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa	GCF_000024085.1_ASM2408v1_protein.faa	
+GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa	0	1374
+GCF_000024085.1_ASM2408v1_protein.faa	1374	0
+# file	average number of edges
+GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa	687	
+GCF_000024085.1_ASM2408v1_protein.faa	687	
+# The 2-path matrix, the number of paths between 2 species of length 2
+# file	GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa	GCF_000024085.1_ASM2408v1_protein.faa	
+GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa(0)	1887876	0
+GCF_000024085.1_ASM2408v1_protein.faa(1)	0	1887876
+# file	average number of 2-paths
+GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa(0)	943938
+GCF_000024085.1_ASM2408v1_protein.faa(1)	943938

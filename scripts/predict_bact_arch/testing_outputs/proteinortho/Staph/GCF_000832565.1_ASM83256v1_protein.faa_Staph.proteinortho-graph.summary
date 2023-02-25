@@ -1,0 +1,14 @@
+# The adjacency matrix, the number of edges between 2 species
+# file	GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa	GCF_000832565.1_ASM83256v1_protein.faa	
+GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa	0	1444
+GCF_000832565.1_ASM83256v1_protein.faa	1444	0
+# file	average number of edges
+GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa	722	
+GCF_000832565.1_ASM83256v1_protein.faa	722	
+# The 2-path matrix, the number of paths between 2 species of length 2
+# file	GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa	GCF_000832565.1_ASM83256v1_protein.faa	
+GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa(0)	2085136	0
+GCF_000832565.1_ASM83256v1_protein.faa(1)	0	2085136
+# file	average number of 2-paths
+GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa(0)	1042568
+GCF_000832565.1_ASM83256v1_protein.faa(1)	1042568

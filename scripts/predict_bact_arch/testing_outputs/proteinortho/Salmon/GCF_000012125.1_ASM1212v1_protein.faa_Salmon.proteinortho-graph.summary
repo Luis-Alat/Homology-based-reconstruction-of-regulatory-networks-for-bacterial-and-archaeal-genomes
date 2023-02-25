@@ -1,0 +1,14 @@
+# The adjacency matrix, the number of edges between 2 species
+# file	GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa	GCF_000012125.1_ASM1212v1_protein.faa	
+GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa	0	359
+GCF_000012125.1_ASM1212v1_protein.faa	359	0
+# file	average number of edges
+GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa	179.5	
+GCF_000012125.1_ASM1212v1_protein.faa	179.5	
+# The 2-path matrix, the number of paths between 2 species of length 2
+# file	GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa	GCF_000012125.1_ASM1212v1_protein.faa	
+GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa(0)	128881	0
+GCF_000012125.1_ASM1212v1_protein.faa(1)	0	128881
+# file	average number of 2-paths
+GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa(0)	64440.5
+GCF_000012125.1_ASM1212v1_protein.faa(1)	64440.5
