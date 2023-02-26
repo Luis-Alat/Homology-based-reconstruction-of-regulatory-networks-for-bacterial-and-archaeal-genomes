@@ -1,0 +1,18 @@
+name: homology_project
+channels:
+  - conda-forge
+dependencies:
+  - pandas
+  - numpy
+  - argparse
+  - jupyterlab
+  - scipy
+  - networkx
+  - biopython
+  - bioconductor-rcy3
+  - r-devtools
+  - r-optparse
+  - proteinortho
+  - sqlite
+  - r-base
+prefix:
