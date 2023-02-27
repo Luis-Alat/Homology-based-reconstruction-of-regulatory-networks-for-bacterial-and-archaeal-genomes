@@ -1,0 +1,65 @@
+.
+├── environment.yml
+├── genomes
+│   ├── gbk
+│   │   ├── B_subtilis_168_GCF_000009045.1_ASM904v1_genomic.gbff
+│   │   ├── GCF_000009645.1_ASM964v1_genomic.gbff
+│   │   ├── GCF_000195955.2_ASM19595v2_genomic.gbff
+│   │   ├── NC_000913.3.gbk
+│   │   ├── P_aeruginosa_GCF_000006765.1_ASM676v1_genomic.gbff
+│   │   └── salmonella_enterica_serovar_LT2_RN_GCF_000006945.2_ASM694v2_genomic.gbff
+│   ├── GCF_000005845.2_E_coli_K12_genomic.faa
+│   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa
+│   ├── GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa
+│   ├── GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa
+│   ├── GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa
+│   └── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa
+├── modifiedNetworks
+│   ├── GCF_000005845.2_E_coli_K12_modified_net.txt
+│   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_modified_net.txt
+│   ├── GCF_000006945.2_ASM694v2_S_enterica_LT2_modified_net.txt
+│   ├── GCF_000009045.1_ASM904v1_B_subtilis_168_modified_net.txt
+│   ├── GCF_000009645.1_ASM964v1_S_aureus_N315_modified_net.txt
+│   └── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_modified_net.txt
+├── network
+│   ├── bacsu_tf_network.txt
+│   ├── ecoli_tf_network.txt
+│   ├── mtuberculosis_tf_network.txt
+│   ├── pseudomonas_tf_network.txt
+│   ├── salmonella_enterica_serovar_Typhimurium_LT2_RN.csv
+│   └── staphy_tf_network.txt
+├── others
+│   ├── literature
+│   │   ├── abstracts_E_coli_new_interactions_pudmed.txt
+│   │   ├── E_coli_abstracts_new_search.txt
+│   │   ├── E_coli_queries
+│   │   ├── makeRules_RunQueries.sh
+│   │   └── search_pubmed.R
+│   └── Sigma_factors_excluir
+│       ├── bsubt_excluir
+│       ├── ecoli_excluir
+│       ├── mtuberculosis_excluir
+│       ├── pseudomonas_excluir
+│       ├── salmonella_excluir
+│       └── staphy_excluir
+├── README.md
+├── scripts
+│   ├── 01_acquisition_data
+│   │   └── empty.txt
+│   ├── 02_preprocessing_data
+│   │   ├── 02_01_01_ParserGBK.py
+│   │   └── 02_01_CleateCleanInputFiles.sh
+│   ├── 03_processing_data
+│   │   └── empty.txt
+│   ├── 04_analysis_data
+│   │   └── empty.txt
+│   ├── main.sh
+│   ├── test
+│   │   ├── input
+│   │   └── output
+│   └── utils
+│       ├── bash_messages.sh
+│       └── tracking.sh
+└── tree
+
+16 directories, 46 files
