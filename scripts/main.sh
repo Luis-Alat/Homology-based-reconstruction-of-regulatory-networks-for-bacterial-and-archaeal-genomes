@@ -6,18 +6,12 @@
 
 set -eE +o functrace
 
+# Importing bash_messages.sh [ShowHelp, ShowArguments], tracking.sh [TrackFailure] 
 source ./utils/bash_messages.sh
-
+source ./utils/tracking.sh
 
 # Stop execution and show on screen line number and bash command if there is any error
-
-failure() {
-        local LINE_NUMBER=$1
-        local ERROR_MESSAGE=$2
-        echo "Error at ${lINE_NUMBER}: ${ERROR_MESSAGE}"
-}
-
-trap ' failure ${LINENO} "$BASH_COMMAND" ' ERR
+trap ' TrackFailure ${LINENO} "$BASH_COMMAND" ' ERR
 
 # Color code along the code
 
@@ -69,7 +63,7 @@ done
 ShowArguments ARGUMENTS
 
 # The preprocessing part is done manually for every organism used in this work
-# and for that reason is comment because is more like a separate step
+# and for that reason is commented and also more suitable to be ran separately
 #preprocessing
 
 #proteinortho
