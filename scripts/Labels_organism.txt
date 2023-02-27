@@ -1,0 +1,6 @@
+E_coli
+P_aeruginossa
+S_enterica
+B_subtilis
+S_aureus
+M_tuberculosis

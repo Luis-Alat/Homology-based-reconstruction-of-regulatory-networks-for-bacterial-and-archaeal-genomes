@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 
 ################################################
 #### Homology based-reconstruction pipeline ####
@@ -7,16 +7,14 @@
 set -eE +o functrace
 
 # Importing bash_messages.sh [ShowHelp, ShowArguments], tracking.sh [TrackFailure] 
+# Importing variables bash_messages GREEN_COLOR; RESET_COLOR
 source ./utils/bash_messages.sh
 source ./utils/tracking.sh
 
+source ./01_acquisition_data/01_RunProteinortho_RunOperonMapper.sh
+
 # Stop execution and show on screen line number and bash command if there is any error
 trap ' TrackFailure ${LINENO} "$BASH_COMMAND" ' ERR
-
-# Color code along the code
-
-GREEN_COLOR=$'\e[1;32m'
-RESET_COLOR=$'\033[0m'
 
 # Default arguments values
 
@@ -38,15 +36,15 @@ while [[ $# -gt 0 ]]; do
 
     case "$1" in
         -g|--genomes)
-            readarray -t GENOMES_FILE_PATH < $2
+            readarray -t GENOMES_FILE_PATH_VALUES < $2
             shift 2
             ;;
         -n|--nets)
-            readarray -t NETWORK_FILE_PATH < $2
+            readarray -t NETWORK_FILE_PATH_VALUES < $2
             shift 2
             ;;
         -l|--labels)
-            readarray -t LABELS < $2
+            readarray -t LABELS_VALUES < $2
             shift 2
             ;;
         -h|--help)
@@ -66,7 +64,9 @@ ShowArguments ARGUMENTS
 # and for that reason is commented and also more suitable to be ran separately
 #preprocessing
 
-#proteinortho
+RunProteinortho "../proteinortho/" GENOMES_FILE_PATH_VALUES LABELS_VALUES 2
+
+
 #extendNet
 #orthosumm
 #extendNetPlusTU

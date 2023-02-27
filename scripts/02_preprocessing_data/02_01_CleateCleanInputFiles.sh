@@ -164,3 +164,17 @@ preprocessing() {
 
 # Calling main function
 preprocessing
+
+# In order to run proteinortho, we need to modify the headers of the fasta files by separating the
+# headers of the id given by NCBI and the one additional id. This ensure the a standart format in the proteinortho output ...
+# files
+
+GenomeNames=("GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa" "GCF_000005845.2_E_coli_K12_genomic.faa" "GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa" "GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa" "GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa" "GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa")
+
+for faa in ${GenomeNames[@]}; do
+
+                # Changing the second '|' by <tab> inplace
+                printf "Modifying faa file "$faa"\n"
+                sed -r -i 's/\|/\t/2' ../../genomes/$faa
+
+done

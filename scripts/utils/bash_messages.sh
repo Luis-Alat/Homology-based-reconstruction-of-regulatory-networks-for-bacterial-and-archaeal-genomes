@@ -4,7 +4,7 @@ ShowHelp() {
 
 	# This function shows on screen the help guide for the main script
 	
-	help="
+	local help="
 $(basename "$0") [-h|--help] [-g|--genomes FILE] [-n|--nets FILE] [-l|--labels FILE] -- Script to predict transciptional networks based on orthologs
 
 NOTE: It is expected that the content of the files supplied matches in order. For example, the first line in the 
@@ -31,6 +31,7 @@ ShowArguments() {
 	# This functions is expecting a hash table
 
 	local -n ARG=$1
+	local KEY
 
 	printf "\n  ${GREEN_COLOR}Arguments${RESET_COLOR}\n\n"
 
@@ -41,3 +42,7 @@ ShowArguments() {
 	printf "\n"
 
 }
+
+# Color codes variables (global)
+GREEN_COLOR=$'\e[1;32m'
+RESET_COLOR=$'\033[0m'
