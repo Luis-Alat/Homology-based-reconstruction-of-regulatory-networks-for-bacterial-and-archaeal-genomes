@@ -82,7 +82,7 @@ ShowArguments ARGUMENTS
 # and for that reason is commented and also more suitable to be ran separately
 #preprocessing
 
-RunProteinortho $PROTEINORTHO_OUTPUT GENOMES_FILE_PATH_VALUES LABELS_VALUES $BATCHES_NUMBER
+#RunProteinortho $PROTEINORTHO_OUTPUT GENOMES_FILE_PATH_VALUES LABELS_VALUES $BATCHES_NUMBER
 
 # Still working on it
 #RunOperonMapper

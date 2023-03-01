@@ -4,3 +4,6 @@ proteinortho/*/*
 !proteinortho/*/*blast-graph
 
 net/*
+!net/results
+
+net/results/tmp/

@@ -144,16 +144,10 @@ ExtendNetworks() {
 
                 printf "    Making file ${MERGE_FILE_NAME}\n"
 
-                ## This line calls an sql implementation to group the columns associated with regulatory interactions to describe
-                ##(1) transcription factor,
-                ##(2) target,
-                ##(3) organism where that interaction was found and
-                ##(4), line number associated with that interaction found in modified networks...
-                ##In addition adds a number indicating in how many organism that interactions was found
+                # This line calls an sql implementation to group the columns associated with regulatory interactions
+                # It requires in order: Col names, GROUP BY col names, SELECT instruction and file with tha table (tsv format)
 
-                exit 1
-
-                bash scripts/sqlite_join.sh "${OUTPUT}/Merge/tmp"  |
+                bash utils/sqlite_grouper.sh "tf, tg, org_ref, line_num" "org_ref, line_num" "org_ref, line_num, GROUP_CONCAT(tf) , GROUP_CONCAT(tg)" "${OUTPUT}/Merge/tmp" | 
                         perl -F"\t" -nae '
                                 chomp($_);
                                 @array=split(",",$F[2]);
@@ -163,45 +157,46 @@ ExtendNetworks() {
                                 print ($_,"\t",$len,"\n")' > "${OUTPUT}Merge/${MERGE_FILE_NAME}"
 
                 rm "${OUTPUT}/Merge/tmp"
+
         done
 
         # In the following "for" loop an "extended network" is going to be created for every model organism...
         # It has the interactions described in the modified network as well as the new interactions found
         # Results will be saved in the folder "net/results"
 
-        # Creating folder if it doesn't exist
-        if [ ! -d net/results ];then
-                mkdir net/results net/results/tmp
+        # Creating folder if it doesn't exist        
+        if [ ! -d "${OUTPUT}results" ]; then
+                mkdir "${OUTPUT}results" "${OUTPUT}results/tmp"
+        else
+                rm -r "${OUTPUT}results"; mkdir "${OUTPUT}results" "${OUTPUT}results/tmp"
         fi
 
-        for ((i=0;i<${#GenomeNames[@]};i++)); do
+        for ((i=0; i < ${#GENOMES[@]}; i++)); do
 
-                # Getting base name
-                BaseName=$(echo ${GenomeNames[$i]} | sed -r 's/\.faa.*//g')
-                OutPutFileTmp=$(echo $BaseName"TMP")
+                OUTPUT_FILE_TMP=$(echo "${BASENAMES_GENOMES[$i]}_TMP")
 
-                printf "Creating result files of "${GenomeNames[$i]}" using the modified network "${NetFiles[$i]}"\n"
+                printf "    Creating extended network of ${GENOMES[$i]} using ${NETWORKS[$i]}\n"
 
-                # Giving format both $MergeFile and the modified network and later they are concatenated...
+                # Giving format both $MergeFile and network and later they are concatenated...
                 # Any missing info is added too
                 ## Retrieving TF and TG columns, adding info about the state of the interaction (does the interactions is known?)
-                cut -f1-3 modifiedNetworks/${NetFiles[$i]} |
-                        awk -F$"\t" 'BEGIN{OFS=FS}{print $0,"Known","NOT_REFR_ORG","NOT_REFR_NUM","NULL"}' > net/results/tmp/$OutPutFileTmp
+                cut -f1-3 ${NETWORKS[$i]} |
+                        awk -F$"\t" 'BEGIN{OFS=FS}{print $0,"Known","NOT_REFR_ORG","NOT_REFR_NUM","NULL"}' > "${OUTPUT}results/tmp/${OUTPUT_FILE_TMP}"
 
                 # Adding info about if the interaction is new and a new enumerate id
-                awk -F$'\t' 'BEGIN{OFS=FS} $2=$2 FS "New?"' net/Merge/$BaseName* |
-                        perl -nse 'print($count,"_new?","\t",$_); $count+=1' -- -count=1 >> net/results/tmp/$OutPutFileTmp
+                awk -F$'\t' 'BEGIN{OFS=FS} $2=$2 FS "New?"' "${OUTPUT}Merge/${BASENAMES_GENOMES[$i]}"* |
+                        perl -nse 'print($count,"_new?","\t",$_); $count+=1' -- -count=1 >> "${OUTPUT}results/tmp/${OUTPUT_FILE_TMP}"
 
                 # Grouping (group_by sql) results and removing "innecesary" information (labels no longer used)
-                OutPutFile=$(echo $BaseName"_extended_network.txt")
-
-                bash scripts/sqlite_groupe_results.sh net/results/tmp/$OutPutFileTmp |
+                OUTPUT_FILE_NAME_EXT_NET=$(echo "${BASENAMES_GENOMES[$i]}_extended_network")
+                
+                bash utils/sqlite_grouper.sh "line_number, tg, tf, status, org_ref, numeric_ref, total_ref" "tg, tf"  "GROUP_CONCAT(line_number), tg, tf, GROUP_CONCAT(status), GROUP_CONCAT(org_ref), GROUP_CONCAT(numeric_ref), GROUP_CONCAT(total_ref)" "${OUTPUT}results/tmp/${OUTPUT_FILE_TMP}" |
                         ## Removing innecesary labels, for example, an interaccion "Known" could be also described by the mapping approach ...
                         ## therefore, that interaction will have the label "Known" as "New", but we already know thats not new. "New" is deleted
                         sed -r 's/(,\w+_new\?)+//1' | sed -r 's/_new\?/_new/1' |
                         sed -r 's/,New\?//g' | sed -r 's/\tNew\?\t/\tNew\t/g' |
                         sed 's/NOT_REFR_ORG,//g' | sed 's/NOT_REFR_NUM,//g' |
-                        sed -r 's/(NULL,)+//g' | sed -r 's/(Known,)+//g' | sort -k2,3 > net/results/$OutPutFile
+                        sed -r 's/(NULL,)+//g' | sed -r 's/(Known,)+//g' | sort -k2,3 > "${OUTPUT}results/${OUTPUT_FILE_NAME_EXT_NET}"
 
         done
 
