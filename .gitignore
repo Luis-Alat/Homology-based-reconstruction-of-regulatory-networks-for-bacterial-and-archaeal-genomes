@@ -2,3 +2,5 @@
 
 proteinortho/*/*
 !proteinortho/*/*blast-graph
+
+net/*
