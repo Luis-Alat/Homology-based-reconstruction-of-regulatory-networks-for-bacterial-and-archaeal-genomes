@@ -22,6 +22,8 @@ Arguments:
         -h|--help -> Show this message.
         -g|--genomes -> File name containing both the path and name of the fasta files to be read. One organism per line.
         -n|--nets -> File name containing both the path and name of the networks in TSV format to be read. One organism per line.
+	-t|--transcription_units_path -> Path to read the transcription units. In this case, It is expected the same name for the genomes files
+	                                 and the file of transcription units once removing the file extension.
 	-l|--labels -> File name containing labels to identify the respective organism rather than using the file name in -g.
 	--proteinortho_output -> Path Name to create and place proteinortho final outputs
 	--batches -> Number of baches for running paralized process [Proteinortho]
@@ -54,3 +56,5 @@ ShowArguments() {
 # Color codes variables (global)
 GREEN_COLOR=$'\e[1;32m'
 RESET_COLOR=$'\033[0m'
+YELLOW_COLOR=$'\e[1;33m]'
+RED_COLOR=$'\e[1;31m]'

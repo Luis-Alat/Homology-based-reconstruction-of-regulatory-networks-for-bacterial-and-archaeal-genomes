@@ -2,7 +2,7 @@
 
 set -e
 
-ExtendNetworks() {
+ExtendNetworksByOtho() {
 
         # This function creates the extended networks by mapping the orthologs retrieved in proteinortho
         # This function is expecting 5 arguments. In order
@@ -12,7 +12,7 @@ ExtendNetworks() {
         # 4. Array containing the path and name of the fasta files (passed by reference)
         # 5. Array containing the path and name of the network files (passed by reference)
 
-        printf "${GREEN_COLOR}  Extended network block${RESET_COLOR}\n\n"
+        printf "${GREEN_COLOR}  Extended network block by orthologs${RESET_COLOR}\n\n"
 
         local i
         local FILE_PATH_PROTEINORTHO_BLAST_GRAPH
@@ -202,6 +202,68 @@ ExtendNetworks() {
 
 }
 
+ExtendNetworksByTranscriptionUnit() {
+
+        printf "${GREEN_COLOR}  Extended network block by Transcription Units (TU)${RESET_COLOR}\n\n"
+
+        local -n NETWORKS=$1
+        local -n GENOMES=$2
+        local TU_PATH_FILES=$(echo $3 | sed 's/\/*$/\//g')
+        local OUTPUT=$(echo $4 | sed 's/\/*$/\//g')
+        local SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+
+        # Creating a bash array and get ID names
+        declare -a local BASENAMES_GENOMES_NO_EXT
+        local BASE
+        for FASTA_FILE in ${GENOMES[@]}; do
+                BASE=$(basename $FASTA_FILE)
+                BASENAMES_GENOMES_NO_EXT+=(${BASE%.*})
+        done
+
+        # If folder doesn't exit, create it
+        if [ ! -d "${OUTPUT}results_plus_TU" ]; then
+                mkdir "${OUTPUT}results_plus_TU" "${OUTPUT}results_plus_TU/tmp"
+        fi
+
+        for FILE_BASE in ${BASENAMES_GENOMES_NO_EXT[@]}; do
+
+                # Verifying if the file exists (Does exist the TU file for this particular model organism?)
+                if [ -f "${TU_PATH_FILES}$FILE_BASE"* ]; then
+
+                        # Defining an output final file name for the python script below
+                        local OUTPUT_FILE_NAME_TUS=$(echo "${FILE_BASE}_extended_network_plus_tu")
+
+                        # Searching TUs where the first gene is equal to the target in the extended network
+                        python ${SCRIPT_DIR}/03_01_01_ParserTUandExt.py --inputNet ${OUTPUT}results/$FILE_BASE* --inputTus ${TU_PATH_FILES}$FILE_BASE* --outputPath ${OUTPUT}results_plus_TU/tmp/
+
+                        printf "  Making ${OUTPUT}results_plus_TU/${OUTPUT_FILE_NAME_TUS}\n"
+
+                        # Giving a new format to the earlier output to match with the extended network format. Saving in a tmp_1 file
+                        awk -F$"\t" 'BEGIN{OFS=FS}{print $4,$2,$3,"New?","NOT_REFR_ORG","NOT_REFR_NUM","NULL",$1,$4}' ${OUTPUT}results_plus_TU/tmp/$FILE_BASE* > ${OUTPUT}results_plus_TU/tmp_1
+
+                        # Giving a new format to the extended network to match with the output python file above. Saving in a tmp_2 file 
+                        awk -F$"\t" 'BEGIN{OFS=FS}{print $0,"NOT_STRAND","NOT_TU_REFER"}' ${OUTPUT}results/$FILE_BASE* > ${OUTPUT}results_plus_TU/tmp_2
+
+                        # Merging results of both files
+                        cat ${OUTPUT}results_plus_TU/tmp_2 ${OUTPUT}results_plus_TU/tmp_1 > ${OUTPUT}results_plus_TU/tmp_3
+
+                        # Removing information not relevant (labels no longer used) useful during the group_by, but not later
+                        bash scripts/sqlite_group_TU.sh net/results_plus_TU/tmp_3 |
+                                sed -r 's/,New\?//g' | sed -r 's/,NOT_REFR_ORG//g' |
+                                sed -r 's/,NOT_REFR_NUM//g' | sed -r 's/,NULL//g' |
+                                sed -r 's/NOT_STRAND,//g' | sed -r 's/NOT_TU_REFER,//g' |
+                                sed -r 's/,\w+_tu//g' | sed -r 's/New\?/New/g' > "${OUTPUT}results_plus_TU/${OUTPUT_FILE_NAME_TUS}"
+                fi
+
+                done
+
+        # Removing tmp files generated above
+        rm ${OUTPUT}results_plus_TU/tmp_1 ${OUTPUT}results_plus_TU/tmp_2 ${OUTPUT}results_plus_TU/tmp_3
+
+}
+
+
+
 # Run current script if it was called directly
 if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
 
@@ -211,7 +273,8 @@ if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
         # Stop execution and show on screen line number and bash command if there is any error
         trap ' TrackFailure ${LINENO} "$BASH_COMMAND" ' ERR
 
-        # The following calling for now is expecting the values directly and not by command line
-        ExtendNetworks
+        # The following functions for now are expecting the values directly and not by command line
+        ExtendNetworksByOtho
+        ExtendNetworksByTranscriptionUnit
 
 fi

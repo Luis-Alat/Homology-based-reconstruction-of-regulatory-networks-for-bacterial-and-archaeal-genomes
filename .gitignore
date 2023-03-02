@@ -7,3 +7,4 @@ net/*
 !net/results
 
 net/results/tmp/
+tus_models_operon/

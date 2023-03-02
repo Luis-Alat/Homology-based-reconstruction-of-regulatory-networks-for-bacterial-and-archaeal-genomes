@@ -53,6 +53,10 @@ while [[ $# -gt 0 ]]; do
             readarray -t LABELS_VALUES < $2
             shift 2
             ;;
+        -t|--transcription_units_path)
+            TUS_PATH=$2
+            shift 2
+        ;;
         --proteinortho_output)
             PROTEINORTHO_OUTPUT=$2
             shift 2
@@ -80,16 +84,15 @@ ShowArguments ARGUMENTS
 
 # The preprocessing part is done manually for every organism used in this work
 # and for that reason is commented and also more suitable to be ran separately
-#preprocessing
+# for a deep view about that, check 02_preprocessing folder
 
-#RunProteinortho $PROTEINORTHO_OUTPUT GENOMES_FILE_PATH_VALUES LABELS_VALUES $BATCHES_NUMBER
+#-RunProteinortho $PROTEINORTHO_OUTPUT GENOMES_FILE_PATH_VALUES LABELS_VALUES $BATCHES_NUMBER
 
 # Still working on it
 #RunOperonMapper
 
-ExtendNetworks $EXTENDED_NETWORKS_OUTPUT LABELS_VALUES $PROTEINORTHO_OUTPUT GENOMES_FILE_PATH_VALUES NETWORK_FILE_PATH_VALUES
-#orthosumm
-#extendNetPlusTU
+#ExtendNetworksByOtho $EXTENDED_NETWORKS_OUTPUT LABELS_VALUES $PROTEINORTHO_OUTPUT GENOMES_FILE_PATH_VALUES NETWORK_FILE_PATH_VALUES
+ExtendNetworksByTranscriptionUnit NETWORK_FILE_PATH_VALUES GENOMES_FILE_PATH_VALUES "../tus_models_operon_processed/" $EXTENDED_NETWORKS_OUTPUT
 #cytoScape
 #coregulators
 #hubs
