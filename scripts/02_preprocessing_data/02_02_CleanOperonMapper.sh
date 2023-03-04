@@ -30,12 +30,15 @@ TransformOperonMapperFiles() {
 
         printf "Processing ${OUTPUT_FILE_NAME}\n"
 
+        # Replace the common name by the ncbi id
         awk -F"\t" 'BEGIN{OFS=FS}{print $3,$1}' "${EQUIV_PATH_TABLE}${OUTPUT_FILE_NAME}" |
             sed -r 's/^/s\/\\</g; s/\t/\\>\//g; s/$/\/gI;/g; s/\./\\./g' | 
             sed -f - <(tail -n +2 $TXT | cut -f1,2,7) > "${OUTPUT}tmp_${COUNTER_TMP}/tmp_operon_mapper"
 
+        # Removing names not matching with the NCBI id
         grep -Fvif <(tail -n +2 $TXT | grep -P "^\s+" | cut -f2) "${OUTPUT}tmp_${COUNTER_TMP}/tmp_operon_mapper" > "${OUTPUT}tmp_${COUNTER_TMP}/tmp"
 
+        # Transform multiples lines describing elements in the same one operon into one describing the elements in the operon
         cut -f1,2 "${OUTPUT}tmp_${COUNTER_TMP}/tmp" | 
             sed ':r;$!{N;br};s/\n\t/,/g' | 
             sed -r 's/,/\t/1' | 
@@ -46,6 +49,7 @@ TransformOperonMapperFiles() {
             sed -r 's/,/\t/1'  | 
             grep -vP "^\d+$" > "${OUTPUT}tmp_${COUNTER_TMP}/operon_strand_type"
 
+        # Join elements of the operon with the strand
         bash 02_02_01_sqlite_join.sh "${OUTPUT}tmp_${COUNTER_TMP}" | 
             sed -r 's/,(\+|\-)+//g' > "${OUTPUT}${OUTPUT_FILE_NAME}") &
 

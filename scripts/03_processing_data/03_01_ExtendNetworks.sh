@@ -206,10 +206,9 @@ ExtendNetworksByTranscriptionUnit() {
 
         printf "${GREEN_COLOR}  Extended network block by Transcription Units (TU)${RESET_COLOR}\n\n"
 
-        local -n NETWORKS=$1
+        local OUTPUT=$(echo $1 | sed 's/\/*$/\//g')
         local -n GENOMES=$2
         local TU_PATH_FILES=$(echo $3 | sed 's/\/*$/\//g')
-        local OUTPUT=$(echo $4 | sed 's/\/*$/\//g')
         local SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
         # Creating a bash array and get ID names
@@ -223,6 +222,9 @@ ExtendNetworksByTranscriptionUnit() {
         # If folder doesn't exit, create it
         if [ ! -d "${OUTPUT}results_plus_TU" ]; then
                 mkdir "${OUTPUT}results_plus_TU" "${OUTPUT}results_plus_TU/tmp"
+        else
+                rm -r "${OUTPUT}results_plus_TU" "${OUTPUT}results_plus_TU/tmp"
+                mkdir "${OUTPUT}results_plus_TU" "${OUTPUT}results_plus_TU/tmp"
         fi
 
         for FILE_BASE in ${BASENAMES_GENOMES_NO_EXT[@]}; do
@@ -234,12 +236,12 @@ ExtendNetworksByTranscriptionUnit() {
                         local OUTPUT_FILE_NAME_TUS=$(echo "${FILE_BASE}_extended_network_plus_tu")
 
                         # Searching TUs where the first gene is equal to the target in the extended network
-                        python ${SCRIPT_DIR}/03_01_01_ParserTUandExt.py --inputNet ${OUTPUT}results/$FILE_BASE* --inputTus ${TU_PATH_FILES}$FILE_BASE* --outputPath ${OUTPUT}results_plus_TU/tmp/
+                        python ${SCRIPT_DIR}/03_01_01_ParserTUandExt.py --input_net "${OUTPUT}results/${FILE_BASE}"* --input_tus "${TU_PATH_FILES}${FILE_BASE}"* --output_path_name "${OUTPUT}results_plus_TU/tmp/${FILE_BASE}_tmp" --arguments_read_net '{"header":None, "sep":"\t", "usecols":[1,2]}' --arguments_read_tus '{"header":None, "sep":"\t"}'
 
                         printf "  Making ${OUTPUT}results_plus_TU/${OUTPUT_FILE_NAME_TUS}\n"
 
                         # Giving a new format to the earlier output to match with the extended network format. Saving in a tmp_1 file
-                        awk -F$"\t" 'BEGIN{OFS=FS}{print $4,$2,$3,"New?","NOT_REFR_ORG","NOT_REFR_NUM","NULL",$1,$4}' ${OUTPUT}results_plus_TU/tmp/$FILE_BASE* > ${OUTPUT}results_plus_TU/tmp_1
+                        awk -F$"\t" 'BEGIN{OFS=FS}{print $4,$2,$3,"New?","NOT_REFR_ORG","NOT_REFR_NUM","NULL",$1,$4}' "${OUTPUT}results_plus_TU/tmp/${FILE_BASE}_tmp" > ${OUTPUT}results_plus_TU/tmp_1
 
                         # Giving a new format to the extended network to match with the output python file above. Saving in a tmp_2 file 
                         awk -F$"\t" 'BEGIN{OFS=FS}{print $0,"NOT_STRAND","NOT_TU_REFER"}' ${OUTPUT}results/$FILE_BASE* > ${OUTPUT}results_plus_TU/tmp_2
@@ -248,11 +250,12 @@ ExtendNetworksByTranscriptionUnit() {
                         cat ${OUTPUT}results_plus_TU/tmp_2 ${OUTPUT}results_plus_TU/tmp_1 > ${OUTPUT}results_plus_TU/tmp_3
 
                         # Removing information not relevant (labels no longer used) useful during the group_by, but not later
-                        bash scripts/sqlite_group_TU.sh net/results_plus_TU/tmp_3 |
+                        bash utils/sqlite_grouper.sh "id,tf,tg,status,org_ref_name,org_ref_line,count,strand,id_tus" "tf,tg" "GROUP_CONCAT(id),tf,tg,GROUP_CONCAT(status),GROUP_CONCAT(org_ref_name),GROUP_CONCAT(org_ref_line),GROUP_CONCAT(count),GROUP_CONCAT(strand),GROUP_CONCAT(id_tus)" "${OUTPUT}results_plus_TU/tmp_3" |
                                 sed -r 's/,New\?//g' | sed -r 's/,NOT_REFR_ORG//g' |
                                 sed -r 's/,NOT_REFR_NUM//g' | sed -r 's/,NULL//g' |
                                 sed -r 's/NOT_STRAND,//g' | sed -r 's/NOT_TU_REFER,//g' |
                                 sed -r 's/,\w+_tu//g' | sed -r 's/New\?/New/g' > "${OUTPUT}results_plus_TU/${OUTPUT_FILE_NAME_TUS}"
+                
                 fi
 
                 done

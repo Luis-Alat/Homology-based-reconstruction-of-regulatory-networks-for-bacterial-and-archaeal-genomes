@@ -86,14 +86,13 @@ ShowArguments ARGUMENTS
 # and for that reason is commented and also more suitable to be ran separately
 # for a deep view about that, check 02_preprocessing folder
 
-#-RunProteinortho $PROTEINORTHO_OUTPUT GENOMES_FILE_PATH_VALUES LABELS_VALUES $BATCHES_NUMBER
+RunProteinortho $PROTEINORTHO_OUTPUT GENOMES_FILE_PATH_VALUES LABELS_VALUES $BATCHES_NUMBER
 
 # Still working on it
 #RunOperonMapper
 
-#ExtendNetworksByOtho $EXTENDED_NETWORKS_OUTPUT LABELS_VALUES $PROTEINORTHO_OUTPUT GENOMES_FILE_PATH_VALUES NETWORK_FILE_PATH_VALUES
-ExtendNetworksByTranscriptionUnit NETWORK_FILE_PATH_VALUES GENOMES_FILE_PATH_VALUES "../tus_models_operon_processed/" $EXTENDED_NETWORKS_OUTPUT
+ExtendNetworksByOtho $EXTENDED_NETWORKS_OUTPUT LABELS_VALUES $PROTEINORTHO_OUTPUT GENOMES_FILE_PATH_VALUES NETWORK_FILE_PATH_VALUES
+ExtendNetworksByTranscriptionUnit $EXTENDED_NETWORKS_OUTPUT GENOMES_FILE_PATH_VALUES $TUS_PATH
 #cytoScape
 #coregulators
 #hubs
-#assignTypeTransc

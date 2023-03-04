@@ -5,6 +5,8 @@ proteinortho/*/*
 
 net/*
 !net/results
+!net/results_plus_TU
 
 net/results/tmp/
 tus_models_operon/
+
