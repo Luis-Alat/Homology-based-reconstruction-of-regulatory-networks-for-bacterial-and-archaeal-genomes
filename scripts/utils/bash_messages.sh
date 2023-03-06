@@ -27,6 +27,9 @@ Arguments:
 	-l|--labels -> File name containing labels to identify the respective organism rather than using the file name in -g.
 	--proteinortho_output -> Path Name to create and place proteinortho final outputs
 	--batches -> Number of baches for running paralized process [Proteinortho]
+	--extended_nets_output -> Path to place the networks with the TUs and orthologs information added
+	--cytoscape_output -> Path to place Cytoscape outputs
+	--tables_output -> Path to place metrics of the networks
 
 "
 	printf "${help}"

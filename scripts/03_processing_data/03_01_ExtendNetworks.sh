@@ -204,6 +204,12 @@ ExtendNetworksByOtho() {
 
 ExtendNetworksByTranscriptionUnit() {
 
+        # This function integrates the TU information into an existing network
+        # This function is expecting 3 arguments. In order
+        # 1. String indicating where to save new networks; This function also will search the networks in this path (passed by value)
+        # 2. Array indicating the path ad file names of the genomes or organism (passed by reference)
+        # 3. String indicating where the transcription units are; Those files should have the same name as the genomes (passed by value)
+
         printf "${GREEN_COLOR}  Extended network block by Transcription Units (TU)${RESET_COLOR}\n\n"
 
         local OUTPUT=$(echo $1 | sed 's/\/*$/\//g')
@@ -213,9 +219,12 @@ ExtendNetworksByTranscriptionUnit() {
 
         # Creating a bash array and get ID names
         declare -a local BASENAMES_GENOMES_NO_EXT
+        declare -a local BASENAMES_GENOMES
         local BASE
+
         for FASTA_FILE in ${GENOMES[@]}; do
                 BASE=$(basename $FASTA_FILE)
+                BASENAMES_GENOMES+=($BASE)
                 BASENAMES_GENOMES_NO_EXT+=(${BASE%.*})
         done
 
@@ -227,24 +236,26 @@ ExtendNetworksByTranscriptionUnit() {
                 mkdir "${OUTPUT}results_plus_TU" "${OUTPUT}results_plus_TU/tmp"
         fi
 
-        for FILE_BASE in ${BASENAMES_GENOMES_NO_EXT[@]}; do
+        local i
+        for ((i=0; i < ${#BASENAMES_GENOMES[@]}; i++)); do
 
                 # Verifying if the file exists (Does exist the TU file for this particular model organism?)
-                if [ -f "${TU_PATH_FILES}$FILE_BASE"* ]; then
+                printf "${TU_PATH_FILES}${BASENAMES_GENOMES_NO_EXT[$i]}"*
+                if [ -f "${TU_PATH_FILES}${BASENAMES_GENOMES_NO_EXT[$i]}"* ]; then
 
                         # Defining an output final file name for the python script below
-                        local OUTPUT_FILE_NAME_TUS=$(echo "${FILE_BASE}_extended_network_plus_tu")
+                        local OUTPUT_FILE_NAME_TUS=$(echo "${BASENAMES_GENOMES[$i]}_extended_network_plus_tu")
 
                         # Searching TUs where the first gene is equal to the target in the extended network
-                        python ${SCRIPT_DIR}/03_01_01_ParserTUandExt.py --input_net "${OUTPUT}results/${FILE_BASE}"* --input_tus "${TU_PATH_FILES}${FILE_BASE}"* --output_path_name "${OUTPUT}results_plus_TU/tmp/${FILE_BASE}_tmp" --arguments_read_net '{"header":None, "sep":"\t", "usecols":[1,2]}' --arguments_read_tus '{"header":None, "sep":"\t"}'
+                        python ${SCRIPT_DIR}/03_01_01_ParserTUandExt.py --input_net "${OUTPUT}results/${BASENAMES_GENOMES[$i]}"* --input_tus "${TU_PATH_FILES}${BASENAMES_GENOMES_NO_EXT[$i]}"* --output_path_name "${OUTPUT}results_plus_TU/tmp/${BASENAMES_GENOMES[$i]}_tmp" --arguments_read_net '{"header":None, "sep":"\t", "usecols":[1,2]}' --arguments_read_tus '{"header":None, "sep":"\t"}'
 
                         printf "  Making ${OUTPUT}results_plus_TU/${OUTPUT_FILE_NAME_TUS}\n"
 
                         # Giving a new format to the earlier output to match with the extended network format. Saving in a tmp_1 file
-                        awk -F$"\t" 'BEGIN{OFS=FS}{print $4,$2,$3,"New?","NOT_REFR_ORG","NOT_REFR_NUM","NULL",$1,$4}' "${OUTPUT}results_plus_TU/tmp/${FILE_BASE}_tmp" > ${OUTPUT}results_plus_TU/tmp_1
+                        awk -F$"\t" 'BEGIN{OFS=FS}{print $4,$2,$3,"New?","NOT_REFR_ORG","NOT_REFR_NUM","NULL",$1,$4}' "${OUTPUT}results_plus_TU/tmp/${BASENAMES_GENOMES[$i]}_tmp" > ${OUTPUT}results_plus_TU/tmp_1
 
                         # Giving a new format to the extended network to match with the output python file above. Saving in a tmp_2 file 
-                        awk -F$"\t" 'BEGIN{OFS=FS}{print $0,"NOT_STRAND","NOT_TU_REFER"}' ${OUTPUT}results/$FILE_BASE* > ${OUTPUT}results_plus_TU/tmp_2
+                        awk -F$"\t" 'BEGIN{OFS=FS}{print $0,"NOT_STRAND","NOT_TU_REFER"}' "${OUTPUT}results/${BASENAMES_GENOMES[$i]}"* > ${OUTPUT}results_plus_TU/tmp_2
 
                         # Merging results of both files
                         cat ${OUTPUT}results_plus_TU/tmp_2 ${OUTPUT}results_plus_TU/tmp_1 > ${OUTPUT}results_plus_TU/tmp_3
@@ -255,10 +266,12 @@ ExtendNetworksByTranscriptionUnit() {
                                 sed -r 's/,NOT_REFR_NUM//g' | sed -r 's/,NULL//g' |
                                 sed -r 's/NOT_STRAND,//g' | sed -r 's/NOT_TU_REFER,//g' |
                                 sed -r 's/,\w+_tu//g' | sed -r 's/New\?/New/g' > "${OUTPUT}results_plus_TU/${OUTPUT_FILE_NAME_TUS}"
-                
+
+                        printf "  All done\n\n"
+
                 fi
 
-                done
+        done
 
         # Removing tmp files generated above
         rm ${OUTPUT}results_plus_TU/tmp_1 ${OUTPUT}results_plus_TU/tmp_2 ${OUTPUT}results_plus_TU/tmp_3

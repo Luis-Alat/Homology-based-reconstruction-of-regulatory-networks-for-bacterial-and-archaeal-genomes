@@ -4,7 +4,7 @@
 #### Homology based-reconstruction pipeline ####
 ################################################
 
-#bash main.sh -g Fasta_files_path.txt -n Nets_files_path.txt -l Labels_organism.txt --extended_nets_output ../net --proteinortho_output ../proteinortho
+#bash main.sh -g Fasta_files_path.txt -n Nets_files_path.txt -l Labels_organism.txt -t ../tus_models_operon_processed --extended_nets_output ../net/ --proteinortho_output ../proteinortho/ --tables_output ../cytoscape --cytoscape_output ../cytoscape
 
 set -eE +o functrace
 
@@ -15,6 +15,9 @@ source ./utils/tracking.sh
 
 source ./01_acquisition_data/01_01_RunProteinortho_RunOperonMapper.sh
 source ./03_processing_data/03_01_ExtendNetworks.sh
+source ./04_analysis_data/04_01_RunCytoscape.sh
+source ./04_analysis_data/04_02_TablesFromNets.sh
+#source ./04_04_analysis_data/
 
 # Stop execution and show on screen line number and bash command if there is any error
 trap ' TrackFailure ${LINENO} "$BASH_COMMAND" ' ERR
@@ -29,6 +32,8 @@ LABELS_VALUES=""
 PROTEINORTHO_OUTPUT="../proteinortho/"
 BATCHES_NUMBER=1
 EXTENDED_NETWORKS_OUTPUT="../net/"
+CYTO_OUTPUT=""
+TABLE_OUTPUT=""
 
 # Parsing argument values
 
@@ -69,6 +74,14 @@ while [[ $# -gt 0 ]]; do
             EXTENDED_NETWORKS_OUTPUT=$2
             shift 2
             ;;
+        --cytoscape_output)
+            CYTO_OUTPUT=$2
+            shift 2
+            ;;
+        --tables_output)
+            TABLE_OUTPUT=$2
+            shift 2
+            ;;
         -h|--help)
             ShowHelp
             ;;
@@ -88,11 +101,12 @@ ShowArguments ARGUMENTS
 
 RunProteinortho $PROTEINORTHO_OUTPUT GENOMES_FILE_PATH_VALUES LABELS_VALUES $BATCHES_NUMBER
 
-# Still working on it
+# Deprecated in the future
 #RunOperonMapper
 
 ExtendNetworksByOtho $EXTENDED_NETWORKS_OUTPUT LABELS_VALUES $PROTEINORTHO_OUTPUT GENOMES_FILE_PATH_VALUES NETWORK_FILE_PATH_VALUES
 ExtendNetworksByTranscriptionUnit $EXTENDED_NETWORKS_OUTPUT GENOMES_FILE_PATH_VALUES $TUS_PATH
-#cytoScape
+AnalyzeByCytoscape GENOMES_FILE_PATH_VALUES $CYTO_OUTPUT "${EXTENDED_NETWORKS_OUTPUT}results" "${EXTENDED_NETWORKS_OUTPUT}results_plus_TU"
+CreateNetworkTableMetrics LABELS_VALUES GENOMES_FILE_PATH_VALUES "${EXTENDED_NETWORKS_OUTPUT}results_plus_TU" $TABLE_OUTPUT
 #coregulators
 #hubs
