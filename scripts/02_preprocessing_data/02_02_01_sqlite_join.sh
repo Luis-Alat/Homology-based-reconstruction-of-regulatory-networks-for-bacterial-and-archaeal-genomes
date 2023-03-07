@@ -1,3 +1,7 @@
+#!/bin/bash
+
+set -e
+
 cd $1
 
 sqlite3 << EOF

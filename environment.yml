@@ -15,4 +15,4 @@ dependencies:
   - proteinortho
   - sqlite
   - r-base
-prefix:
+prefix: /home/lromero/mambaforge/envs/homology_project

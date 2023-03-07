@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 
 # The following function takes the gbk files and networks to produce the input files in the following steps.
 # Because of the detail of this process and the unique characteristics of each file. A lot of the following functions results

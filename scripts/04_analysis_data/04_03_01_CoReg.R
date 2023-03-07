@@ -7,13 +7,15 @@ if(length(new.packages)) install_github("LiLabAtVT/CoReg")
 library(CoReg)
 library(optparse)
 
-option_list = list(
-  make_option(c("-i", "--inputFile"), type="character", default=NULL, 
-              help="Extended Network", metavar="character")
+option_list <- list(
+  make_option(c("-i", "--inputFile"), type = "character", default = NULL,
+              help = "Extended Network", metavar = "character"),
+  make_option(c("-o", "--outputPath"), type = "character", default = NULL,
+              help = "Path to place files", metavar = "charcater")
 );
 
-opt_parser = OptionParser(option_list=option_list);
-parameters = parse_args(opt_parser);
+opt_parser <- OptionParser(option_list = option_list);
+parameters <- parse_args(opt_parser);
 
 print(parameters)
 print("Loading data...")
@@ -34,9 +36,22 @@ ExtNetResults <- CoReg(ExtendedNetIGraph)
 
 print("Saving files...")
 
-outputFileCoRegulators <- gsub(".txt", "_Modules.txt", basename(parameters$inputFile))
-outputFileMatrix <- paste("tmp/", gsub(".txt", "_Matrix.txt", basename(parameters$inputFile)), sep = "")
-outputFileRange <-  paste("tmp/", gsub(".txt", "_Range.txt",  basename(parameters$inputFile)), sep = "")
+outputFileCoRegulators <- paste(parameters$outputPath, 
+                                basename(parameters$inputFile),
+                                "_coreg_modules", 
+                                sep = "")
+
+outputFileMatrix <- paste(parameters$outputPath, 
+                          "tmp/", 
+                          basename(parameters$inputFile), 
+                          "_coreg_matrix", 
+                          sep = "")
+
+outputFileRange <- paste(parameters$outputPath,
+                          "tmp/",
+                          basename(parameters$inputFile), 
+                          "_coreg_range",
+                          sep = "")
 
 # Matrix and Range will be saved in the tmp folder, Co-regulators in the current one
 

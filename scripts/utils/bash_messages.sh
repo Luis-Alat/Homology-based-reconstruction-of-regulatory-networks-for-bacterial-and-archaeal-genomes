@@ -30,6 +30,8 @@ Arguments:
 	--extended_nets_output -> Path to place the networks with the TUs and orthologs information added
 	--cytoscape_output -> Path to place Cytoscape outputs
 	--tables_output -> Path to place metrics of the networks
+	--coreg_output -> Path to place CoReg output
+	--networkx_output -> Path to place networkx output
 
 "
 	printf "${help}"

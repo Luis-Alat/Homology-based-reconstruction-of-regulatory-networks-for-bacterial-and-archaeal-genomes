@@ -4,7 +4,7 @@
 #### Homology based-reconstruction pipeline ####
 ################################################
 
-#bash main.sh -g Fasta_files_path.txt -n Nets_files_path.txt -l Labels_organism.txt -t ../tus_models_operon_processed --extended_nets_output ../net/ --proteinortho_output ../proteinortho/ --tables_output ../cytoscape --cytoscape_output ../cytoscape
+#bash main.sh -g Fasta_files_path.txt -n Nets_files_path.txt -l Labels_organism.txt -t ../tus_models_operon_processed --extended_nets_output ../net/ --proteinortho_output ../proteinortho/ --tables_output ../cytoscape --cytoscape_output ../cytoscape --coreg_output ../cytoscape --networkx_output ../cytoscape
 
 set -eE +o functrace
 
@@ -17,7 +17,10 @@ source ./01_acquisition_data/01_01_RunProteinortho_RunOperonMapper.sh
 source ./03_processing_data/03_01_ExtendNetworks.sh
 source ./04_analysis_data/04_01_RunCytoscape.sh
 source ./04_analysis_data/04_02_TablesFromNets.sh
-#source ./04_04_analysis_data/
+source ./04_analysis_data/04_03_GetCoregulates.sh
+source ./04_analysis_data/04_04_RunNetworkx.sh
+#source ./04_analysis_data/
+#source ./04_analysis_data/
 
 # Stop execution and show on screen line number and bash command if there is any error
 trap ' TrackFailure ${LINENO} "$BASH_COMMAND" ' ERR
@@ -34,6 +37,8 @@ BATCHES_NUMBER=1
 EXTENDED_NETWORKS_OUTPUT="../net/"
 CYTO_OUTPUT=""
 TABLE_OUTPUT=""
+COREG_OUTPUT=""
+NETX_OUTPUT=""
 
 # Parsing argument values
 
@@ -61,7 +66,7 @@ while [[ $# -gt 0 ]]; do
         -t|--transcription_units_path)
             TUS_PATH=$2
             shift 2
-        ;;
+            ;;
         --proteinortho_output)
             PROTEINORTHO_OUTPUT=$2
             shift 2
@@ -82,6 +87,14 @@ while [[ $# -gt 0 ]]; do
             TABLE_OUTPUT=$2
             shift 2
             ;;
+        --coreg_output)
+            COREG_OUTPUT=$2
+            shift 2
+            ;;
+        --networkx_output)
+            NETX_OUTPUT=$2
+            shift 2
+            ;;
         -h|--help)
             ShowHelp
             ;;
@@ -99,14 +112,16 @@ ShowArguments ARGUMENTS
 # and for that reason is commented and also more suitable to be ran separately
 # for a deep view about that, check 02_preprocessing folder
 
-RunProteinortho $PROTEINORTHO_OUTPUT GENOMES_FILE_PATH_VALUES LABELS_VALUES $BATCHES_NUMBER
+#RunProteinortho $PROTEINORTHO_OUTPUT GENOMES_FILE_PATH_VALUES LABELS_VALUES $BATCHES_NUMBER
 
 # Deprecated in the future
 #RunOperonMapper
 
-ExtendNetworksByOtho $EXTENDED_NETWORKS_OUTPUT LABELS_VALUES $PROTEINORTHO_OUTPUT GENOMES_FILE_PATH_VALUES NETWORK_FILE_PATH_VALUES
-ExtendNetworksByTranscriptionUnit $EXTENDED_NETWORKS_OUTPUT GENOMES_FILE_PATH_VALUES $TUS_PATH
-AnalyzeByCytoscape GENOMES_FILE_PATH_VALUES $CYTO_OUTPUT "${EXTENDED_NETWORKS_OUTPUT}results" "${EXTENDED_NETWORKS_OUTPUT}results_plus_TU"
-CreateNetworkTableMetrics LABELS_VALUES GENOMES_FILE_PATH_VALUES "${EXTENDED_NETWORKS_OUTPUT}results_plus_TU" $TABLE_OUTPUT
-#coregulators
-#hubs
+#ExtendNetworksByOtho $EXTENDED_NETWORKS_OUTPUT LABELS_VALUES $PROTEINORTHO_OUTPUT GENOMES_FILE_PATH_VALUES NETWORK_FILE_PATH_VALUES
+#ExtendNetworksByTranscriptionUnit $EXTENDED_NETWORKS_OUTPUT GENOMES_FILE_PATH_VALUES $TUS_PATH
+#AnalyzeByCytoscape GENOMES_FILE_PATH_VALUES $CYTO_OUTPUT "${EXTENDED_NETWORKS_OUTPUT}results" "${EXTENDED_NETWORKS_OUTPUT}results_plus_TU"
+#CreateNetworkTableMetrics LABELS_VALUES GENOMES_FILE_PATH_VALUES "${EXTENDED_NETWORKS_OUTPUT}results_plus_TU" $TABLE_OUTPUT
+#RunCoreg GENOMES_FILE_PATH_VALUES "${EXTENDED_NETWORKS_OUTPUT}results_plus_TU" $COREG_OUTPUT
+GetHubs "${EXTENDED_NETWORKS_OUTPUT}results_plus_TU" $NETX_OUTPUT
+# GTest
+# Literature

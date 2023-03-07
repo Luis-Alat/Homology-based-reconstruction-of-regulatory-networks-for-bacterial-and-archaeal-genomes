@@ -22,12 +22,7 @@ AnalyzeByCytoscape() {
         done
 
         # Creating folder if it doesn't exist
-        if [ ! -d $OUTPUT ]; then
-            mkdir $OUTPUT "${OUTPUT}tmp"
-        else
-            rm -r $OUTPUT
-            mkdir $OUTPUT "${OUTPUT}tmp"
-        fi
+        [ ! -d $OUTPUT ] && mkdir $OUTPUT "${OUTPUT}tmp"
 
         cd $OUTPUT
 

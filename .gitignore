@@ -10,3 +10,4 @@ net/*
 net/results/tmp/
 tus_models_operon/
 
+cytoscape/tmp/*
