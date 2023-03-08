@@ -22,6 +22,8 @@ CreateNetworkTableMetrics() {
         local i
         local j
 
+        [ ! -d $OUTPUT ] && mkdir $OUTPUT
+
         for ((i=0; i < ${#GENOMES[@]}; i++)); do
                 GENOMES[$i]=$(basename ${GENOMES[$i]})
         done

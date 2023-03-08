@@ -22,14 +22,12 @@ AnalyzeByCytoscape() {
         done
 
         # Creating folder if it doesn't exist
-        [ ! -d $OUTPUT ] && mkdir $OUTPUT "${OUTPUT}tmp"
-
-        cd $OUTPUT
+        [ ! -d $OUTPUT ] && mkdir -p $OUTPUT "${OUTPUT}tmp"
 
         for ((i=0; i < ${#GENOMES[@]}; i++)); do
 
-                local INPUT_ORTHO_NETS=$(printf "${PATH_NET_ORTHO}${BASE_NAME[$i]}"*)
-                local INPUT_PLUS_TU_NETS=$(printf "${PATH_NET_PLUS_TU}${BASE_NAME[$i]}"*)
+                local INPUT_ORTHO_NETS=$( printf "${PATH_NET_ORTHO}${BASE_NAME[$i]}"* )
+                local INPUT_PLUS_TU_NETS=$( printf "${PATH_NET_PLUS_TU}${BASE_NAME[$i]}"* )
 
                 # Calling the R script to execute commands on CytoScape (API), generating and analyzing networks
                 Rscript --vanilla $SCRIPT_DIR/04_01_01_CytoScapeBuildNetworks.R -i "${INPUT_ORTHO_NETS}" -t new -p $OUTPUT

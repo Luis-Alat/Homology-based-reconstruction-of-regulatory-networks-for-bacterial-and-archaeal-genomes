@@ -136,14 +136,8 @@ cytoscapePing()
 option_list = list(
   make_option(c("-i", "--inputFile"), type="character", default=NULL, 
               help="Extended Network or information about orthologs", metavar="character"),
-  make_option(c("-m", "--modifiedNetwork"), type = "character", default = NULL,
-              help="Modifed network, It's ignore if -t is equal to \"new\"", metavar="character"),
   make_option(c("-t", "--typeMethod"), type = "character", default = NULL,
               help="Type of information to process: new or ortho", metavar="character"),
-  make_option(c("-c", "--colors"), type = "character", default = NULL,
-              help="String containing the differents colors to fill the nodes in the cytoScape network. This
-              options only is valid if -t is equal to ortho. Colors must be in order ascedent
-              and separate them by commas without blank spaces", metavar="character"),
   make_option(c("-p", "--path"), type = "character", default = NULL,
               help="Path to save files", metavar = "character")
 );

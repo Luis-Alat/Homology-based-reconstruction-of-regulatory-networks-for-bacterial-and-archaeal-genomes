@@ -173,8 +173,8 @@ GenomeNames=("GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa" "GCF_00000584
 
 for faa in ${GenomeNames[@]}; do
 
-                # Changing the second '|' by <tab> inplace
+                # Changing the second '|' by <tab> inplace and removing all after that
                 printf "Modifying faa file "$faa"\n"
-                sed -r -i 's/\|/\t/2' ../../genomes/$faa
+                sed -r -i 's/\|/\t/2; s/\t.+$//g' ../../genomes/$faa
 
 done

@@ -8,6 +8,10 @@ net/*
 !net/results_plus_TU
 
 net/results/tmp/
+net/results_plus_TU/tmp
 tus_models_operon/
 
-cytoscape/tmp/*
+analysis/cytoscape/tmp/*
+analysis/coreg/tmp/*
+
+genomes/*diamond.dmnd

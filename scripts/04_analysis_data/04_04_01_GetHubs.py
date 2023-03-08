@@ -52,7 +52,15 @@ if __name__ == "__main__":
     network_df = network_df.to_numpy().tolist()
 
     graph = nx.DiGraph(network_df)
-    hubs_values, authorities_values = nx.hits(graph)
+
+    iter, state = 100, True
+    while state:
+        try:
+            hubs_values, authorities_values = nx.hits(graph, max_iter=iter)
+            state = False
+        except:
+            print(f"  Power iteration failed to convergence with {iter}. Using {iter + 100}")
+            iter += 100
 
     scores_net_df = CreateScoresFrame(nodes=hubs_values.keys(), 
                                       hub_scores=hubs_values.values(), 

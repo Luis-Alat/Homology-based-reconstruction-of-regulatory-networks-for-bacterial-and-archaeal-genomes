@@ -47,26 +47,28 @@ RunProteinortho() {
                         # Do not search orthologues against itself (dah)
                         if [[ $i -ne $j ]]; then
 
-                                ( mkdir "tmp_${COUNTER}" && cd "tmp_${COUNTER}" 
+                                ( mkdir "tmp_${COUNTER}" && cd "tmp_${COUNTER}"
                                 local BASE_NAME=$(basename ${GENOMES[$j]})
                                 local PROJECT_NAME=$(printf "${BASE_NAME}_${FOLDER_LABELS[$i]}")
 
-                                proteinortho6.pl --clean --verbose=2 -cpus=5 --cov=70 -project=$PROJECT_NAME ../${GENOMES[$i]} ../${GENOMES[$j]}
+                                proteinortho6.pl --verbose=1 -cpus=6 --cov=70 -project=$PROJECT_NAME ../${GENOMES[$i]} ../${GENOMES[$j]}
                                 
                                 # Apparently the proteinortho outputs only can be saved in the directory where it's ran
-                                mv ${PROJECT_NAME}* ../$FULL_OUTPUT_PATH && cd ../ && rm -r "tmp_${COUNTER}" ) &
+                                mv ${PROJECT_NAME}* ../$FULL_OUTPUT_PATH && cd ../ ) &
 
                                 ((++COUNTER))
                                 ((++COUNT_BATCHES)); [ "${COUNT_BATCHES}" -eq "${BATCHES}" ] && COUNT_BATCHES=0 && wait
 
                         fi
 
-                done
+                done 
 
         done
 
         wait
 
+        rm -r "tmp_"*
+	#rm *diamond.dmnd
 }
 
 RunOperonMapper() {

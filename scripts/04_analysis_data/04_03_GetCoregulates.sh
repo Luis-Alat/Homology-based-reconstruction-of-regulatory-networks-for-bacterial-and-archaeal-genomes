@@ -20,8 +20,6 @@ RunCoreg() {
         # Creating folder if it doesn't exist
         [ ! -d "${OUTPUT}" ] && mkdir "${OUTPUT}" "${OUTPUT}tmp/"
 
-        cd "${OUTPUT}"
-
         # Using CoReg to find co-regulators in the networks
         for FILE_NAME in ${BASE_NAME[@]}; do
                 Rscript --vanilla $SCRIPT_DIR/04_03_01_CoReg.R -i "${INPUT_PATH}${FILE_NAME}"* -o $OUTPUT
