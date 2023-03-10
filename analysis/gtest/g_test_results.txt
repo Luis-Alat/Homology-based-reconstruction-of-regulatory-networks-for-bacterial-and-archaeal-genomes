@@ -1,0 +1,78 @@
+../net/results_plus_TU/GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_extended_network_plus_tu
+
+G-test
+score: 4833.446207058737
+P-value: 0.0
+df: 2
+
+Matrix
+
+,Counts,Observed_probability,Expected_probability
+TP,1716,0.47429519071310117,0.06098514286771717
+FP,921,0.25456053067993367,0.4479193026285305
+FN,981,0.27114427860696516,0.4910955545037523
+../net/results_plus_TU/GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa_extended_network_plus_tu
+
+G-test
+score: 13420.131482918374
+P-value: 0.0
+df: 2
+
+Matrix
+
+,Counts,Observed_probability,Expected_probability
+TP,2730,0.501101321585903,0.03194056936062041
+FP,8,0.0014684287812041115,0.30896023374826587
+FN,2710,0.4974302496328928,0.6590991968911137
+../net/results_plus_TU/GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa_extended_network_plus_tu
+
+G-test
+score: 9377.286714232754
+P-value: 0.0
+df: 2
+
+Matrix
+
+,Counts,Observed_probability,Expected_probability
+TP,2526,0.3917493796526055,0.03546650976044342
+FP,443,0.06870347394540943,0.2997201492798394
+FN,3479,0.5395471464019851,0.6648133409597171
+../net/results_plus_TU/GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa_extended_network_plus_tu
+
+G-test
+score: 1105.9113357243373
+P-value: 7.151624612279723e-241
+df: 2
+
+Matrix
+
+,Counts,Observed_probability,Expected_probability
+TP,412,0.2592825676526117,0.03332882368359244
+FP,297,0.1869100062932662,0.3284901115751101
+FN,880,0.5538074260541221,0.6381810647412974
+../net/results_plus_TU/GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_extended_network_plus_tu
+
+G-test
+score: 3696.451902788158
+P-value: 0.0
+df: 2
+
+Matrix
+
+,Counts,Observed_probability,Expected_probability
+TP,836,0.1814236111111111,0.012195774753239255
+FP,162,0.03515625,0.17046588378622582
+FN,3610,0.7834201388888888,0.817338341460535
+../net/results_plus_TU/GCF_000005845.2_E_coli_K12_genomic.faa_extended_network_plus_tu
+
+G-test
+score: 15549.089549415057
+P-value: 0.0
+df: 2
+
+Matrix
+
+,Counts,Observed_probability,Expected_probability
+TP,3611,0.5288517867603983,0.045822408319594284
+FP,5,0.0007322788517867604,0.3064144898318209
+FN,3212,0.47041593438781487,0.6477631018485848
