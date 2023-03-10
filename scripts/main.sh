@@ -4,7 +4,7 @@
 #### Homology based-reconstruction pipeline ####
 ################################################
 
-#bash main.sh -g Fasta_files_path.txt -n Nets_files_path.txt -l Labels_organism.txt -t ../tus_models_operon_processed --extended_nets_output ../net/ --proteinortho_output ../proteinortho/ --tables_output ../cytoscape --cytoscape_output ../cytoscape --coreg_output ../cytoscape --networkx_output ../cytoscape
+#bash main.sh -g Fasta_files_path.txt -n Nets_files_path.txt -l Labels_organism.txt -t ../tus_models_operon_processed/ --extended_nets_output ../net/ --proteinortho_output ../proteinortho/ --tables_output ../analysis/tables/ --cytoscape_output ../analysis/cytoscape/ --coreg_output ../analysis/coreg/ --networkx_output ../analysis/hits/ --g_test_output ../analysis/gtest
 
 set -eE +o functrace
 
@@ -19,7 +19,7 @@ source ./04_analysis_data/04_01_RunCytoscape.sh
 source ./04_analysis_data/04_02_TablesFromNets.sh
 source ./04_analysis_data/04_03_GetCoregulates.sh
 source ./04_analysis_data/04_04_RunNetworkx.sh
-#source ./04_analysis_data/04_05_RunGtest.sh
+source ./04_analysis_data/04_05_RunGtest.sh
 #source ./04_analysis_data/04_06_SearchPubMed.sh
 
 # Stop execution and show on screen line number and bash command if there is any error
@@ -39,6 +39,7 @@ CYTO_OUTPUT=""
 TABLE_OUTPUT=""
 COREG_OUTPUT=""
 NETX_OUTPUT=""
+G_TEST_OUTPUT=""
 
 # Parsing argument values
 
@@ -95,6 +96,10 @@ while [[ $# -gt 0 ]]; do
             NETX_OUTPUT=$2
             shift 2
             ;;
+        --g_test_output)
+            G_TEST_OUTPUT=$2
+            shift 2
+            ;;
         -h|--help)
             ShowHelp
             ;;
@@ -122,6 +127,6 @@ ExtendNetworksByTranscriptionUnit $EXTENDED_NETWORKS_OUTPUT GENOMES_FILE_PATH_VA
 AnalyzeByCytoscape GENOMES_FILE_PATH_VALUES $CYTO_OUTPUT "${EXTENDED_NETWORKS_OUTPUT}results" "${EXTENDED_NETWORKS_OUTPUT}results_plus_TU"
 CreateNetworkTableMetrics LABELS_VALUES GENOMES_FILE_PATH_VALUES "${EXTENDED_NETWORKS_OUTPUT}results_plus_TU" $TABLE_OUTPUT
 RunCoreg GENOMES_FILE_PATH_VALUES "${EXTENDED_NETWORKS_OUTPUT}results_plus_TU" $COREG_OUTPUT
-GetHubs "${EXTENDED_NETWORKS_OUTPUT}results_plus_TU" $NETX_OUTPUT
-# GTest
+RunGtest "${EXTENDED_NETWORKS_OUTPUT}results_plus_TU" $G_TEST_OUTPUT
+
 # Literature

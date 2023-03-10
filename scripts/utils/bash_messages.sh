@@ -32,6 +32,7 @@ Arguments:
 	--tables_output -> Path to place metrics of the networks
 	--coreg_output -> Path to place CoReg output
 	--networkx_output -> Path to place networkx output
+	--g_test_output -> Path to place G-test results.
 
 "
 	printf "${help}"
