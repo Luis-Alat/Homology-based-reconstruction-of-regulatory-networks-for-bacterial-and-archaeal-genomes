@@ -15,4 +15,8 @@ dependencies:
   - proteinortho
   - sqlite
   - r-base
+  - ca-certificates
+  - certifi
+  - openssl
+  - r-easypubmed
 prefix: /home/lromero/mambaforge/envs/homology_project

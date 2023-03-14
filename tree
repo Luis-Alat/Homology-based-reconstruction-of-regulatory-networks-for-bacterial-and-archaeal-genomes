@@ -1,46 +1,80 @@
 # Tree of this repo
 # Not all the files were pushed into github
 .
-├── cytoscape
-│   ├── GCF_000005845.2_E_coli_K12_genomic.faa_extended_network.cys
-│   ├── GCF_000005845.2_E_coli_K12_genomic.faa_extended_network_metrics
-│   ├── GCF_000005845.2_E_coli_K12_genomic.faa_extended_network_plus_tu.cys
-│   ├── GCF_000005845.2_E_coli_K12_genomic.faa_extended_network_plus_tu_metrics
-│   ├── GCF_000005845.2_E_coli_K12_genomic.faa_extended_network_plus_tu.svg
-│   ├── GCF_000005845.2_E_coli_K12_genomic.faa_extended_network.svg
-│   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_extended_network.cys
-│   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_extended_network_metrics
-│   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_extended_network_plus_tu.cys
-│   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_extended_network_plus_tu_metrics
-│   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_extended_network_plus_tu.svg
-│   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_extended_network.svg
-│   ├── GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa_extended_network.cys
-│   ├── GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa_extended_network_metrics
-│   ├── GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa_extended_network_plus_tu.cys
-│   ├── GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa_extended_network_plus_tu_metrics
-│   ├── GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa_extended_network_plus_tu.svg
-│   ├── GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa_extended_network.svg
-│   ├── GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa_extended_network.cys
-│   ├── GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa_extended_network_metrics
-│   ├── GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa_extended_network_plus_tu.cys
-│   ├── GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa_extended_network_plus_tu_metrics
-│   ├── GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa_extended_network_plus_tu.svg
-│   ├── GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa_extended_network.svg
-│   ├── GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa_extended_network.cys
-│   ├── GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa_extended_network_metrics
-│   ├── GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa_extended_network_plus_tu.cys
-│   ├── GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa_extended_network_plus_tu_metrics
-│   ├── GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa_extended_network_plus_tu.svg
-│   ├── GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa_extended_network.svg
-│   ├── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_extended_network.cys
-│   ├── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_extended_network_metrics
-│   ├── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_extended_network_plus_tu.cys
-│   ├── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_extended_network_plus_tu_metrics
-│   ├── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_extended_network_plus_tu.svg
-│   ├── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_extended_network.svg
-│   ├── Table_of_percentage_of_news.csv
-│   ├── Table_of_percentage_of_reconstruction.csv
-│   └── tmp
+├── analysis
+│   ├── coreg
+│   │   ├── GCF_000005845.2_E_coli_K12_genomic.faa_extended_network_plus_tu_coreg_modules
+│   │   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_extended_network_plus_tu_coreg_modules
+│   │   ├── GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa_extended_network_plus_tu_coreg_modules
+│   │   ├── GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa_extended_network_plus_tu_coreg_modules
+│   │   ├── GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa_extended_network_plus_tu_coreg_modules
+│   │   ├── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_extended_network_plus_tu_coreg_modules
+│   │   └── tmp
+│   │       ├── GCF_000005845.2_E_coli_K12_genomic.faa_extended_network_plus_tu_coreg_matrix
+│   │       ├── GCF_000005845.2_E_coli_K12_genomic.faa_extended_network_plus_tu_coreg_range
+│   │       ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_extended_network_plus_tu_coreg_matrix
+│   │       ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_extended_network_plus_tu_coreg_range
+│   │       ├── GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa_extended_network_plus_tu_coreg_matrix
+│   │       ├── GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa_extended_network_plus_tu_coreg_range
+│   │       ├── GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa_extended_network_plus_tu_coreg_matrix
+│   │       ├── GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa_extended_network_plus_tu_coreg_range
+│   │       ├── GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa_extended_network_plus_tu_coreg_matrix
+│   │       ├── GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa_extended_network_plus_tu_coreg_range
+│   │       ├── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_extended_network_plus_tu_coreg_matrix
+│   │       └── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_extended_network_plus_tu_coreg_range
+│   ├── cytoscape
+│   │   ├── GCF_000005845.2_E_coli_K12_genomic.faa_extended_network.cys
+│   │   ├── GCF_000005845.2_E_coli_K12_genomic.faa_extended_network_metrics
+│   │   ├── GCF_000005845.2_E_coli_K12_genomic.faa_extended_network_plus_tu.cys
+│   │   ├── GCF_000005845.2_E_coli_K12_genomic.faa_extended_network_plus_tu_metrics
+│   │   ├── GCF_000005845.2_E_coli_K12_genomic.faa_extended_network_plus_tu.svg
+│   │   ├── GCF_000005845.2_E_coli_K12_genomic.faa_extended_network.svg
+│   │   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_extended_network.cys
+│   │   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_extended_network_metrics
+│   │   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_extended_network_plus_tu.cys
+│   │   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_extended_network_plus_tu_metrics
+│   │   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_extended_network_plus_tu.svg
+│   │   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_extended_network.svg
+│   │   ├── GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa_extended_network.cys
+│   │   ├── GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa_extended_network_metrics
+│   │   ├── GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa_extended_network_plus_tu.cys
+│   │   ├── GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa_extended_network_plus_tu_metrics
+│   │   ├── GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa_extended_network_plus_tu.svg
+│   │   ├── GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa_extended_network.svg
+│   │   ├── GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa_extended_network.cys
+│   │   ├── GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa_extended_network_metrics
+│   │   ├── GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa_extended_network_plus_tu.cys
+│   │   ├── GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa_extended_network_plus_tu_metrics
+│   │   ├── GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa_extended_network_plus_tu.svg
+│   │   ├── GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa_extended_network.svg
+│   │   ├── GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa_extended_network.cys
+│   │   ├── GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa_extended_network_metrics
+│   │   ├── GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa_extended_network_plus_tu.cys
+│   │   ├── GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa_extended_network_plus_tu_metrics
+│   │   ├── GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa_extended_network_plus_tu.svg
+│   │   ├── GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa_extended_network.svg
+│   │   ├── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_extended_network.cys
+│   │   ├── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_extended_network_metrics
+│   │   ├── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_extended_network_plus_tu.cys
+│   │   ├── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_extended_network_plus_tu_metrics
+│   │   ├── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_extended_network_plus_tu.svg
+│   │   ├── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_extended_network.svg
+│   │   └── tmp
+│   ├── gtest
+│   │   └── g_test_results.txt
+│   ├── hits
+│   │   ├── GCF_000005845.2_E_coli_K12_genomic.faa_extended_network_plus_tu_hits
+│   │   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_extended_network_plus_tu_hits
+│   │   ├── GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa_extended_network_plus_tu_hits
+│   │   ├── GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa_extended_network_plus_tu_hits
+│   │   ├── GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa_extended_network_plus_tu_hits
+│   │   └── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_extended_network_plus_tu_hits
+│   ├── pubmed
+│   │   ├── Ecoli_Rules_PubMed.txt_pubmed
+│   │   └── Ecoli_Rules_PubMed.txt_stdoutput
+│   └── tables
+│       ├── Table_of_percentage_of_news.csv
+│       └── Table_of_percentage_of_reconstruction.csv
 ├── environment.yml
 ├── genomes
 │   ├── gbk
@@ -51,11 +85,17 @@
 │   │   ├── P_aeruginosa_GCF_000006765.1_ASM676v1_genomic.gbff
 │   │   └── salmonella_enterica_serovar_LT2_RN_GCF_000006945.2_ASM694v2_genomic.gbff
 │   ├── GCF_000005845.2_E_coli_K12_genomic.faa
+│   ├── GCF_000005845.2_E_coli_K12_genomic.faa.diamond.dmnd
 │   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa
+│   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa.diamond.dmnd
 │   ├── GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa
+│   ├── GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa.diamond.dmnd
 │   ├── GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa
+│   ├── GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa.diamond.dmnd
 │   ├── GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa
-│   └── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa
+│   ├── GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa.diamond.dmnd
+│   ├── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa
+│   └── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa.diamond.dmnd
 ├── modifiedNetworks
 │   ├── GCF_000005845.2_E_coli_K12_modified_net.txt
 │   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_modified_net.txt
@@ -82,13 +122,11 @@
 │   │   ├── ortoFiles
 │   │   │   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_E_coli_K12.blast-graph_ortho
 │   │   │   ├── GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa_E_coli_K12.blast-graph_ortho
-│   │   │   ├── GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa_E_coli_K12.blast-graph_ortho
 │   │   │   ├── GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa_E_coli_K12.blast-graph_ortho
 │   │   │   └── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_E_coli_K12.blast-graph_ortho
 │   │   └── PreNewInteractionsFiles
 │   │       ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_E_coli_K12.blast-graph_new_interactions
 │   │       ├── GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa_E_coli_K12.blast-graph_new_interactions
-│   │       ├── GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa_E_coli_K12.blast-graph_new_interactions
 │   │       ├── GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa_E_coli_K12.blast-graph_new_interactions
 │   │       ├── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_E_coli_K12.blast-graph_new_interactions
 │   │       └── tmp
@@ -207,37 +245,6 @@
 │       ├── salmonella_excluir
 │       └── staphy_excluir
 ├── proteinortho
-│   ├── B_subtilis
-│   │   ├── GCF_000005845.2_E_coli_K12_genomic.faa_B_subtilis.blast-graph
-│   │   ├── GCF_000005845.2_E_coli_K12_genomic.faa_B_subtilis.info
-│   │   ├── GCF_000005845.2_E_coli_K12_genomic.faa_B_subtilis.proteinortho-graph
-│   │   ├── GCF_000005845.2_E_coli_K12_genomic.faa_B_subtilis.proteinortho-graph.summary
-│   │   ├── GCF_000005845.2_E_coli_K12_genomic.faa_B_subtilis.proteinortho.html
-│   │   ├── GCF_000005845.2_E_coli_K12_genomic.faa_B_subtilis.proteinortho.tsv
-│   │   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_B_subtilis.blast-graph
-│   │   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_B_subtilis.info
-│   │   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_B_subtilis.proteinortho-graph
-│   │   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_B_subtilis.proteinortho-graph.summary
-│   │   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_B_subtilis.proteinortho.html
-│   │   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_B_subtilis.proteinortho.tsv
-│   │   ├── GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa_B_subtilis.blast-graph
-│   │   ├── GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa_B_subtilis.info
-│   │   ├── GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa_B_subtilis.proteinortho-graph
-│   │   ├── GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa_B_subtilis.proteinortho-graph.summary
-│   │   ├── GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa_B_subtilis.proteinortho.html
-│   │   ├── GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa_B_subtilis.proteinortho.tsv
-│   │   ├── GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa_B_subtilis.blast-graph
-│   │   ├── GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa_B_subtilis.info
-│   │   ├── GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa_B_subtilis.proteinortho-graph
-│   │   ├── GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa_B_subtilis.proteinortho-graph.summary
-│   │   ├── GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa_B_subtilis.proteinortho.html
-│   │   ├── GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa_B_subtilis.proteinortho.tsv
-│   │   ├── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_B_subtilis.blast-graph
-│   │   ├── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_B_subtilis.info
-│   │   ├── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_B_subtilis.proteinortho-graph
-│   │   ├── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_B_subtilis.proteinortho-graph.summary
-│   │   ├── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_B_subtilis.proteinortho.html
-│   │   └── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_B_subtilis.proteinortho.tsv
 │   ├── B_subtilis_168
 │   │   ├── GCF_000005845.2_E_coli_K12_genomic.faa_B_subtilis_168.blast-graph
 │   │   ├── GCF_000005845.2_E_coli_K12_genomic.faa_B_subtilis_168.info
@@ -269,37 +276,6 @@
 │   │   ├── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_B_subtilis_168.proteinortho-graph.summary
 │   │   ├── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_B_subtilis_168.proteinortho.html
 │   │   └── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_B_subtilis_168.proteinortho.tsv
-│   ├── E_coli
-│   │   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_E_coli.blast-graph
-│   │   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_E_coli.info
-│   │   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_E_coli.proteinortho-graph
-│   │   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_E_coli.proteinortho-graph.summary
-│   │   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_E_coli.proteinortho.html
-│   │   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_E_coli.proteinortho.tsv
-│   │   ├── GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa_E_coli.blast-graph
-│   │   ├── GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa_E_coli.info
-│   │   ├── GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa_E_coli.proteinortho-graph
-│   │   ├── GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa_E_coli.proteinortho-graph.summary
-│   │   ├── GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa_E_coli.proteinortho.html
-│   │   ├── GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa_E_coli.proteinortho.tsv
-│   │   ├── GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa_E_coli.blast-graph
-│   │   ├── GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa_E_coli.info
-│   │   ├── GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa_E_coli.proteinortho-graph
-│   │   ├── GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa_E_coli.proteinortho-graph.summary
-│   │   ├── GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa_E_coli.proteinortho.html
-│   │   ├── GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa_E_coli.proteinortho.tsv
-│   │   ├── GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa_E_coli.blast-graph
-│   │   ├── GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa_E_coli.info
-│   │   ├── GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa_E_coli.proteinortho-graph
-│   │   ├── GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa_E_coli.proteinortho-graph.summary
-│   │   ├── GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa_E_coli.proteinortho.html
-│   │   ├── GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa_E_coli.proteinortho.tsv
-│   │   ├── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_E_coli.blast-graph
-│   │   ├── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_E_coli.info
-│   │   ├── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_E_coli.proteinortho-graph
-│   │   ├── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_E_coli.proteinortho-graph.summary
-│   │   ├── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_E_coli.proteinortho.html
-│   │   └── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_E_coli.proteinortho.tsv
 │   ├── E_coli_K12
 │   │   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_E_coli_K12.blast-graph
 │   │   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_E_coli_K12.info
@@ -331,37 +307,6 @@
 │   │   ├── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_E_coli_K12.proteinortho-graph.summary
 │   │   ├── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_E_coli_K12.proteinortho.html
 │   │   └── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_E_coli_K12.proteinortho.tsv
-│   ├── M_tuberculosis
-│   │   ├── GCF_000005845.2_E_coli_K12_genomic.faa_M_tuberculosis.blast-graph
-│   │   ├── GCF_000005845.2_E_coli_K12_genomic.faa_M_tuberculosis.info
-│   │   ├── GCF_000005845.2_E_coli_K12_genomic.faa_M_tuberculosis.proteinortho-graph
-│   │   ├── GCF_000005845.2_E_coli_K12_genomic.faa_M_tuberculosis.proteinortho-graph.summary
-│   │   ├── GCF_000005845.2_E_coli_K12_genomic.faa_M_tuberculosis.proteinortho.html
-│   │   ├── GCF_000005845.2_E_coli_K12_genomic.faa_M_tuberculosis.proteinortho.tsv
-│   │   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_M_tuberculosis.blast-graph
-│   │   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_M_tuberculosis.info
-│   │   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_M_tuberculosis.proteinortho-graph
-│   │   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_M_tuberculosis.proteinortho-graph.summary
-│   │   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_M_tuberculosis.proteinortho.html
-│   │   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_M_tuberculosis.proteinortho.tsv
-│   │   ├── GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa_M_tuberculosis.blast-graph
-│   │   ├── GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa_M_tuberculosis.info
-│   │   ├── GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa_M_tuberculosis.proteinortho-graph
-│   │   ├── GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa_M_tuberculosis.proteinortho-graph.summary
-│   │   ├── GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa_M_tuberculosis.proteinortho.html
-│   │   ├── GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa_M_tuberculosis.proteinortho.tsv
-│   │   ├── GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa_M_tuberculosis.blast-graph
-│   │   ├── GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa_M_tuberculosis.info
-│   │   ├── GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa_M_tuberculosis.proteinortho-graph
-│   │   ├── GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa_M_tuberculosis.proteinortho-graph.summary
-│   │   ├── GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa_M_tuberculosis.proteinortho.html
-│   │   ├── GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa_M_tuberculosis.proteinortho.tsv
-│   │   ├── GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa_M_tuberculosis.blast-graph
-│   │   ├── GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa_M_tuberculosis.info
-│   │   ├── GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa_M_tuberculosis.proteinortho-graph
-│   │   ├── GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa_M_tuberculosis.proteinortho-graph.summary
-│   │   ├── GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa_M_tuberculosis.proteinortho.html
-│   │   └── GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa_M_tuberculosis.proteinortho.tsv
 │   ├── M_tuberculosis_H37Rv
 │   │   ├── GCF_000005845.2_E_coli_K12_genomic.faa_M_tuberculosis_H37Rv.blast-graph
 │   │   ├── GCF_000005845.2_E_coli_K12_genomic.faa_M_tuberculosis_H37Rv.info
@@ -424,68 +369,6 @@
 │   │   ├── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_P_aeruginosa_PA01.proteinortho-graph.summary
 │   │   ├── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_P_aeruginosa_PA01.proteinortho.html
 │   │   └── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_P_aeruginosa_PA01.proteinortho.tsv
-│   ├── P_aeruginossa
-│   │   ├── GCF_000005845.2_E_coli_K12_genomic.faa_P_aeruginossa.blast-graph
-│   │   ├── GCF_000005845.2_E_coli_K12_genomic.faa_P_aeruginossa.info
-│   │   ├── GCF_000005845.2_E_coli_K12_genomic.faa_P_aeruginossa.proteinortho-graph
-│   │   ├── GCF_000005845.2_E_coli_K12_genomic.faa_P_aeruginossa.proteinortho-graph.summary
-│   │   ├── GCF_000005845.2_E_coli_K12_genomic.faa_P_aeruginossa.proteinortho.html
-│   │   ├── GCF_000005845.2_E_coli_K12_genomic.faa_P_aeruginossa.proteinortho.tsv
-│   │   ├── GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa_P_aeruginossa.blast-graph
-│   │   ├── GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa_P_aeruginossa.info
-│   │   ├── GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa_P_aeruginossa.proteinortho-graph
-│   │   ├── GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa_P_aeruginossa.proteinortho-graph.summary
-│   │   ├── GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa_P_aeruginossa.proteinortho.html
-│   │   ├── GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa_P_aeruginossa.proteinortho.tsv
-│   │   ├── GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa_P_aeruginossa.blast-graph
-│   │   ├── GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa_P_aeruginossa.info
-│   │   ├── GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa_P_aeruginossa.proteinortho-graph
-│   │   ├── GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa_P_aeruginossa.proteinortho-graph.summary
-│   │   ├── GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa_P_aeruginossa.proteinortho.html
-│   │   ├── GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa_P_aeruginossa.proteinortho.tsv
-│   │   ├── GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa_P_aeruginossa.blast-graph
-│   │   ├── GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa_P_aeruginossa.info
-│   │   ├── GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa_P_aeruginossa.proteinortho-graph
-│   │   ├── GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa_P_aeruginossa.proteinortho-graph.summary
-│   │   ├── GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa_P_aeruginossa.proteinortho.html
-│   │   ├── GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa_P_aeruginossa.proteinortho.tsv
-│   │   ├── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_P_aeruginossa.blast-graph
-│   │   ├── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_P_aeruginossa.info
-│   │   ├── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_P_aeruginossa.proteinortho-graph
-│   │   ├── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_P_aeruginossa.proteinortho-graph.summary
-│   │   ├── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_P_aeruginossa.proteinortho.html
-│   │   └── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_P_aeruginossa.proteinortho.tsv
-│   ├── S_aureus
-│   │   ├── GCF_000005845.2_E_coli_K12_genomic.faa_S_aureus.blast-graph
-│   │   ├── GCF_000005845.2_E_coli_K12_genomic.faa_S_aureus.info
-│   │   ├── GCF_000005845.2_E_coli_K12_genomic.faa_S_aureus.proteinortho-graph
-│   │   ├── GCF_000005845.2_E_coli_K12_genomic.faa_S_aureus.proteinortho-graph.summary
-│   │   ├── GCF_000005845.2_E_coli_K12_genomic.faa_S_aureus.proteinortho.html
-│   │   ├── GCF_000005845.2_E_coli_K12_genomic.faa_S_aureus.proteinortho.tsv
-│   │   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_S_aureus.blast-graph
-│   │   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_S_aureus.info
-│   │   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_S_aureus.proteinortho-graph
-│   │   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_S_aureus.proteinortho-graph.summary
-│   │   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_S_aureus.proteinortho.html
-│   │   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_S_aureus.proteinortho.tsv
-│   │   ├── GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa_S_aureus.blast-graph
-│   │   ├── GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa_S_aureus.info
-│   │   ├── GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa_S_aureus.proteinortho-graph
-│   │   ├── GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa_S_aureus.proteinortho-graph.summary
-│   │   ├── GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa_S_aureus.proteinortho.html
-│   │   ├── GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa_S_aureus.proteinortho.tsv
-│   │   ├── GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa_S_aureus.blast-graph
-│   │   ├── GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa_S_aureus.info
-│   │   ├── GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa_S_aureus.proteinortho-graph
-│   │   ├── GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa_S_aureus.proteinortho-graph.summary
-│   │   ├── GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa_S_aureus.proteinortho.html
-│   │   ├── GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa_S_aureus.proteinortho.tsv
-│   │   ├── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_S_aureus.blast-graph
-│   │   ├── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_S_aureus.info
-│   │   ├── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_S_aureus.proteinortho-graph
-│   │   ├── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_S_aureus.proteinortho-graph.summary
-│   │   ├── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_S_aureus.proteinortho.html
-│   │   └── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_S_aureus.proteinortho.tsv
 │   ├── S_aureus_N315
 │   │   ├── GCF_000005845.2_E_coli_K12_genomic.faa_S_aureus_N315.blast-graph
 │   │   ├── GCF_000005845.2_E_coli_K12_genomic.faa_S_aureus_N315.info
@@ -517,37 +400,6 @@
 │   │   ├── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_S_aureus_N315.proteinortho-graph.summary
 │   │   ├── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_S_aureus_N315.proteinortho.html
 │   │   └── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_S_aureus_N315.proteinortho.tsv
-│   ├── S_enterica
-│   │   ├── GCF_000005845.2_E_coli_K12_genomic.faa_S_enterica.blast-graph
-│   │   ├── GCF_000005845.2_E_coli_K12_genomic.faa_S_enterica.info
-│   │   ├── GCF_000005845.2_E_coli_K12_genomic.faa_S_enterica.proteinortho-graph
-│   │   ├── GCF_000005845.2_E_coli_K12_genomic.faa_S_enterica.proteinortho-graph.summary
-│   │   ├── GCF_000005845.2_E_coli_K12_genomic.faa_S_enterica.proteinortho.html
-│   │   ├── GCF_000005845.2_E_coli_K12_genomic.faa_S_enterica.proteinortho.tsv
-│   │   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_S_enterica.blast-graph
-│   │   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_S_enterica.info
-│   │   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_S_enterica.proteinortho-graph
-│   │   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_S_enterica.proteinortho-graph.summary
-│   │   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_S_enterica.proteinortho.html
-│   │   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_S_enterica.proteinortho.tsv
-│   │   ├── GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa_S_enterica.blast-graph
-│   │   ├── GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa_S_enterica.info
-│   │   ├── GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa_S_enterica.proteinortho-graph
-│   │   ├── GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa_S_enterica.proteinortho-graph.summary
-│   │   ├── GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa_S_enterica.proteinortho.html
-│   │   ├── GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa_S_enterica.proteinortho.tsv
-│   │   ├── GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa_S_enterica.blast-graph
-│   │   ├── GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa_S_enterica.info
-│   │   ├── GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa_S_enterica.proteinortho-graph
-│   │   ├── GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa_S_enterica.proteinortho-graph.summary
-│   │   ├── GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa_S_enterica.proteinortho.html
-│   │   ├── GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa_S_enterica.proteinortho.tsv
-│   │   ├── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_S_enterica.blast-graph
-│   │   ├── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_S_enterica.info
-│   │   ├── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_S_enterica.proteinortho-graph
-│   │   ├── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_S_enterica.proteinortho-graph.summary
-│   │   ├── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_S_enterica.proteinortho.html
-│   │   └── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_S_enterica.proteinortho.tsv
 │   └── S_Typhimurium_LT2
 │       ├── GCF_000005845.2_E_coli_K12_genomic.faa_S_Typhimurium_LT2.blast-graph
 │       ├── GCF_000005845.2_E_coli_K12_genomic.faa_S_Typhimurium_LT2.info
@@ -595,13 +447,62 @@
 │   │   ├── 04_01_01_CytoScapeBuildNetworks.R
 │   │   ├── 04_01_RunCytoscape.sh
 │   │   ├── 04_02_TablesFromNets.sh
-│   │   ├── compare_modules.sh
-│   │   ├── CoReg.R
-│   │   └── getHubs.py
+│   │   ├── 04_03_01_CoReg.R
+│   │   ├── 04_03_GetCoregulates.sh
+│   │   ├── 04_04_01_GetHubs.py
+│   │   ├── 04_04_RunNetworkx.sh
+│   │   ├── 04_05_01_RunGtest.py
+│   │   ├── 04_05_RunGtest.sh
+│   │   ├── 04_06_01_SearchPubMed.R
+│   │   └── 04_06_SearchPubMed.sh
+│   ├── Ecoli_Rules_PubMed.txt
+│   ├── experimental_
+│   │   └── NN_NN_CreatePubMedRules.sh
 │   ├── Fasta_files_path.txt
 │   ├── Labels_organism.txt
 │   ├── main.sh
 │   ├── Nets_files_path.txt
+│   ├── tmp_1
+│   ├── tmp_10
+│   ├── tmp_11
+│   ├── tmp_12
+│   ├── tmp_13
+│   ├── tmp_14
+│   ├── tmp_15
+│   ├── tmp_16
+│   ├── tmp_17
+│   ├── tmp_18
+│   ├── tmp_19
+│   ├── tmp_2
+│   ├── tmp_20
+│   ├── tmp_21
+│   ├── tmp_22
+│   ├── tmp_23
+│   ├── tmp_24
+│   ├── tmp_25
+│   ├── tmp_26
+│   ├── tmp_27
+│   │   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_M_tuberculosis_H37Rv.blast-graph
+│   │   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_M_tuberculosis_H37Rv.info
+│   │   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_M_tuberculosis_H37Rv.proteinortho.tsv
+│   │   └── proteinortho_cache_GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_M_tuberculosis_H37Rv
+│   │       ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_M_tuberculosis_H37Rv.removed_blast-graph14516369380221024997
+│   │       ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_M_tuberculosis_H37Rv.removed_blast-graph4101415182684599283
+│   │       ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_M_tuberculosis_H37Rv.removed_blast-graph6609885635865563287
+│   │       ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_M_tuberculosis_H37Rv.removed_blast-graph_proteinortho_tmp_15395762116170079833
+│   │       ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_M_tuberculosis_H37Rv.removed_blast-graph_proteinortho_tmp_4101415182684599283
+│   │       ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_M_tuberculosis_H37Rv.removed_blast-graph_proteinortho_tmp_4273664521960636774
+│   │       ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_M_tuberculosis_H37Rv.removed_blast-graph_proteinortho_tmp_6609885635865563287
+│   │       ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_M_tuberculosis_H37Rv.removed_blast-graph_proteinortho_tmp_674449866028473119
+│   │       ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa.vs.GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa.diamond_WD
+│   │       └── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa.vs.GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa.diamond_WD
+│   ├── tmp_3
+│   ├── tmp_4
+│   ├── tmp_5
+│   ├── tmp_6
+│   ├── tmp_7
+│   ├── tmp_8
+│   ├── tmp_9
 │   └── utils
 │       ├── bash_messages.sh
 │       ├── sqlite_grouper.sh
@@ -622,4 +523,4 @@
     ├── GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.txt
     └── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.txt
 
-54 directories, 566 files
+86 directories, 435 files

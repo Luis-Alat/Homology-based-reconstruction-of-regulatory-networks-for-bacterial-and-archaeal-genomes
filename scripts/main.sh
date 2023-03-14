@@ -11,7 +11,7 @@ set -e
 # Current script path
 SCRIPT_DIR=$(cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd)
 
-# Importing from bash_messages.sh -> [ShowHelp, ShowArguments] and from tracking.sh -> [TrackFailure] 
+# Importing from bash_messages.sh -> [ShowHelp, ShowArguments] and from tracking.sh -> [TrackFailure]
 # Importing variables from bash_messages -> GREEN_COLOR; RESET_COLOR
 source $SCRIPT_DIR/utils/bash_messages.sh
 source $SCRIPT_DIR/utils/tracking.sh
@@ -129,17 +129,18 @@ ShowArguments ARGUMENTS
 # and for that reason is commented and also more suitable to be ran separately
 # for a deep view about that, check 02_preprocessing folder
 
-#RunProteinortho $PROTEINORTHO_OUTPUT GENOMES_FILE_PATH_VALUES LABELS_VALUES $BATCHES_NUMBER
+RunProteinortho $PROTEINORTHO_OUTPUT GENOMES_FILE_PATH_VALUES LABELS_VALUES $BATCHES_NUMBER
 
 # Deprecated in the future
 #RunOperonMapper
 
-#ExtendNetworksByOtho $EXTENDED_NETWORKS_OUTPUT LABELS_VALUES $PROTEINORTHO_OUTPUT GENOMES_FILE_PATH_VALUES NETWORK_FILE_PATH_VALUES
-#ExtendNetworksByTranscriptionUnit $EXTENDED_NETWORKS_OUTPUT GENOMES_FILE_PATH_VALUES $TUS_PATH
-#AnalyzeByCytoscape GENOMES_FILE_PATH_VALUES $CYTO_OUTPUT "${EXTENDED_NETWORKS_OUTPUT}results" "${EXTENDED_NETWORKS_OUTPUT}results_plus_TU"
-#CreateNetworkTableMetrics LABELS_VALUES GENOMES_FILE_PATH_VALUES "${EXTENDED_NETWORKS_OUTPUT}results_plus_TU" $TABLE_OUTPUT
-#RunCoreg GENOMES_FILE_PATH_VALUES "${EXTENDED_NETWORKS_OUTPUT}results_plus_TU" $COREG_OUTPUT
-#RunGtest "${EXTENDED_NETWORKS_OUTPUT}results_plus_TU" $G_TEST_OUTPUT
+ExtendNetworksByOtho $EXTENDED_NETWORKS_OUTPUT LABELS_VALUES $PROTEINORTHO_OUTPUT GENOMES_FILE_PATH_VALUES NETWORK_FILE_PATH_VALUES
+ExtendNetworksByTranscriptionUnit $EXTENDED_NETWORKS_OUTPUT GENOMES_FILE_PATH_VALUES $TUS_PATH
+AnalyzeByCytoscape GENOMES_FILE_PATH_VALUES $CYTO_OUTPUT "${EXTENDED_NETWORKS_OUTPUT}results" "${EXTENDED_NETWORKS_OUTPUT}results_plus_TU"
+CreateNetworkTableMetrics LABELS_VALUES GENOMES_FILE_PATH_VALUES "${EXTENDED_NETWORKS_OUTPUT}results_plus_TU" $TABLE_OUTPUT
+RunCoreg GENOMES_FILE_PATH_VALUES "${EXTENDED_NETWORKS_OUTPUT}results_plus_TU" $COREG_OUTPUT
+GetHubs "${EXTENDED_NETWORKS_OUTPUT}results_plus_TU" $NETX_OUTPUT
+RunGtest "${EXTENDED_NETWORKS_OUTPUT}results_plus_TU" $G_TEST_OUTPUT
 
 # Literature is only ran for E.coli now
 
