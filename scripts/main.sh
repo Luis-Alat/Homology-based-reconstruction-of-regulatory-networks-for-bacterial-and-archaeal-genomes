@@ -4,23 +4,26 @@
 #### Homology based-reconstruction pipeline ####
 ################################################
 
-#bash main.sh -g Fasta_files_path.txt -n Nets_files_path.txt -l Labels_organism.txt -t ../tus_models_operon_processed/ --extended_nets_output ../net/ --proteinortho_output ../proteinortho/ --tables_output ../analysis/tables/ --cytoscape_output ../analysis/cytoscape/ --coreg_output ../analysis/coreg/ --networkx_output ../analysis/hits/ --g_test_output ../analysis/gtest
+#bash main.sh -g Fasta_files_path.txt -n Nets_files_path.txt -l Labels_organism.txt -t ../tus_models_operon_processed/ --extended_nets_output ../net/ --proteinortho_output ../proteinortho/ --tables_output ../analysis/tables/ --cytoscape_output ../analysis/cytoscape/ --coreg_output ../analysis/coreg/ --networkx_output ../analysis/hits/ --g_test_output ../analysis/gtest --literature_output ../analysis/pubmed --literature_input Ecoli_Rules_PubMed.txt
 
-set -eE +o functrace
+set -e
 
-# Importing bash_messages.sh [ShowHelp, ShowArguments], tracking.sh [TrackFailure] 
-# Importing variables bash_messages GREEN_COLOR; RESET_COLOR
-source ./utils/bash_messages.sh
-source ./utils/tracking.sh
+# Current script path
+SCRIPT_DIR=$(cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd)
 
-source ./01_acquisition_data/01_01_RunProteinortho_RunOperonMapper.sh
-source ./03_processing_data/03_01_ExtendNetworks.sh
-source ./04_analysis_data/04_01_RunCytoscape.sh
-source ./04_analysis_data/04_02_TablesFromNets.sh
-source ./04_analysis_data/04_03_GetCoregulates.sh
-source ./04_analysis_data/04_04_RunNetworkx.sh
-source ./04_analysis_data/04_05_RunGtest.sh
-#source ./04_analysis_data/04_06_SearchPubMed.sh
+# Importing from bash_messages.sh -> [ShowHelp, ShowArguments] and from tracking.sh -> [TrackFailure] 
+# Importing variables from bash_messages -> GREEN_COLOR; RESET_COLOR
+source $SCRIPT_DIR/utils/bash_messages.sh
+source $SCRIPT_DIR/utils/tracking.sh
+
+source $SCRIPT_DIR/01_acquisition_data/01_01_RunProteinortho_RunOperonMapper.sh
+source $SCRIPT_DIR/03_processing_data/03_01_ExtendNetworks.sh
+source $SCRIPT_DIR/04_analysis_data/04_01_RunCytoscape.sh
+source $SCRIPT_DIR/04_analysis_data/04_02_TablesFromNets.sh
+source $SCRIPT_DIR/04_analysis_data/04_03_GetCoregulates.sh
+source $SCRIPT_DIR/04_analysis_data/04_04_RunNetworkx.sh
+source $SCRIPT_DIR/04_analysis_data/04_05_RunGtest.sh
+source $SCRIPT_DIR/04_analysis_data/04_06_SearchPubMed.sh
 
 # Stop execution and show on screen line number and bash command if there is any error
 trap ' TrackFailure ${LINENO} "$BASH_COMMAND" ' ERR
@@ -40,6 +43,7 @@ TABLE_OUTPUT=""
 COREG_OUTPUT=""
 NETX_OUTPUT=""
 G_TEST_OUTPUT=""
+PUBMED_OUTPUT=""
 
 # Parsing argument values
 
@@ -100,6 +104,14 @@ while [[ $# -gt 0 ]]; do
             G_TEST_OUTPUT=$2
             shift 2
             ;;
+        --literature_output)
+            PUBMED_OUTPUT=$2
+            shift 2
+            ;;
+        --literature_input)
+            PUBMED_INPUT=$2
+            shift 2
+            ;;
         -h|--help)
             ShowHelp
             ;;
@@ -117,16 +129,18 @@ ShowArguments ARGUMENTS
 # and for that reason is commented and also more suitable to be ran separately
 # for a deep view about that, check 02_preprocessing folder
 
-RunProteinortho $PROTEINORTHO_OUTPUT GENOMES_FILE_PATH_VALUES LABELS_VALUES $BATCHES_NUMBER
+#RunProteinortho $PROTEINORTHO_OUTPUT GENOMES_FILE_PATH_VALUES LABELS_VALUES $BATCHES_NUMBER
 
 # Deprecated in the future
 #RunOperonMapper
 
-ExtendNetworksByOtho $EXTENDED_NETWORKS_OUTPUT LABELS_VALUES $PROTEINORTHO_OUTPUT GENOMES_FILE_PATH_VALUES NETWORK_FILE_PATH_VALUES
-ExtendNetworksByTranscriptionUnit $EXTENDED_NETWORKS_OUTPUT GENOMES_FILE_PATH_VALUES $TUS_PATH
-AnalyzeByCytoscape GENOMES_FILE_PATH_VALUES $CYTO_OUTPUT "${EXTENDED_NETWORKS_OUTPUT}results" "${EXTENDED_NETWORKS_OUTPUT}results_plus_TU"
-CreateNetworkTableMetrics LABELS_VALUES GENOMES_FILE_PATH_VALUES "${EXTENDED_NETWORKS_OUTPUT}results_plus_TU" $TABLE_OUTPUT
-RunCoreg GENOMES_FILE_PATH_VALUES "${EXTENDED_NETWORKS_OUTPUT}results_plus_TU" $COREG_OUTPUT
-RunGtest "${EXTENDED_NETWORKS_OUTPUT}results_plus_TU" $G_TEST_OUTPUT
+#ExtendNetworksByOtho $EXTENDED_NETWORKS_OUTPUT LABELS_VALUES $PROTEINORTHO_OUTPUT GENOMES_FILE_PATH_VALUES NETWORK_FILE_PATH_VALUES
+#ExtendNetworksByTranscriptionUnit $EXTENDED_NETWORKS_OUTPUT GENOMES_FILE_PATH_VALUES $TUS_PATH
+#AnalyzeByCytoscape GENOMES_FILE_PATH_VALUES $CYTO_OUTPUT "${EXTENDED_NETWORKS_OUTPUT}results" "${EXTENDED_NETWORKS_OUTPUT}results_plus_TU"
+#CreateNetworkTableMetrics LABELS_VALUES GENOMES_FILE_PATH_VALUES "${EXTENDED_NETWORKS_OUTPUT}results_plus_TU" $TABLE_OUTPUT
+#RunCoreg GENOMES_FILE_PATH_VALUES "${EXTENDED_NETWORKS_OUTPUT}results_plus_TU" $COREG_OUTPUT
+#RunGtest "${EXTENDED_NETWORKS_OUTPUT}results_plus_TU" $G_TEST_OUTPUT
 
-# Literature
+# Literature is only ran for E.coli now
+
+SearchOnPubMed $PUBMED_INPUT $PUBMED_OUTPUT
