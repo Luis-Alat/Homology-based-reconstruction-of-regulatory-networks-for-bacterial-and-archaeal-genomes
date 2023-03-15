@@ -122,11 +122,13 @@
 │   │   ├── ortoFiles
 │   │   │   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_E_coli_K12.blast-graph_ortho
 │   │   │   ├── GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa_E_coli_K12.blast-graph_ortho
+│   │   │   ├── GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa_E_coli_K12.blast-graph_ortho
 │   │   │   ├── GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa_E_coli_K12.blast-graph_ortho
 │   │   │   └── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_E_coli_K12.blast-graph_ortho
 │   │   └── PreNewInteractionsFiles
 │   │       ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_E_coli_K12.blast-graph_new_interactions
 │   │       ├── GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa_E_coli_K12.blast-graph_new_interactions
+│   │       ├── GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa_E_coli_K12.blast-graph_new_interactions
 │   │       ├── GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa_E_coli_K12.blast-graph_new_interactions
 │   │       ├── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_E_coli_K12.blast-graph_new_interactions
 │   │       └── tmp
@@ -462,47 +464,6 @@
 │   ├── Labels_organism.txt
 │   ├── main.sh
 │   ├── Nets_files_path.txt
-│   ├── tmp_1
-│   ├── tmp_10
-│   ├── tmp_11
-│   ├── tmp_12
-│   ├── tmp_13
-│   ├── tmp_14
-│   ├── tmp_15
-│   ├── tmp_16
-│   ├── tmp_17
-│   ├── tmp_18
-│   ├── tmp_19
-│   ├── tmp_2
-│   ├── tmp_20
-│   ├── tmp_21
-│   ├── tmp_22
-│   ├── tmp_23
-│   ├── tmp_24
-│   ├── tmp_25
-│   ├── tmp_26
-│   ├── tmp_27
-│   │   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_M_tuberculosis_H37Rv.blast-graph
-│   │   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_M_tuberculosis_H37Rv.info
-│   │   ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_M_tuberculosis_H37Rv.proteinortho.tsv
-│   │   └── proteinortho_cache_GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_M_tuberculosis_H37Rv
-│   │       ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_M_tuberculosis_H37Rv.removed_blast-graph14516369380221024997
-│   │       ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_M_tuberculosis_H37Rv.removed_blast-graph4101415182684599283
-│   │       ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_M_tuberculosis_H37Rv.removed_blast-graph6609885635865563287
-│   │       ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_M_tuberculosis_H37Rv.removed_blast-graph_proteinortho_tmp_15395762116170079833
-│   │       ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_M_tuberculosis_H37Rv.removed_blast-graph_proteinortho_tmp_4101415182684599283
-│   │       ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_M_tuberculosis_H37Rv.removed_blast-graph_proteinortho_tmp_4273664521960636774
-│   │       ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_M_tuberculosis_H37Rv.removed_blast-graph_proteinortho_tmp_6609885635865563287
-│   │       ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_M_tuberculosis_H37Rv.removed_blast-graph_proteinortho_tmp_674449866028473119
-│   │       ├── GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa.vs.GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa.diamond_WD
-│   │       └── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa.vs.GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa.diamond_WD
-│   ├── tmp_3
-│   ├── tmp_4
-│   ├── tmp_5
-│   ├── tmp_6
-│   ├── tmp_7
-│   ├── tmp_8
-│   ├── tmp_9
 │   └── utils
 │       ├── bash_messages.sh
 │       ├── sqlite_grouper.sh
@@ -523,4 +484,4 @@
     ├── GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.txt
     └── GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.txt
 
-86 directories, 435 files
+56 directories, 426 files

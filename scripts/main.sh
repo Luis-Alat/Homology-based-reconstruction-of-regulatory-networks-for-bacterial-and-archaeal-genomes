@@ -4,7 +4,7 @@
 #### Homology based-reconstruction pipeline ####
 ################################################
 
-#bash main.sh -g Fasta_files_path.txt -n Nets_files_path.txt -l Labels_organism.txt -t ../tus_models_operon_processed/ --extended_nets_output ../net/ --proteinortho_output ../proteinortho/ --tables_output ../analysis/tables/ --cytoscape_output ../analysis/cytoscape/ --coreg_output ../analysis/coreg/ --networkx_output ../analysis/hits/ --g_test_output ../analysis/gtest --literature_output ../analysis/pubmed --literature_input Ecoli_Rules_PubMed.txt
+#bash main.sh -g Fasta_files_path.txt -n Nets_files_path.txt -l Labels_organism.txt -t ../tus/operon_mapper/models/ --extended_nets_output ../net/ --proteinortho_output ../proteinortho/ --tables_output ../analysis/tables/ --cytoscape_output ../analysis/cytoscape/ --coreg_output ../analysis/coreg/ --networkx_output ../analysis/hits/ --g_test_output ../analysis/gtest --literature_output ../analysis/pubmed --literature_input Ecoli_Rules_PubMed.txt
 
 set -e
 

@@ -1,17 +1,23 @@
 .env
 
-proteinortho/*/*
-!proteinortho/*/*blast-graph
+genomes/models/*diamond.dmnd
 
-net/*
-!net/results
-!net/results_plus_TU
+network/predicted_nets/models/*
+!network/predicted_nets/models/results_plus_TU
 
-net/results/tmp/
-net/results_plus_TU/tmp
-tus_models_operon/
+network/predicted_nets/models/results_plus_TU/tmp/*
 
-analysis/cytoscape/tmp/*
-analysis/coreg/tmp/*
+proteinortho/models/*/*
+!proteinortho/models/*/*blast-graph
 
-genomes/*diamond.dmnd
+proteinortho/archael
+proteinortho/bacteria
+
+tus/.operon_mapper_tus_raw_models
+
+analysis/models/cytoscape/tmp/*
+analysis/models/coreg/tmp/*
+
+tus/moreno_models/models/.retrieve_moreron_tus_models.sh
+tus/moreno_models/archaeal
+tus/moreno_models/bacteria
