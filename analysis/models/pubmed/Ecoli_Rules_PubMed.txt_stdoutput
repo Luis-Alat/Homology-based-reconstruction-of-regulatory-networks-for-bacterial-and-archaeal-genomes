@@ -1,6 +1,6 @@
 [1] "##### PARAMETERS #####"
 [1] "Input file name: Ecoli_Rules_PubMed.txt"
-[1] "Output path file name: ../analysis/pubmed/Ecoli_Rules_PubMed.txt_pubmed"
+[1] "Output path file name: ../analysis/models/pubmed/Ecoli_Rules_PubMed.txt_pubmed"
 [1] "Searching:  ((caiF) AND (yaaU)) AND ((E. coli) OR (Escherichia coli))"
 [1] "    ((caiF) AND (yaaU)) AND ((E. coli) OR (Escherichia coli)) returned zero results"
 [1] "Searching:  ((araC) AND (rluA)) AND ((E. coli) OR (Escherichia coli))"

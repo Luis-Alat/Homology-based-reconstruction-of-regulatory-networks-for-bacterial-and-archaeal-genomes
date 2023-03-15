@@ -14,7 +14,7 @@
 #ncc	13
 #mnp	4
 #nsl	67
-#time	17.303
+#time	9.141
 SUID	shared name	name	selected	id	category	AverageShortestPathLength	ClusteringCoefficient	ClosenessCentrality	IsSingleNode	PartnerOfMultiEdgedNodePairs	SelfLoops	Eccentricity	Stress	EdgeCount	Indegree	Outdegree	BetweennessCentrality	NeighborhoodConnectivity
 133829	NP_218193.1	NP_218193.1	FALSE	NP_218193.1	New	2.68058608058608	0.00107334525939177	0.373052746652091	FALSE	0	1	6	0	432	1	431	0	4.00232558139535
 133740	NP_214862.1	NP_214862.1	FALSE	NP_214862.1	New	1.08381502890173	0.00134912604408468	0.922666666666667	FALSE	0	1	2	1488359	320	2	318	0.443654366232204	4.37735849056604

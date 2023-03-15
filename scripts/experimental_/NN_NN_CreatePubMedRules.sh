@@ -2,7 +2,7 @@
 
 set -e
 
-#bash NN_NN_CreatePubMedRules.sh ../../others/ids_equivalences/GCF_000005845.2_E_coli_K12_genomic.txt ../../net/results_plus_TU/GCF_000005845.2_E_coli_K12_genomic.faa_extended_network_plus_tu "AND ((E. coli) OR (Escherichia coli))" > ../Ecoli_Rules_PubMed.txt
+#bash NN_NN_CreatePubMedRules.sh ../../others/ids_equivalences/GCF_000005845.2_E_coli_K12_genomic.txt ../../network/predicted_nets/models/results_plus_TU/GCF_000005845.2_E_coli_K12_genomic.faa_extended_network_plus_tu "AND ((E. coli) OR (Escherichia coli))" > ../Ecoli_Rules_PubMed.txt
 
 source ../utils/tracking.sh
 
