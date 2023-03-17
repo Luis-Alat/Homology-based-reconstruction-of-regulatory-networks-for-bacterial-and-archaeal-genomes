@@ -126,7 +126,7 @@ done
 ShowArguments ARGUMENTS
 
 # The preprocessing part is done manually for every organism used in this work
-# and for that reason is commented and also more suitable to be ran separately
+# and for that reason is more suitable to be ran separately
 # for a deep view about that, check 02_preprocessing folder
 
 RunProteinortho $PROTEINORTHO_OUTPUT GENOMES_FILE_PATH_VALUES LABELS_VALUES $BATCHES_NUMBER

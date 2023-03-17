@@ -14,8 +14,6 @@ ExtendNetworksByOtho() {
 
         printf "${GREEN_COLOR}  Extended network block by orthologs${RESET_COLOR}\n\n"
 
-        local i
-        local FILE_PATH_PROTEINORTHO_BLAST_GRAPH
         local OUTPUT=$(echo $1 | sed 's/\/*$/\//g') # Before It was net/
         local -n FOLDER_LABELS=$2
         local INPUT_PROTEINORTHO=$(echo $3 | sed 's/\/*$/\//g')
@@ -31,6 +29,9 @@ ExtendNetworksByOtho() {
                 mkdir $OUTPUT
         fi
 
+        local i
+        local FILE_PATH_PROTEINORTHO_BLAST_GRAPH
+        
         for ((i=0; i < ${#FOLDER_LABELS[@]}; i++)); do
 
                 # Creating folder if it doesn't exist

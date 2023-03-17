@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 
 ShowHelp() {
 
@@ -67,5 +67,5 @@ ShowArguments() {
 # Color codes variables (global)
 GREEN_COLOR=$'\e[1;32m'
 RESET_COLOR=$'\033[0m'
-YELLOW_COLOR=$'\e[1;33m]'
-RED_COLOR=$'\e[1;31m]'
+YELLOW_COLOR=$'\e[1;33m'
+RED_COLOR=$'\e[1;31m'

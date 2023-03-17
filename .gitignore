@@ -1,7 +1,9 @@
 .env
 
 genomes/models/*diamond.dmnd
+genomes/bacteria/
 
+network/predicted_nets/bacteria/
 network/predicted_nets/models/*
 !network/predicted_nets/models/results_plus_TU
 

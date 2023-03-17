@@ -7,8 +7,8 @@ RunProteinortho() {
         # This function runs proteinortho doing paired comparations
         # This functions is expecting 4 arguments. In order:
         # 1. String to put output files (passed by value)
-        # 2. Array containing the labels identifying each fasta file or organism (passed by reference)
-        # 3. Array containing the path and name of the fasta files (passed by reference)
+        # 2. Array containing the path and name of the fasta files (passed by reference)
+        # 3. Array containing the labels to identify each fasta file or organism (passed by reference)
         # 4. Integer specifying if proteinortho will run in batches (passed by value)
 
         printf "${GREEN_COLOR}  Running Function RunProteinortho${RESET_COLOR}\n\n"

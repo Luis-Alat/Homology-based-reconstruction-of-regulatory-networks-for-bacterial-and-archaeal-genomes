@@ -1,0 +1,6 @@
+../../../../genomes/models/GCF_000005845.2_E_coli_K12_genomic.faa
+../../../../genomes/models/GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa
+../../../../genomes/models/GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa
+../../../../genomes/models/GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa
+../../../../genomes/models/GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa
+../../../../genomes/models/GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa

@@ -1,0 +1,6 @@
+E_coli_K12
+P_aeruginosa_PA01
+S_Typhimurium_LT2
+B_subtilis_168
+S_aureus_N315
+M_tuberculosis_H37Rv
