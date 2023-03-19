@@ -1,0 +1,10 @@
+../tus/moreno_models/bacteria/GCF_000005825.pred.txt
+../tus/moreno_models/bacteria/GCF_000005845.pred.txt
+../tus/moreno_models/bacteria/GCF_000006685.pred.txt
+../tus/moreno_models/bacteria/GCF_000006765.pred.txt
+../tus/moreno_models/bacteria/GCF_000006925.pred.txt
+../tus/moreno_models/bacteria/GCF_000006945.pred.txt
+../tus/moreno_models/bacteria/GCF_000006985.pred.txt
+../tus/moreno_models/bacteria/GCF_000007025.pred.txt
+../tus/moreno_models/bacteria/GCF_000007085.pred.txt
+../tus/moreno_models/bacteria/GCF_000007105.pred.txt

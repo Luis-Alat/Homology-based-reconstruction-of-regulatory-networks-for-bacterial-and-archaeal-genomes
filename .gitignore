@@ -23,3 +23,5 @@ analysis/models/coreg/tmp/*
 tus/moreno_models/models/.retrieve_moreron_tus_models.sh
 tus/moreno_models/archaeal
 tus/moreno_models/bacteria
+
+scripts/experimental_/others

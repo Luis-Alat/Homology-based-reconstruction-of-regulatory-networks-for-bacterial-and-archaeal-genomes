@@ -1,6 +1,9 @@
 ../../../../genomes/bacteria/GCF_000005825.2_ASM582v2_protein.faa
+../../../../genomes/bacteria/GCF_000005845.2_ASM584v2_protein.faa
 ../../../../genomes/bacteria/GCF_000006685.1_ASM668v1_protein.faa
+../../../../genomes/bacteria/GCF_000006765.1_ASM676v1_protein.faa
 ../../../../genomes/bacteria/GCF_000006925.2_ASM692v2_protein.faa
+../../../../genomes/bacteria/GCF_000006945.2_ASM694v2_protein.faa
 ../../../../genomes/bacteria/GCF_000006985.1_ASM698v1_protein.faa
 ../../../../genomes/bacteria/GCF_000007025.1_ASM702v1_protein.faa
 ../../../../genomes/bacteria/GCF_000007085.1_ASM708v1_protein.faa
@@ -30,6 +33,7 @@
 ../../../../genomes/bacteria/GCF_000008625.1_ASM862v1_protein.faa
 ../../../../genomes/bacteria/GCF_000008725.1_ASM872v1_protein.faa
 ../../../../genomes/bacteria/GCF_000008865.2_ASM886v2_protein.faa
+../../../../genomes/bacteria/GCF_000009045.1_ASM904v1_protein.faa
 ../../../../genomes/bacteria/GCF_000009085.1_ASM908v1_protein.faa
 ../../../../genomes/bacteria/GCF_000009145.1_ASM914v1_protein.faa
 ../../../../genomes/bacteria/GCF_000009305.1_ASM930v1_protein.faa
@@ -55,7 +59,6 @@
 ../../../../genomes/bacteria/GCF_000011305.1_ASM1130v1_protein.faa
 ../../../../genomes/bacteria/GCF_000011345.1_ASM1134v1_protein.faa
 ../../../../genomes/bacteria/GCF_000011385.1_ASM1138v1_protein.faa
-../../../../genomes/bacteria/GCF_000011645.1_ASM1164v1_protein.faa
 ../../../../genomes/bacteria/GCF_000011965.2_ASM1196v2_protein.faa
 ../../../../genomes/bacteria/GCF_000012085.2_ASM1208v2_protein.faa
 ../../../../genomes/bacteria/GCF_000012305.1_ASM1230v1_protein.faa
@@ -233,7 +236,6 @@
 ../../../../genomes/bacteria/GCF_000023465.1_ASM2346v1_protein.faa
 ../../../../genomes/bacteria/GCF_000023545.1_ASM2354v1_protein.faa
 ../../../../genomes/bacteria/GCF_000023565.1_ASM2356v1_protein.faa
-../../../../genomes/bacteria/GCF_000023685.1_ASM2368v1_protein.faa
 ../../../../genomes/bacteria/GCF_000023705.1_ASM2370v1_protein.faa
 ../../../../genomes/bacteria/GCF_000023745.1_ASM2374v1_protein.faa
 ../../../../genomes/bacteria/GCF_000023785.1_ASM2378v1_protein.faa
@@ -428,7 +430,6 @@
 ../../../../genomes/bacteria/GCF_000160835.1_ASM16083v1_protein.faa
 ../../../../genomes/bacteria/GCF_000160975.1_ASM16097v1_protein.faa
 ../../../../genomes/bacteria/GCF_000161455.1_ASM16145v1_protein.faa
-../../../../genomes/bacteria/GCF_000161495.1_ASM16149v1_protein.faa
 ../../../../genomes/bacteria/GCF_000161935.1_ASM16193v1_protein.faa
 ../../../../genomes/bacteria/GCF_000162255.1_ASM16225v1_protein.faa
 ../../../../genomes/bacteria/GCF_000162475.2_Gran_ele_ATCC_700633_V2_protein.faa
@@ -438,11 +439,9 @@
 ../../../../genomes/bacteria/GCF_000164135.1_ASM16413v1_protein.faa
 ../../../../genomes/bacteria/GCF_000164635.1_ASM16463v1_protein.faa
 ../../../../genomes/bacteria/GCF_000164695.2_ASM16469v2_protein.faa
-../../../../genomes/bacteria/GCF_000164905.1_ASM16490v1_protein.faa
 ../../../../genomes/bacteria/GCF_000165125.1_Vcar_1.0_protein.faa
 ../../../../genomes/bacteria/GCF_000165465.1_ASM16546v1_protein.faa
 ../../../../genomes/bacteria/GCF_000165505.1_ASM16550v1_protein.faa
-../../../../genomes/bacteria/GCF_000165595.2_ASM16559v2_protein.faa
 ../../../../genomes/bacteria/GCF_000165715.2_ASM16571v3_protein.faa
 ../../../../genomes/bacteria/GCF_000165735.1_ASM16573v1_protein.faa
 ../../../../genomes/bacteria/GCF_000165795.1_ASM16579v1_protein.faa
@@ -505,7 +504,6 @@
 ../../../../genomes/bacteria/GCF_000178375.1_ASM17837v1_protein.faa
 ../../../../genomes/bacteria/GCF_000178435.1_ASM17843v1_protein.faa
 ../../../../genomes/bacteria/GCF_000178455.1_ASM17845v1_protein.faa
-../../../../genomes/bacteria/GCF_000178815.2_ASM17881v2_protein.faa
 ../../../../genomes/bacteria/GCF_000178835.2_ASM17883v2_protein.faa
 ../../../../genomes/bacteria/GCF_000178855.1_ASM17885v1_protein.faa
 ../../../../genomes/bacteria/GCF_000178875.2_ASM17887v2_protein.faa
@@ -587,6 +585,7 @@
 ../../../../genomes/bacteria/GCF_000195555.1_ASM19555v1_protein.faa
 ../../../../genomes/bacteria/GCF_000195635.1_ASM19563v1_protein.faa
 ../../../../genomes/bacteria/GCF_000195875.1_ASM19587v1_protein.faa
+../../../../genomes/bacteria/GCF_000195955.2_ASM19595v2_protein.faa
 ../../../../genomes/bacteria/GCF_000196035.1_ASM19603v1_protein.faa
 ../../../../genomes/bacteria/GCF_000196115.1_ASM19611v1_protein.faa
 ../../../../genomes/bacteria/GCF_000196135.1_ASM19613v1_protein.faa
@@ -615,7 +614,6 @@
 ../../../../genomes/bacteria/GCF_000204015.1_ASM20401v1_protein.faa
 ../../../../genomes/bacteria/GCF_000204195.1_ASM20419v1_protein.faa
 ../../../../genomes/bacteria/GCF_000204235.1_ASM20423v2_protein.faa
-../../../../genomes/bacteria/GCF_000204255.1_ASM20425v1_protein.faa
 ../../../../genomes/bacteria/GCF_000205025.1_ASM20502v1_protein.faa
 ../../../../genomes/bacteria/GCF_000208385.1_ASM20838v1_protein.faa
 ../../../../genomes/bacteria/GCF_000208405.1_ASM20840v1_protein.faa
@@ -670,13 +668,11 @@
 ../../../../genomes/bacteria/GCF_000219125.1_ASM21912v1_protein.faa
 ../../../../genomes/bacteria/GCF_000219725.1_ASM21972v1_protein.faa
 ../../../../genomes/bacteria/GCF_000219915.2_ASM21991v3_protein.faa
-../../../../genomes/bacteria/GCF_000220215.1_ASM22021v1_protein.faa
 ../../../../genomes/bacteria/GCF_000220235.1_ASM22023v1_protein.faa
 ../../../../genomes/bacteria/GCF_000220525.1_ASM22052v2_protein.faa
 ../../../../genomes/bacteria/GCF_000220705.2_ASM22070v2_protein.faa
 ../../../../genomes/bacteria/GCF_000221505.1_ASM22150v2_protein.faa
 ../../../../genomes/bacteria/GCF_000221985.1_ASM22198v1_protein.faa
-../../../../genomes/bacteria/GCF_000222105.3_ASM22210v4_protein.faa
 ../../../../genomes/bacteria/GCF_000222305.1_ASM22230v1_protein.faa
 ../../../../genomes/bacteria/GCF_000222485.1_ASM22248v1_protein.faa
 ../../../../genomes/bacteria/GCF_000222605.1_ASM22260v1_protein.faa
@@ -695,7 +691,6 @@
 ../../../../genomes/bacteria/GCF_000225705.1_Coll_tana_YIT_12063_V1_protein.faa
 ../../../../genomes/bacteria/GCF_000225825.1_ASM22582v2_protein.faa
 ../../../../genomes/bacteria/GCF_000225955.1_ASM22595v1_protein.faa
-../../../../genomes/bacteria/GCF_000226135.1_ASM22613v2_protein.faa
 ../../../../genomes/bacteria/GCF_000226215.1_ASM22621v2_protein.faa
 ../../../../genomes/bacteria/GCF_000226295.1_ASM22629v1_protein.faa
 ../../../../genomes/bacteria/GCF_000226315.1_ASM22631v1_protein.faa
@@ -706,7 +701,6 @@
 ../../../../genomes/bacteria/GCF_000227705.2_ASM22770v3_protein.faa
 ../../../../genomes/bacteria/GCF_000227725.1_ASM22772v1_protein.faa
 ../../../../genomes/bacteria/GCF_000227745.2_ASM22774v3_protein.faa
-../../../../genomes/bacteria/GCF_000230655.2_ASM23065v3_protein.faa
 ../../../../genomes/bacteria/GCF_000230695.2_ASM23069v3_protein.faa
 ../../../../genomes/bacteria/GCF_000230915.1_ASM23091v1_protein.faa
 ../../../../genomes/bacteria/GCF_000230995.2_ASM23099v3_protein.faa
@@ -802,7 +796,6 @@
 ../../../../genomes/bacteria/GCF_000246895.1_ASM24689v2_protein.faa
 ../../../../genomes/bacteria/GCF_000246925.1_ASM24692v2_protein.faa
 ../../../../genomes/bacteria/GCF_000246945.1_ASM24694v2_protein.faa
-../../../../genomes/bacteria/GCF_000246965.1_ASM24696v2_protein.faa
 ../../../../genomes/bacteria/GCF_000247565.1_ASM24756v1_protein.faa
 ../../../../genomes/bacteria/GCF_000247605.1_ASM24760v1_protein.faa
 ../../../../genomes/bacteria/GCF_000247715.1_ASM24771v1_protein.faa
@@ -812,7 +805,6 @@
 ../../../../genomes/bacteria/GCF_000250635.1_ASM25063v1_protein.faa
 ../../../../genomes/bacteria/GCF_000250875.1_ASM25087v1_protein.faa
 ../../../../genomes/bacteria/GCF_000252445.1_ASM25244v1_protein.faa
-../../../../genomes/bacteria/GCF_000252855.1_ASM25285v1_protein.faa
 ../../../../genomes/bacteria/GCF_000253015.1_ASM25301v1_protein.faa
 ../../../../genomes/bacteria/GCF_000253035.1_ASM25303v1_protein.faa
 ../../../../genomes/bacteria/GCF_000253095.1_ASM25309v1_protein.faa
@@ -879,7 +871,6 @@
 ../../../../genomes/bacteria/GCF_000271305.1_ASM27130v1_protein.faa
 ../../../../genomes/bacteria/GCF_000272005.1_ASM27200v1_protein.faa
 ../../../../genomes/bacteria/GCF_000273175.1_Bact_nord_CL02T12C05_V1_protein.faa
-../../../../genomes/bacteria/GCF_000273525.1_PB_Bifi_bifi_NCIMB_41171_V1_protein.faa
 ../../../../genomes/bacteria/GCF_000275725.1_162.HSS18214.1_protein.faa
 ../../../../genomes/bacteria/GCF_000275805.1_Scar_wigg_F0424_V1_protein.faa
 ../../../../genomes/bacteria/GCF_000276805.1_ASM27680v1_protein.faa
@@ -933,7 +924,6 @@
 ../../../../genomes/bacteria/GCF_000296465.1_Barn_inte_YIT_11860_V1_protein.faa
 ../../../../genomes/bacteria/GCF_000296695.1_ASM29669v1_protein.faa
 ../../../../genomes/bacteria/GCF_000296815.2_ASM29681v2_protein.faa
-../../../../genomes/bacteria/GCF_000296835.1_ASM29683v1_protein.faa
 ../../../../genomes/bacteria/GCF_000297025.1_ASM29702v1_protein.faa
 ../../../../genomes/bacteria/GCF_000297055.2_ASM29705v2_protein.faa
 ../../../../genomes/bacteria/GCF_000297075.2_Ppseudo_final_protein.faa
@@ -1039,7 +1029,6 @@
 ../../../../genomes/bacteria/GCF_000314995.1_ASM31499v1_protein.faa
 ../../../../genomes/bacteria/GCF_000315015.1_ASM31501v1_protein.faa
 ../../../../genomes/bacteria/GCF_000315055.1_ASM31505v1_protein.faa
-../../../../genomes/bacteria/GCF_000315075.1_ASM31507v1_protein.faa
 ../../../../genomes/bacteria/GCF_000315235.1_ASM31523v1_protein.faa
 ../../../../genomes/bacteria/GCF_000315365.1_ASM31536v1_protein.faa
 ../../../../genomes/bacteria/GCF_000315445.1_Allo_otit_ATCC_51267_V1_protein.faa
@@ -1054,7 +1043,6 @@
 ../../../../genomes/bacteria/GCF_000317145.1_ASM31714v1_protein.faa
 ../../../../genomes/bacteria/GCF_000317165.1_O1P2RL8_protein.faa
 ../../../../genomes/bacteria/GCF_000317205.1_FisPCC7414_1.0_protein.faa
-../../../../genomes/bacteria/GCF_000317285.1_ChlPCC6912_1.0_protein.faa
 ../../../../genomes/bacteria/GCF_000317435.1_ASM31743v1_protein.faa
 ../../../../genomes/bacteria/GCF_000317475.1_ASM31747v1_protein.faa
 ../../../../genomes/bacteria/GCF_000317495.1_ASM31749v1_protein.faa
@@ -1186,7 +1174,6 @@
 ../../../../genomes/bacteria/GCF_000367945.1_Acin_sp_NIPH_809_V1_protein.faa
 ../../../../genomes/bacteria/GCF_000368025.1_Acin_parv_CIP108168_V1_protein.faa
 ../../../../genomes/bacteria/GCF_000368565.1_Acin_gern_CIP_107464_V1_protein.faa
-../../../../genomes/bacteria/GCF_000368585.1_Acin_vene_CIP_110063_V1_protein.faa
 ../../../../genomes/bacteria/GCF_000368725.1_Acin_soli_NIPH_2899_V1_protein.faa
 ../../../../genomes/bacteria/GCF_000368805.1_Acin_john_ANC_3681_V1_protein.faa
 ../../../../genomes/bacteria/GCF_000368865.1_Acin_bouv_CIP_107468_V1_protein.faa
@@ -1194,7 +1181,6 @@
 ../../../../genomes/bacteria/GCF_000369625.1_Acin_sp_NIPH_2171_V1_protein.faa
 ../../../../genomes/bacteria/GCF_000371465.1_Clos_coli_209318_V1_protein.faa
 ../../../../genomes/bacteria/GCF_000371785.1_ASM37178v1_protein.faa
-../../../../genomes/bacteria/GCF_000371885.1_ASM37188v1_protein.faa
 ../../../../genomes/bacteria/GCF_000371925.1_ASM37192v1_protein.faa
 ../../../../genomes/bacteria/GCF_000372085.1_ASM37208v1_protein.faa
 ../../../../genomes/bacteria/GCF_000372385.1_ASM37238v1_protein.faa
@@ -1256,11 +1242,9 @@
 ../../../../genomes/bacteria/GCF_000376245.1_ASM37624v1_protein.faa
 ../../../../genomes/bacteria/GCF_000376265.1_ASM37626v1_protein.faa
 ../../../../genomes/bacteria/GCF_000376385.1_ASM37638v1_protein.faa
-../../../../genomes/bacteria/GCF_000376405.1_ASM37640v1_protein.faa
 ../../../../genomes/bacteria/GCF_000376425.1_ASM37642v1_protein.faa
 ../../../../genomes/bacteria/GCF_000376545.2_ASM37654v2_protein.faa
 ../../../../genomes/bacteria/GCF_000376565.1_ASM37656v1_protein.faa
-../../../../genomes/bacteria/GCF_000376665.1_ASM37666v1_protein.faa
 ../../../../genomes/bacteria/GCF_000376785.1_ASM37678v1_protein.faa
 ../../../../genomes/bacteria/GCF_000376805.1_ASM37680v1_protein.faa
 ../../../../genomes/bacteria/GCF_000376825.1_ASM37682v1_protein.faa
@@ -1364,7 +1348,6 @@
 ../../../../genomes/bacteria/GCF_000383415.1_ASM38341v1_protein.faa
 ../../../../genomes/bacteria/GCF_000383515.1_ASM38351v1_protein.faa
 ../../../../genomes/bacteria/GCF_000383575.1_ASM38357v1_protein.faa
-../../../../genomes/bacteria/GCF_000383595.1_ASM38359v1_protein.faa
 ../../../../genomes/bacteria/GCF_000383775.1_ASM38377v1_protein.faa
 ../../../../genomes/bacteria/GCF_000383795.1_ASM38379v1_protein.faa
 ../../../../genomes/bacteria/GCF_000383855.1_ASM38385v1_protein.faa
@@ -1416,14 +1399,6 @@
 ../../../../genomes/bacteria/GCF_000403725.2_GD7_protein.faa
 ../../../../genomes/bacteria/GCF_000404125.1_Version_1_Erwinia_tracheiphila_PSU-1_protein.faa
 ../../../../genomes/bacteria/GCF_000406945.1_Ente_disp_ATCC51266_V1_protein.faa
-../../../../genomes/bacteria/GCF_000407205.1_Ente_vill_ATCC700913_V2_protein.faa
-../../../../genomes/bacteria/GCF_000407225.1_Ente_colu_ATCC51263_V2_protein.faa
-../../../../genomes/bacteria/GCF_000407245.1_Ente_aviu_ATCC14025_V2_protein.faa
-../../../../genomes/bacteria/GCF_000407285.1_Ente_sacc_ATCC43076_V2_protein.faa
-../../../../genomes/bacteria/GCF_000407365.1_Ente_asin_ATCC700915_V2_protein.faa
-../../../../genomes/bacteria/GCF_000407525.1_Ente_raff_ATCC49464_V2_protein.faa
-../../../../genomes/bacteria/GCF_000407545.1_Ente_gilf_BAA-350_PQ1_CCUG_45553_V2_protein.faa
-../../../../genomes/bacteria/GCF_000407605.1_Ente_sulf_ATCC49903_V2_protein.faa
 ../../../../genomes/bacteria/GCF_000409775.1_Han1.0_protein.faa
 ../../../../genomes/bacteria/GCF_000410875.1_KCCM90073_protein.faa
 ../../../../genomes/bacteria/GCF_000411155.1_Acti_euro_ACS-120-V-COL10B_V1_protein.faa
@@ -1434,7 +1409,6 @@
 ../../../../genomes/bacteria/GCF_000412635.1_Sphingobium_sp._strain_YL23_protein.faa
 ../../../../genomes/bacteria/GCF_000412675.1_ASM41267v1_protein.faa
 ../../../../genomes/bacteria/GCF_000412995.1_Trep_vinc_F0403_V1_protein.faa
-../../../../genomes/bacteria/GCF_000413035.1_Trep_medi_ATCC_700293_V1_protein.faa
 ../../../../genomes/bacteria/GCF_000413055.1_Trep_malt_ATCC_51939_V1_protein.faa
 ../../../../genomes/bacteria/GCF_000413895.1_Acin_rudi_CIP_110305_V1_protein.faa
 ../../../../genomes/bacteria/GCF_000413935.1_Acin_sp_NIPH_2036_V1_protein.faa
@@ -1478,7 +1452,6 @@
 ../../../../genomes/bacteria/GCF_000421165.1_ASM42116v1_protein.faa
 ../../../../genomes/bacteria/GCF_000421185.1_ASM42118v1_protein.faa
 ../../../../genomes/bacteria/GCF_000421225.1_ASM42122v1_protein.faa
-../../../../genomes/bacteria/GCF_000421245.1_ASM42124v1_protein.faa
 ../../../../genomes/bacteria/GCF_000421265.1_ASM42126v1_protein.faa
 ../../../../genomes/bacteria/GCF_000421285.1_ASM42128v1_protein.faa
 ../../../../genomes/bacteria/GCF_000421465.1_ASM42146v1_protein.faa
@@ -1725,7 +1698,6 @@
 ../../../../genomes/bacteria/GCF_000430845.1_ASM43084v1_protein.faa
 ../../../../genomes/bacteria/GCF_000430885.1_ASM43088v1_protein.faa
 ../../../../genomes/bacteria/GCF_000430995.1_TC1_protein.faa
-../../../../genomes/bacteria/GCF_000439105.1_ASM43910v1_protein.faa
 ../../../../genomes/bacteria/GCF_000439375.1_06-3099_v1_protein.faa
 ../../../../genomes/bacteria/GCF_000439435.1_ASM43943v1_protein.faa
 ../../../../genomes/bacteria/GCF_000439455.1_ASM43945v1_protein.faa
@@ -1742,11 +1714,9 @@
 ../../../../genomes/bacteria/GCF_000445065.1_ASM44506v1_protein.faa
 ../../../../genomes/bacteria/GCF_000445105.1_ASM44510v1_protein.faa
 ../../../../genomes/bacteria/GCF_000445125.1_ASM44512v1_protein.faa
-../../../../genomes/bacteria/GCF_000445445.1_SOV1_protein.faa
 ../../../../genomes/bacteria/GCF_000445475.1_Version_1_of_the_Sulfurimonas_hongkongensis_AST-10_genome_protein.faa
 ../../../../genomes/bacteria/GCF_000447205.1_ABySS_v1.3.3_protein.faa
 ../../../../genomes/bacteria/GCF_000447675.1_ASM44767v1_protein.faa
-../../../../genomes/bacteria/GCF_000452245.2_ASM45224v2_protein.faa
 ../../../../genomes/bacteria/GCF_000452765.1_CC1513_092313_2.0_protein.faa
 ../../../../genomes/bacteria/GCF_000452845.1_CC1416_092313_2.0_protein.faa
 ../../../../genomes/bacteria/GCF_000454025.1_ASM45402v1_protein.faa
@@ -1755,20 +1725,17 @@
 ../../../../genomes/bacteria/GCF_000454725.1_ibidis.assembly_protein.faa
 ../../../../genomes/bacteria/GCF_000455225.1_Megasphaera_massiliensis_protein.faa
 ../../../../genomes/bacteria/GCF_000455265.1_Pa_GD11_protein.faa
-../../../../genomes/bacteria/GCF_000455445.1_4401737_protein.faa
 ../../../../genomes/bacteria/GCF_000455485.1_G5_protein.faa
 ../../../../genomes/bacteria/GCF_000455605.1_GPTSA100-9_protein.faa
 ../../../../genomes/bacteria/GCF_000464745.1_NC405_1_protein.faa
 ../../../../genomes/bacteria/GCF_000464785.1_NC407_1_protein.faa
 ../../../../genomes/bacteria/GCF_000464805.1_NC540_1_protein.faa
 ../../../../genomes/bacteria/GCF_000465575.1_GS_De_Novo_Assembly_protein.faa
-../../../../genomes/bacteria/GCF_000466945.1_ASM46694v1_protein.faa
 ../../../../genomes/bacteria/GCF_000466965.1_ASM46696v1_protein.faa
 ../../../../genomes/bacteria/GCF_000467105.1_ASM46710v1_protein.faa
 ../../../../genomes/bacteria/GCF_000467125.1_ASM46712v1_protein.faa
 ../../../../genomes/bacteria/GCF_000468015.1_ASM46801v1_protein.faa
 ../../../../genomes/bacteria/GCF_000468055.1_ASM46805v1_protein.faa
-../../../../genomes/bacteria/GCF_000468115.1_TsocrATCC35536v1.0_protein.faa
 ../../../../genomes/bacteria/GCF_000468135.1_PpleuF0068v1.0_protein.faa
 ../../../../genomes/bacteria/GCF_000468495.1_ASM46849v1_protein.faa
 ../../../../genomes/bacteria/GCF_000468535.1_ASM46853v1_protein.faa
@@ -1800,7 +1767,6 @@
 ../../../../genomes/bacteria/GCF_000473265.1_ASM47326v1_protein.faa
 ../../../../genomes/bacteria/GCF_000473325.1_ASM47332v1_protein.faa
 ../../../../genomes/bacteria/GCF_000473365.1_ASM47336v1_protein.faa
-../../../../genomes/bacteria/GCF_000473765.1_Rpsyc1.0_protein.faa
 ../../../../genomes/bacteria/GCF_000473895.1_KS51_v1_protein.faa
 ../../../../genomes/bacteria/GCF_000473995.1_ASM47399v1_protein.faa
 ../../../../genomes/bacteria/GCF_000474275.2_Bmar1.0_protein.faa
@@ -1840,7 +1806,6 @@
 ../../../../genomes/bacteria/GCF_000488275.1_Acin_bris_CIP110357_V2_protein.faa
 ../../../../genomes/bacteria/GCF_000494755.1_ASM49475v1_protein.faa
 ../../../../genomes/bacteria/GCF_000495435.3_ASM49543v3_protein.faa
-../../../../genomes/bacteria/GCF_000495775.1_AbenevWGS1.0_protein.faa
 ../../../../genomes/bacteria/GCF_000495915.1_PseChl_protein.faa
 ../../../../genomes/bacteria/GCF_000496075.1_LuBa1.0_protein.faa
 ../../../../genomes/bacteria/GCF_000496735.2_MKO1_protein.faa
@@ -2023,7 +1988,6 @@
 ../../../../genomes/bacteria/GCF_000612725.1_PRJEB5747_assembly_1_protein.faa
 ../../../../genomes/bacteria/GCF_000612805.1_FF3_protein.faa
 ../../../../genomes/bacteria/GCF_000612845.1_AP5T_protein.faa
-../../../../genomes/bacteria/GCF_000613185.1_PRJEB5748_assembly_1_protein.faa
 ../../../../genomes/bacteria/GCF_000613285.1_ASM61328v1_protein.faa
 ../../../../genomes/bacteria/GCF_000613805.1_ASM61380v1_protein.faa
 ../../../../genomes/bacteria/GCF_000613845.1_ASM61384v1_protein.faa
@@ -2189,7 +2153,6 @@
 ../../../../genomes/bacteria/GCF_000709935.2_ASM70993v2_protein.faa
 ../../../../genomes/bacteria/GCF_000710505.1_Plagard2.0_protein.faa
 ../../../../genomes/bacteria/GCF_000710755.1_ASM71075v1_protein.faa
-../../../../genomes/bacteria/GCF_000710775.1_ASM71077v1_protein.faa
 ../../../../genomes/bacteria/GCF_000710955.1_ASM71095v1_protein.faa
 ../../../../genomes/bacteria/GCF_000711195.1_ASM71119v1_protein.faa
 ../../../../genomes/bacteria/GCF_000711225.1_ASM71122v1_protein.faa
@@ -2290,7 +2253,6 @@
 ../../../../genomes/bacteria/GCF_000730165.1_ASM73016v2_protein.faa
 ../../../../genomes/bacteria/GCF_000730385.1_ASM73038v1_protein.faa
 ../../../../genomes/bacteria/GCF_000730585.1_ASM73058v1_protein.faa
-../../../../genomes/bacteria/GCF_000730645.1_ASM73064v1_protein.faa
 ../../../../genomes/bacteria/GCF_000730685.1_ASM73068v1_protein.faa
 ../../../../genomes/bacteria/GCF_000731315.1_RG540_Ch_pA_protein.faa
 ../../../../genomes/bacteria/GCF_000731675.1_ASM73167v1_protein.faa
@@ -2314,7 +2276,6 @@
 ../../../../genomes/bacteria/GCF_000734015.1_ASM73401v1_protein.faa
 ../../../../genomes/bacteria/GCF_000734965.1_ASM73496v1_protein.faa
 ../../../../genomes/bacteria/GCF_000735045.1_Fv_myxofaciens_P3G_1.0_protein.faa
-../../../../genomes/bacteria/GCF_000735425.1_GLGR_DRAFTv1_protein.faa
 ../../../../genomes/bacteria/GCF_000735695.2_ASM73569v2_protein.faa
 ../../../../genomes/bacteria/GCF_000735715.2_ASM73571v2_protein.faa
 ../../../../genomes/bacteria/GCF_000737065.1_ASM73706v1_protein.faa
@@ -2341,7 +2302,6 @@
 ../../../../genomes/bacteria/GCF_000740055.1_ASM74005v1_protein.faa
 ../../../../genomes/bacteria/GCF_000740785.1_ASM74078v1_protein.faa
 ../../../../genomes/bacteria/GCF_000740965.1_ASM74096v1_protein.faa
-../../../../genomes/bacteria/GCF_000741205.1_Bifgalcum_protein.faa
 ../../../../genomes/bacteria/GCF_000741365.1_Bifrum_protein.faa
 ../../../../genomes/bacteria/GCF_000741375.1_Bifsae_protein.faa
 ../../../../genomes/bacteria/GCF_000741575.1_Bifcun_protein.faa
@@ -2369,7 +2329,6 @@
 ../../../../genomes/bacteria/GCF_000744825.1_ASM74482v1_protein.faa
 ../../../../genomes/bacteria/GCF_000744885.1_ASM74488v1_protein.faa
 ../../../../genomes/bacteria/GCF_000745065.1_ASM74506v1_protein.faa
-../../../../genomes/bacteria/GCF_000745125.1_ASM74512v1_protein.faa
 ../../../../genomes/bacteria/GCF_000745345.1_ASM74534v1_protein.faa
 ../../../../genomes/bacteria/GCF_000745425.1_ASM74542v1_protein.faa
 ../../../../genomes/bacteria/GCF_000745455.1_ASM74545v1_protein.faa
@@ -2410,7 +2369,6 @@
 ../../../../genomes/bacteria/GCF_000756665.1_ASM75666v1_protein.faa
 ../../../../genomes/bacteria/GCF_000756715.1_PRJEB5505_assembly_1_protein.faa
 ../../../../genomes/bacteria/GCF_000756815.1_PRJEB6598_assembly_1_protein.faa
-../../../../genomes/bacteria/GCF_000757385.1_ASM75738v1_protein.faa
 ../../../../genomes/bacteria/GCF_000757425.2_Tmorbiroseiassem5_protein.faa
 ../../../../genomes/bacteria/GCF_000757725.1_ASM75772v1_protein.faa
 ../../../../genomes/bacteria/GCF_000757795.1_ASM75779v1_protein.faa
@@ -2479,24 +2437,17 @@
 ../../../../genomes/bacteria/GCF_000770675.1_ASM77067v1_protein.faa
 ../../../../genomes/bacteria/GCF_000770795.1_ASM77079v1_protein.faa
 ../../../../genomes/bacteria/GCF_000771045.1_DSM-17755_protein.faa
-../../../../genomes/bacteria/GCF_000771085.1_DSM-19703_protein.faa
-../../../../genomes/bacteria/GCF_000771625.1_DSM-23967_protein.faa
-../../../../genomes/bacteria/GCF_000771645.1_DSM-23969_protein.faa
-../../../../genomes/bacteria/GCF_000771685.1_DSM-23975_protein.faa
 ../../../../genomes/bacteria/GCF_000771745.2_THFILIv2_protein.faa
 ../../../../genomes/bacteria/GCF_000772105.1_ASM77210v1_protein.faa
 ../../../../genomes/bacteria/GCF_000772535.1_ASM77253v1_protein.faa
 ../../../../genomes/bacteria/GCF_000772945.1_ASM77294v1_protein.faa
 ../../../../genomes/bacteria/GCF_000773975.1_ASM77397v1_protein.faa
 ../../../../genomes/bacteria/GCF_000775285.1_ASM77528v1_protein.faa
-../../../../genomes/bacteria/GCF_000775595.1_ASM77559v1_protein.faa
-../../../../genomes/bacteria/GCF_000775605.1_ASM77560v1_protein.faa
 ../../../../genomes/bacteria/GCF_000775615.1_ASM77561v1_protein.faa
 ../../../../genomes/bacteria/GCF_000783715.2_ASM78371v2_protein.faa
 ../../../../genomes/bacteria/GCF_000783935.2_ASM78393v2_protein.faa
 ../../../../genomes/bacteria/GCF_000784735.1_ASM78473v1_protein.faa
 ../../../../genomes/bacteria/GCF_000785105.2_ASM78510v2_protein.faa
-../../../../genomes/bacteria/GCF_000785435.2_ASM78543v2_protein.faa
 ../../../../genomes/bacteria/GCF_000785455.1_ASM78545v1_protein.faa
 ../../../../genomes/bacteria/GCF_000785495.1_ASM78549v1_protein.faa
 ../../../../genomes/bacteria/GCF_000785705.2_ASM78570v2_protein.faa
@@ -2709,7 +2660,6 @@
 ../../../../genomes/bacteria/GCF_000964225.1_ASM96422v1_protein.faa
 ../../../../genomes/bacteria/GCF_000964365.1_ASM96436v1_protein.faa
 ../../../../genomes/bacteria/GCF_000964425.1_ASM96442v1_protein.faa
-../../../../genomes/bacteria/GCF_000964545.1_ASM96454v1_protein.faa
 ../../../../genomes/bacteria/GCF_000964565.1_ASM96456v1_protein.faa
 ../../../../genomes/bacteria/GCF_000964595.1_ASM96459v1_protein.faa
 ../../../../genomes/bacteria/GCF_000964665.1_ASM96466v1_protein.faa
@@ -2944,7 +2894,6 @@
 ../../../../genomes/bacteria/GCF_001188955.3_ASM118895v3_protein.faa
 ../../../../genomes/bacteria/GCF_001189235.2_ASM118923v2_protein.faa
 ../../../../genomes/bacteria/GCF_001189295.1_ASM118929v1_protein.faa
-../../../../genomes/bacteria/GCF_001189575.1_ASM118957v1_protein.faa
 ../../../../genomes/bacteria/GCF_001189845.1_ASM118984v1_protein.faa
 ../../../../genomes/bacteria/GCF_001189915.1_ASM118991v1_protein.faa
 ../../../../genomes/bacteria/GCF_001189965.1_ASM118996v1_protein.faa
@@ -2957,7 +2906,6 @@
 ../../../../genomes/bacteria/GCF_001202035.1_ASM120203v1_protein.faa
 ../../../../genomes/bacteria/GCF_001205715.1_ASM120571v1_protein.faa
 ../../../../genomes/bacteria/GCF_001224225.1_7067_4_69_protein.faa
-../../../../genomes/bacteria/GCF_001238275.1_ASM123827v1_protein.faa
 ../../../../genomes/bacteria/GCF_001243045.1_Clostridium_niameyense_protein.faa
 ../../../../genomes/bacteria/GCF_001243895.1_Bacillus_testis_protein.faa
 ../../../../genomes/bacteria/GCF_001244495.1_Clostridium_phoceensis_protein.faa
@@ -2968,7 +2916,6 @@
 ../../../../genomes/bacteria/GCF_001261775.1_Anaeromassilibacillus_senegalense_protein.faa
 ../../../../genomes/bacteria/GCF_001262015.1_ASM126201v1_protein.faa
 ../../../../genomes/bacteria/GCF_001262055.1_ASM126205v1_protein.faa
-../../../../genomes/bacteria/GCF_001262605.1_ASM126260v1_protein.faa
 ../../../../genomes/bacteria/GCF_001262635.1_ASM126263v1_protein.faa
 ../../../../genomes/bacteria/GCF_001263175.1_ASM126317v1_protein.faa
 ../../../../genomes/bacteria/GCF_001263205.1_ASM126320v1_protein.faa
@@ -3014,7 +2961,6 @@
 ../../../../genomes/bacteria/GCF_001278945.1_ASM127894v1_protein.faa
 ../../../../genomes/bacteria/GCF_001280435.1_ASM128043v1_protein.faa
 ../../../../genomes/bacteria/GCF_001280595.1_ASM128059v1_protein.faa
-../../../../genomes/bacteria/GCF_001280865.1_DSW5v1_protein.faa
 ../../../../genomes/bacteria/GCF_001280945.1_ASM128094v1_protein.faa
 ../../../../genomes/bacteria/GCF_001281045.1_ASM128104v1_protein.faa
 ../../../../genomes/bacteria/GCF_001281175.1_ASM128117v1_protein.faa
@@ -3055,11 +3001,9 @@
 ../../../../genomes/bacteria/GCF_001305595.1_ASM130559v1_protein.faa
 ../../../../genomes/bacteria/GCF_001305675.1_ASM130567v1_protein.faa
 ../../../../genomes/bacteria/GCF_001306015.1_ASM130601v1_protein.faa
-../../../../genomes/bacteria/GCF_001306035.1_ASM130603v1_protein.faa
 ../../../../genomes/bacteria/GCF_001306115.1_ASM130611v1_protein.faa
 ../../../../genomes/bacteria/GCF_001306135.1_ASM130613v1_protein.faa
 ../../../../genomes/bacteria/GCF_001306145.1_ASM130614v1_protein.faa
-../../../../genomes/bacteria/GCF_001306175.1_ASM130617v1_protein.faa
 ../../../../genomes/bacteria/GCF_001306415.1_ASM130641v1_protein.faa
 ../../../../genomes/bacteria/GCF_001307105.1_ASM130710v1_protein.faa
 ../../../../genomes/bacteria/GCF_001307195.1_ASM130719v1_protein.faa
@@ -3161,7 +3105,6 @@
 ../../../../genomes/bacteria/GCF_001431505.1_ASM143150v1_protein.faa
 ../../../../genomes/bacteria/GCF_001431525.1_ASM143152v1_protein.faa
 ../../../../genomes/bacteria/GCF_001431535.1_ASM143153v1_protein.faa
-../../../../genomes/bacteria/GCF_001431585.1_ASM143158v1_protein.faa
 ../../../../genomes/bacteria/GCF_001431725.1_ASM143172v1_protein.faa
 ../../../../genomes/bacteria/GCF_001432245.1_ASM143224v1_protein.faa
 ../../../../genomes/bacteria/GCF_001433715.1_ASM143371v1_protein.faa
@@ -3171,7 +3114,6 @@
 ../../../../genomes/bacteria/GCF_001434135.1_ASM143413v1_protein.faa
 ../../../../genomes/bacteria/GCF_001434145.1_ASM143414v1_protein.faa
 ../../../../genomes/bacteria/GCF_001434255.1_ASM143425v1_protein.faa
-../../../../genomes/bacteria/GCF_001434295.1_ASM143429v1_protein.faa
 ../../../../genomes/bacteria/GCF_001434335.1_ASM143433v1_protein.faa
 ../../../../genomes/bacteria/GCF_001434355.1_ASM143435v1_protein.faa
 ../../../../genomes/bacteria/GCF_001434365.1_ASM143436v1_protein.faa
@@ -3179,7 +3121,6 @@
 ../../../../genomes/bacteria/GCF_001434405.1_ASM143440v1_protein.faa
 ../../../../genomes/bacteria/GCF_001434435.1_ASM143443v1_protein.faa
 ../../../../genomes/bacteria/GCF_001434455.1_ASM143445v1_protein.faa
-../../../../genomes/bacteria/GCF_001434475.1_ASM143447v1_protein.faa
 ../../../../genomes/bacteria/GCF_001434515.1_ASM143451v1_protein.faa
 ../../../../genomes/bacteria/GCF_001434555.1_ASM143455v1_protein.faa
 ../../../../genomes/bacteria/GCF_001434665.1_ASM143466v1_protein.faa
@@ -3207,13 +3148,11 @@
 ../../../../genomes/bacteria/GCF_001436255.1_ASM143625v1_protein.faa
 ../../../../genomes/bacteria/GCF_001436275.1_ASM143627v1_protein.faa
 ../../../../genomes/bacteria/GCF_001436295.1_ASM143629v1_protein.faa
-../../../../genomes/bacteria/GCF_001436305.1_ASM143630v1_protein.faa
 ../../../../genomes/bacteria/GCF_001436315.1_ASM143631v1_protein.faa
 ../../../../genomes/bacteria/GCF_001436375.1_ASM143637v1_protein.faa
 ../../../../genomes/bacteria/GCF_001436505.1_ASM143650v1_protein.faa
 ../../../../genomes/bacteria/GCF_001436535.1_ASM143653v1_protein.faa
 ../../../../genomes/bacteria/GCF_001436555.1_ASM143655v1_protein.faa
-../../../../genomes/bacteria/GCF_001436575.1_ASM143657v1_protein.faa
 ../../../../genomes/bacteria/GCF_001436595.1_ASM143659v1_protein.faa
 ../../../../genomes/bacteria/GCF_001436605.1_ASM143660v1_protein.faa
 ../../../../genomes/bacteria/GCF_001436615.1_ASM143661v1_protein.faa
@@ -3237,7 +3176,6 @@
 ../../../../genomes/bacteria/GCF_001439605.1_ASM143960v1_protein.faa
 ../../../../genomes/bacteria/GCF_001439635.1_ASM143963v1_protein.faa
 ../../../../genomes/bacteria/GCF_001439665.1_ASM143966v1_protein.faa
-../../../../genomes/bacteria/GCF_001439685.1_G8685_protein.faa
 ../../../../genomes/bacteria/GCF_001439735.1_mG273_protein.faa
 ../../../../genomes/bacteria/GCF_001439885.1_ABySSBR3267_protein.faa
 ../../../../genomes/bacteria/GCF_001439915.1_ASM143991v1_protein.faa
@@ -3287,7 +3225,6 @@
 ../../../../genomes/bacteria/GCF_001462145.1_ASM146214v1_protein.faa
 ../../../../genomes/bacteria/GCF_001463865.1_ASM146386v1_protein.faa
 ../../../../genomes/bacteria/GCF_001463905.1_ASM146390v1_protein.faa
-../../../../genomes/bacteria/GCF_001463945.1_ASM146394v1_protein.faa
 ../../../../genomes/bacteria/GCF_001465255.1_ASM146525v1_protein.faa
 ../../../../genomes/bacteria/GCF_001465545.3_ASM146554v3_protein.faa
 ../../../../genomes/bacteria/GCF_001465595.2_ASM146559v2_protein.faa
@@ -3319,7 +3256,6 @@
 ../../../../genomes/bacteria/GCF_001483945.1_ASM148394v1_protein.faa
 ../../../../genomes/bacteria/GCF_001483985.1_ASM148398v1_protein.faa
 ../../../../genomes/bacteria/GCF_001484625.1_ASM148462v1_protein.faa
-../../../../genomes/bacteria/GCF_001484725.1_ASM148472v1_protein.faa
 ../../../../genomes/bacteria/GCF_001484965.1_ASM148496v1_protein.faa
 ../../../../genomes/bacteria/GCF_001485145.1_ASM148514v1_protein.faa
 ../../../../genomes/bacteria/GCF_001485435.1_ASM148543v1_protein.faa
@@ -3361,7 +3297,6 @@
 ../../../../genomes/bacteria/GCF_001514495.1_ASM151449v1_protein.faa
 ../../../../genomes/bacteria/GCF_001514535.1_ASM151453v1_protein.faa
 ../../../../genomes/bacteria/GCF_001515305.1_ASM151530v1_protein.faa
-../../../../genomes/bacteria/GCF_001515365.1_ASM151536v1_protein.faa
 ../../../../genomes/bacteria/GCF_001515525.1_ASM151552v1_protein.faa
 ../../../../genomes/bacteria/GCF_001516895.1_ASM151689v1_protein.faa
 ../../../../genomes/bacteria/GCF_001517405.1_EM595_protein.faa
@@ -3406,7 +3341,6 @@
 ../../../../genomes/bacteria/GCF_001544515.1_ASM1544515v2_protein.faa
 ../../../../genomes/bacteria/GCF_001544535.1_ASM1544535v2_protein.faa
 ../../../../genomes/bacteria/GCF_001544555.2_Burkholderia_udeis_LMG_27134_protein.faa
-../../../../genomes/bacteria/GCF_001544575.2_ASM154457v2_protein.faa
 ../../../../genomes/bacteria/GCF_001544615.1_ASM154461v2_protein.faa
 ../../../../genomes/bacteria/GCF_001544695.2_ASM154469v2_protein.faa
 ../../../../genomes/bacteria/GCF_001544755.2_ASM154475v2_protein.faa
@@ -3439,7 +3373,6 @@
 ../../../../genomes/bacteria/GCF_001552275.1_ASM155227v1_protein.faa
 ../../../../genomes/bacteria/GCF_001552295.1_ASM155229v1_protein.faa
 ../../../../genomes/bacteria/GCF_001552315.1_ASM155231v1_protein.faa
-../../../../genomes/bacteria/GCF_001552335.1_ASM155233v1_protein.faa
 ../../../../genomes/bacteria/GCF_001552355.1_ASM155235v1_protein.faa
 ../../../../genomes/bacteria/GCF_001552375.1_ASM155237v1_protein.faa
 ../../../../genomes/bacteria/GCF_001552435.1_ASM155243v1_protein.faa
@@ -3503,7 +3436,6 @@
 ../../../../genomes/bacteria/GCF_001570965.1_ASM157096v1_protein.faa
 ../../../../genomes/bacteria/GCF_001570985.1_ASM157098v1_protein.faa
 ../../../../genomes/bacteria/GCF_001571005.1_ASM157100v1_protein.faa
-../../../../genomes/bacteria/GCF_001571025.1_ASM157102v1_protein.faa
 ../../../../genomes/bacteria/GCF_001571045.1_ASM157104v1_protein.faa
 ../../../../genomes/bacteria/GCF_001571065.1_ASM157106v1_protein.faa
 ../../../../genomes/bacteria/GCF_001571085.1_ASM157108v1_protein.faa
@@ -3547,7 +3479,6 @@
 ../../../../genomes/bacteria/GCF_001591045.1_ASM159104v1_protein.faa
 ../../../../genomes/bacteria/GCF_001591105.1_ASM159110v1_protein.faa
 ../../../../genomes/bacteria/GCF_001591165.1_ASM159116v1_protein.faa
-../../../../genomes/bacteria/GCF_001591185.1_ASM159118v1_protein.faa
 ../../../../genomes/bacteria/GCF_001591305.1_ASM159130v1_protein.faa
 ../../../../genomes/bacteria/GCF_001591385.1_ASM159138v1_protein.faa
 ../../../../genomes/bacteria/GCF_001591485.1_ASM159148v1_protein.faa
@@ -3556,12 +3487,8 @@
 ../../../../genomes/bacteria/GCF_001591645.1_ASM159164v1_protein.faa
 ../../../../genomes/bacteria/GCF_001591745.1_ASM159174v1_protein.faa
 ../../../../genomes/bacteria/GCF_001591825.1_ASM159182v1_protein.faa
-../../../../genomes/bacteria/GCF_001591865.1_ASM159186v1_protein.faa
 ../../../../genomes/bacteria/GCF_001591945.1_ASM159194v1_protein.faa
-../../../../genomes/bacteria/GCF_001591965.1_ASM159196v1_protein.faa
 ../../../../genomes/bacteria/GCF_001592025.1_ASM159202v1_protein.faa
-../../../../genomes/bacteria/GCF_001592065.1_ASM159206v1_protein.faa
-../../../../genomes/bacteria/GCF_001592085.1_ASM159208v1_protein.faa
 ../../../../genomes/bacteria/GCF_001592105.1_ASM159210v1_protein.faa
 ../../../../genomes/bacteria/GCF_001592225.1_ASM159222v1_protein.faa
 ../../../../genomes/bacteria/GCF_001592265.1_ASM159226v1_protein.faa
@@ -3689,7 +3616,6 @@
 ../../../../genomes/bacteria/GCF_001637205.1_ASM163720v1_protein.faa
 ../../../../genomes/bacteria/GCF_001637315.1_ASM163731v1_protein.faa
 ../../../../genomes/bacteria/GCF_001637325.1_ASM163732v1_protein.faa
-../../../../genomes/bacteria/GCF_001637335.1_ASM163733v1_protein.faa
 ../../../../genomes/bacteria/GCF_001637395.1_ASM163739v1_protein.faa
 ../../../../genomes/bacteria/GCF_001639065.2_ASM163906v2_protein.faa
 ../../../../genomes/bacteria/GCF_001639105.2_ASM163910v2_protein.faa
@@ -3707,7 +3633,6 @@
 ../../../../genomes/bacteria/GCF_001642325.1_ASM164232v1_protein.faa
 ../../../../genomes/bacteria/GCF_001642575.1_Xfloridensis_v1.0_protein.faa
 ../../../../genomes/bacteria/GCF_001642655.1_ASM164265v1_protein.faa
-../../../../genomes/bacteria/GCF_001642675.1_ASM164267v1_protein.faa
 ../../../../genomes/bacteria/GCF_001642695.1_ASM164269v2_protein.faa
 ../../../../genomes/bacteria/GCF_001642805.2_ASM164280v2_protein.faa
 ../../../../genomes/bacteria/GCF_001642835.1_ASM164283v1_protein.faa
@@ -3812,7 +3737,6 @@
 ../../../../genomes/bacteria/GCF_001685415.1_ASM168541v1_protein.faa
 ../../../../genomes/bacteria/GCF_001685435.2_ASM168543v3_protein.faa
 ../../../../genomes/bacteria/GCF_001685485.1_ASM168548v1_protein.faa
-../../../../genomes/bacteria/GCF_001686925.1_ASM168692v1_protein.faa
 ../../../../genomes/bacteria/GCF_001686985.1_ASM168698v1_protein.faa
 ../../../../genomes/bacteria/GCF_001687305.1_ASM168730v1_protein.faa
 ../../../../genomes/bacteria/GCF_001687335.1_ASM168733v1_protein.faa
@@ -3835,7 +3759,6 @@
 ../../../../genomes/bacteria/GCF_001693515.2_ASM169351v2_protein.faa
 ../../../../genomes/bacteria/GCF_001693735.1_ASM169373v1_protein.faa
 ../../../../genomes/bacteria/GCF_001693775.2_ASM169377v2_protein.faa
-../../../../genomes/bacteria/GCF_001695395.1_ASM169539v1_protein.faa
 ../../../../genomes/bacteria/GCF_001696485.1_ASM169648v1_protein.faa
 ../../../../genomes/bacteria/GCF_001696715.1_ASM169671v1_protein.faa
 ../../../../genomes/bacteria/GCF_001697185.1_ASM169718v1_protein.faa
@@ -3909,7 +3832,6 @@
 ../../../../genomes/bacteria/GCF_001730315.1_ASM173031v1_protein.faa
 ../../../../genomes/bacteria/GCF_001730365.1_ASM173036v1_protein.faa
 ../../../../genomes/bacteria/GCF_001730525.1_ASM173052v1_protein.faa
-../../../../genomes/bacteria/GCF_001730605.1_ASM173060v1_protein.faa
 ../../../../genomes/bacteria/GCF_001730685.1_ASM173068v1_protein.faa
 ../../../../genomes/bacteria/GCF_001735525.1_ASM173552v1_protein.faa
 ../../../../genomes/bacteria/GCF_001735765.2_ASM173576v2_protein.faa
@@ -4027,7 +3949,6 @@
 ../../../../genomes/bacteria/GCF_001885765.1_ASM188576v1_protein.faa
 ../../../../genomes/bacteria/GCF_001885905.1_ASM188590v1_protein.faa
 ../../../../genomes/bacteria/GCF_001885945.1_ASM188594v1_protein.faa
-../../../../genomes/bacteria/GCF_001885995.1_ASM188599v1_protein.faa
 ../../../../genomes/bacteria/GCF_001886155.1_ASM188615v1_protein.faa
 ../../../../genomes/bacteria/GCF_001886195.1_ASM188619v1_protein.faa
 ../../../../genomes/bacteria/GCF_001886225.1_ASM188622v1_protein.faa
@@ -4311,7 +4232,6 @@
 ../../../../genomes/bacteria/GCF_002086305.1_ASM208630v1_protein.faa
 ../../../../genomes/bacteria/GCF_002086485.1_ASM208648v1_protein.faa
 ../../../../genomes/bacteria/GCF_002086515.1_ASM208651v1_protein.faa
-../../../../genomes/bacteria/GCF_002086545.1_ASM208654v1_protein.faa
 ../../../../genomes/bacteria/GCF_002086635.1_ASM208663v1_protein.faa
 ../../../../genomes/bacteria/GCF_002086695.1_ASM208669v1_protein.faa
 ../../../../genomes/bacteria/GCF_002086735.1_ASM208673v1_protein.faa
@@ -4351,7 +4271,6 @@
 ../../../../genomes/bacteria/GCF_002101845.1_ASM210184v1_protein.faa
 ../../../../genomes/bacteria/GCF_002101885.1_ASM210188v1_protein.faa
 ../../../../genomes/bacteria/GCF_002101965.1_ASM210196v1_protein.faa
-../../../../genomes/bacteria/GCF_002102025.1_ASM210202v1_protein.faa
 ../../../../genomes/bacteria/GCF_002102175.1_ASM210217v1_protein.faa
 ../../../../genomes/bacteria/GCF_002102185.1_ASM210218v1_protein.faa
 ../../../../genomes/bacteria/GCF_002102265.1_ASM210226v1_protein.faa
@@ -4359,7 +4278,6 @@
 ../../../../genomes/bacteria/GCF_002102395.1_ASM210239v1_protein.faa
 ../../../../genomes/bacteria/GCF_002104335.1_ASM210433v1_protein.faa
 ../../../../genomes/bacteria/GCF_002104435.1_ASM210443v1_protein.faa
-../../../../genomes/bacteria/GCF_002104455.1_ASM210445v1_protein.faa
 ../../../../genomes/bacteria/GCF_002104475.1_ASM210447v1_protein.faa
 ../../../../genomes/bacteria/GCF_002104515.1_ASM210451v1_protein.faa
 ../../../../genomes/bacteria/GCF_002104675.1_ASM210467v1_protein.faa
@@ -4408,7 +4326,6 @@
 ../../../../genomes/bacteria/GCF_002149965.1_ASM214996v1_protein.faa
 ../../../../genomes/bacteria/GCF_002150005.2_ASM215000v2_protein.faa
 ../../../../genomes/bacteria/GCF_002150045.1_ASM215004v1_protein.faa
-../../../../genomes/bacteria/GCF_002150685.1_ASM215068v1_protein.faa
 ../../../../genomes/bacteria/GCF_002150735.1_ASM215073v1_protein.faa
 ../../../../genomes/bacteria/GCF_002150765.1_ASM215076v1_protein.faa
 ../../../../genomes/bacteria/GCF_002150805.1_ASM215080v1_protein.faa
@@ -4478,9 +4395,6 @@
 ../../../../genomes/bacteria/GCF_002197985.1_ASM219798v1_protein.faa
 ../../../../genomes/bacteria/GCF_002198095.1_ASM219809v1_protein.faa
 ../../../../genomes/bacteria/GCF_002198115.1_ASM219811v1_protein.faa
-../../../../genomes/bacteria/GCF_002200845.1_ASM220084v1_protein.faa
-../../../../genomes/bacteria/GCF_002200855.1_ASM220085v1_protein.faa
-../../../../genomes/bacteria/GCF_002200915.1_ASM220091v1_protein.faa
 ../../../../genomes/bacteria/GCF_002201235.1_ASM220123v1_protein.faa
 ../../../../genomes/bacteria/GCF_002201475.1_ASM220147v1_protein.faa
 ../../../../genomes/bacteria/GCF_002201795.1_ASM220179v1_protein.faa
@@ -4535,7 +4449,6 @@
 ../../../../genomes/bacteria/GCF_002220755.1_ASM222075v1_protein.faa
 ../../../../genomes/bacteria/GCF_002220865.2_ASM222086v2_protein.faa
 ../../../../genomes/bacteria/GCF_002221525.1_ASM222152v1_protein.faa
-../../../../genomes/bacteria/GCF_002221595.1_ASM222159v1_protein.faa
 ../../../../genomes/bacteria/GCF_002222595.2_ASM222259v2_protein.faa
 ../../../../genomes/bacteria/GCF_002222655.1_ASM222265v1_protein.faa
 ../../../../genomes/bacteria/GCF_002224225.1_ASM222422v1_protein.faa
@@ -4609,7 +4522,6 @@
 ../../../../genomes/bacteria/GCF_002263515.1_ASM226351v1_protein.faa
 ../../../../genomes/bacteria/GCF_002265265.1_ASM226526v1_protein.faa
 ../../../../genomes/bacteria/GCF_002265435.1_ASM226543v1_protein.faa
-../../../../genomes/bacteria/GCF_002265845.1_ASM226584v1_protein.faa
 ../../../../genomes/bacteria/GCF_002266285.1_ASM226628v1_protein.faa
 ../../../../genomes/bacteria/GCF_002266435.2_ASM226643v2_protein.faa
 ../../../../genomes/bacteria/GCF_002266855.1_ASM226685v1_protein.faa
@@ -4845,7 +4757,6 @@
 ../../../../genomes/bacteria/GCF_002786325.1_157.Hcov.spades_scaffolds_517_protein.faa
 ../../../../genomes/bacteria/GCF_002794255.1_ASM279425v1_protein.faa
 ../../../../genomes/bacteria/GCF_002795245.1_ASM279524v1_protein.faa
-../../../../genomes/bacteria/GCF_002795265.1_ASM279526v1_protein.faa
 ../../../../genomes/bacteria/GCF_002795305.1_ASM279530v1_protein.faa
 ../../../../genomes/bacteria/GCF_002795405.1_ASM279540v1_protein.faa
 ../../../../genomes/bacteria/GCF_002795425.1_ASM279542v1_protein.faa
@@ -4866,7 +4777,6 @@
 ../../../../genomes/bacteria/GCF_002797775.1_ASM279777v1_protein.faa
 ../../../../genomes/bacteria/GCF_002797815.1_ASM279781v1_protein.faa
 ../../../../genomes/bacteria/GCF_002797855.1_ASM279785v1_protein.faa
-../../../../genomes/bacteria/GCF_002797875.1_ASM279787v1_protein.faa
 ../../../../genomes/bacteria/GCF_002797915.1_ASM279791v1_protein.faa
 ../../../../genomes/bacteria/GCF_002797975.1_ASM279797v1_protein.faa
 ../../../../genomes/bacteria/GCF_002798015.1_ASM279801v1_protein.faa
@@ -4913,7 +4823,6 @@
 ../../../../genomes/bacteria/GCF_002812325.1_ASM281232v1_protein.faa
 ../../../../genomes/bacteria/GCF_002812805.1_ASM281280v1_protein.faa
 ../../../../genomes/bacteria/GCF_002812985.1_MDC2473_protein.faa
-../../../../genomes/bacteria/GCF_002813205.1_ASM281320v1_protein.faa
 ../../../../genomes/bacteria/GCF_002813245.1_ASM281324v1_protein.faa
 ../../../../genomes/bacteria/GCF_002813445.1_ASM281344v1_protein.faa
 ../../../../genomes/bacteria/GCF_002813455.1_ASM281345v1_protein.faa
@@ -4933,7 +4842,6 @@
 ../../../../genomes/bacteria/GCF_002837135.1_ASM283713v1_protein.faa
 ../../../../genomes/bacteria/GCF_002838765.1_ASM283876v1_protein.faa
 ../../../../genomes/bacteria/GCF_002843175.1_ASM284317v1_protein.faa
-../../../../genomes/bacteria/GCF_002843305.1_ASM284330v1_protein.faa
 ../../../../genomes/bacteria/GCF_002843315.1_ASM284331v1_protein.faa
 ../../../../genomes/bacteria/GCF_002843355.2_ASM284335v2_protein.faa
 ../../../../genomes/bacteria/GCF_002843385.1_ASM284338v1_protein.faa
@@ -5034,7 +4942,6 @@
 ../../../../genomes/bacteria/GCF_002887595.1_ASM288759v1_protein.faa
 ../../../../genomes/bacteria/GCF_002887615.1_ASM288761v1_protein.faa
 ../../../../genomes/bacteria/GCF_002887775.1_ASM288777v1_protein.faa
-../../../../genomes/bacteria/GCF_002888095.1_ASM288809v1_protein.faa
 ../../../../genomes/bacteria/GCF_002891075.1_ASM289107v1_protein.faa
 ../../../../genomes/bacteria/GCF_002892185.1_ASM289218v1_protein.faa
 ../../../../genomes/bacteria/GCF_002892925.1_ASM289292v1_protein.faa
@@ -5057,7 +4964,6 @@
 ../../../../genomes/bacteria/GCF_002899695.1_ASM289969v1_protein.faa
 ../../../../genomes/bacteria/GCF_002899825.2_ASM289982v2_protein.faa
 ../../../../genomes/bacteria/GCF_002899895.1_ASM289989v2_protein.faa
-../../../../genomes/bacteria/GCF_002900095.1_ASM290009v1_protein.faa
 ../../../../genomes/bacteria/GCF_002900975.1_ASM290097v1_protein.faa
 ../../../../genomes/bacteria/GCF_002901445.1_ASM290144v1_protein.faa
 ../../../../genomes/bacteria/GCF_002902145.1_ASM290214v1_protein.faa
@@ -5088,7 +4994,6 @@
 ../../../../genomes/bacteria/GCF_002921145.1_ASM292114v1_protein.faa
 ../../../../genomes/bacteria/GCF_002923755.1_ASM292375v1_protein.faa
 ../../../../genomes/bacteria/GCF_002924615.1_ASM292461v1_protein.faa
-../../../../genomes/bacteria/GCF_002924625.1_ASM292462v1_protein.faa
 ../../../../genomes/bacteria/GCF_002925845.1_ASM292584v1_protein.faa
 ../../../../genomes/bacteria/GCF_002926065.1_ASM292606v1_protein.faa
 ../../../../genomes/bacteria/GCF_002926165.1_ASM292616v1_protein.faa
@@ -5130,7 +5035,6 @@
 ../../../../genomes/bacteria/GCF_002940015.1_ASM294001v1_protein.faa
 ../../../../genomes/bacteria/GCF_002940065.1_ASM294006v1_protein.faa
 ../../../../genomes/bacteria/GCF_002940085.1_ASM294008v1_protein.faa
-../../../../genomes/bacteria/GCF_002940605.1_XthCFBP4691_protein.faa
 ../../../../genomes/bacteria/GCF_002940745.1_ASM294074v1_protein.faa
 ../../../../genomes/bacteria/GCF_002943415.1_ASM294341v1_protein.faa
 ../../../../genomes/bacteria/GCF_002943425.1_ASM294342v1_protein.faa
@@ -5210,7 +5114,6 @@
 ../../../../genomes/bacteria/GCF_002995745.1_ASM299574v1_protein.faa
 ../../../../genomes/bacteria/GCF_002995755.1_ASM299575v1_protein.faa
 ../../../../genomes/bacteria/GCF_002995785.1_ASM299578v1_protein.faa
-../../../../genomes/bacteria/GCF_002995795.1_ASM299579v1_protein.faa
 ../../../../genomes/bacteria/GCF_002995805.1_ASM299580v1_protein.faa
 ../../../../genomes/bacteria/GCF_002995845.1_ASM299584v1_protein.faa
 ../../../../genomes/bacteria/GCF_002998295.1_ASM299829v1_protein.faa
@@ -5248,7 +5151,6 @@
 ../../../../genomes/bacteria/GCF_003003285.1_ASM300328v1_protein.faa
 ../../../../genomes/bacteria/GCF_003003355.1_ASM300335v1_protein.faa
 ../../../../genomes/bacteria/GCF_003003375.1_ASM300337v1_protein.faa
-../../../../genomes/bacteria/GCF_003003695.1_ASM300369v1_protein.faa
 ../../../../genomes/bacteria/GCF_003003775.1_ASM300377v1_protein.faa
 ../../../../genomes/bacteria/GCF_003003795.1_ASM300379v1_protein.faa
 ../../../../genomes/bacteria/GCF_003003845.1_ASM300384v1_protein.faa
@@ -5307,7 +5209,6 @@
 ../../../../genomes/bacteria/GCF_003019695.1_ASM301969v1_protein.faa
 ../../../../genomes/bacteria/GCF_003019715.1_ASM301971v1_protein.faa
 ../../../../genomes/bacteria/GCF_003019925.1_ASM301992v1_protein.faa
-../../../../genomes/bacteria/GCF_003020045.1_ASM302004v1_protein.faa
 ../../../../genomes/bacteria/GCF_003020585.1_ASM302058v1_protein.faa
 ../../../../genomes/bacteria/GCF_003020825.1_ASM302082v1_protein.faa
 ../../../../genomes/bacteria/GCF_003023845.1_ASM302384v1_protein.faa
@@ -5343,7 +5244,6 @@
 ../../../../genomes/bacteria/GCF_003030905.1_ASM303090v1_protein.faa
 ../../../../genomes/bacteria/GCF_003034225.1_ASM303422v1_protein.faa
 ../../../../genomes/bacteria/GCF_003034915.1_ASM303491v1_protein.faa
-../../../../genomes/bacteria/GCF_003034995.1_ASM303499v1_protein.faa
 ../../../../genomes/bacteria/GCF_003044065.1_ASM304406v1_protein.faa
 ../../../../genomes/bacteria/GCF_003044275.1_Rcar_protein.faa
 ../../../../genomes/bacteria/GCF_003044425.1_ASM304442v1_protein.faa
@@ -5489,7 +5389,6 @@
 ../../../../genomes/bacteria/GCF_003121585.1_ASM312158v1_protein.faa
 ../../../../genomes/bacteria/GCF_003121625.1_ASM312162v1_protein.faa
 ../../../../genomes/bacteria/GCF_003121895.1_ASM312189v1_protein.faa
-../../../../genomes/bacteria/GCF_003121925.1_ASM312192v1_protein.faa
 ../../../../genomes/bacteria/GCF_003121985.1_ASM312198v1_protein.faa
 ../../../../genomes/bacteria/GCF_003122325.1_ASM312232v1_protein.faa
 ../../../../genomes/bacteria/GCF_003122365.1_ASM312236v1_protein.faa
@@ -5521,7 +5420,6 @@
 ../../../../genomes/bacteria/GCF_003148385.1_ASM314838v1_protein.faa
 ../../../../genomes/bacteria/GCF_003148465.1_ASM314846v1_protein.faa
 ../../../../genomes/bacteria/GCF_003148475.1_ASM314847v1_protein.faa
-../../../../genomes/bacteria/GCF_003148525.1_ASM314852v1_protein.faa
 ../../../../genomes/bacteria/GCF_003148565.1_ASM314856v1_protein.faa
 ../../../../genomes/bacteria/GCF_003148585.1_ASM314858v1_protein.faa
 ../../../../genomes/bacteria/GCF_003148625.1_ASM314862v1_protein.faa
@@ -5553,7 +5451,6 @@
 ../../../../genomes/bacteria/GCF_003172895.1_ASM317289v1_protein.faa
 ../../../../genomes/bacteria/GCF_003172975.1_ASM317297v1_protein.faa
 ../../../../genomes/bacteria/GCF_003173015.1_ASM317301v1_protein.faa
-../../../../genomes/bacteria/GCF_003173055.1_ASM317305v1_protein.faa
 ../../../../genomes/bacteria/GCF_003173575.1_ASM317357v1_protein.faa
 ../../../../genomes/bacteria/GCF_003173595.1_ASM317359v1_protein.faa
 ../../../../genomes/bacteria/GCF_003173695.1_ASM317369v1_protein.faa
@@ -5982,7 +5879,6 @@
 ../../../../genomes/bacteria/GCF_003386865.1_ASM338686v1_protein.faa
 ../../../../genomes/bacteria/GCF_003386945.1_ASM338694v1_protein.faa
 ../../../../genomes/bacteria/GCF_003387075.1_ASM338707v1_protein.faa
-../../../../genomes/bacteria/GCF_003387095.1_ASM338709v1_protein.faa
 ../../../../genomes/bacteria/GCF_003387165.1_ASM338716v1_protein.faa
 ../../../../genomes/bacteria/GCF_003387375.1_ASM338737v1_protein.faa
 ../../../../genomes/bacteria/GCF_003387475.1_ASM338747v1_protein.faa
@@ -6089,9 +5985,7 @@
 ../../../../genomes/bacteria/GCF_003550175.1_ASM355017v1_protein.faa
 ../../../../genomes/bacteria/GCF_003555545.1_ASM355554v1_protein.faa
 ../../../../genomes/bacteria/GCF_003568585.1_meiothermus1.04_protein.faa
-../../../../genomes/bacteria/GCF_003568665.1_ASM356866v1_protein.faa
 ../../../../genomes/bacteria/GCF_003568725.1_ASM356872v1_protein.faa
-../../../../genomes/bacteria/GCF_003568825.1_ASM356882v1_protein.faa
 ../../../../genomes/bacteria/GCF_003568845.1_ASM356884v1_protein.faa
 ../../../../genomes/bacteria/GCF_003568965.1_Vhalioticoli_protein.faa
 ../../../../genomes/bacteria/GCF_003568985.1_Vezurae_protein.faa
@@ -6173,7 +6067,6 @@
 ../../../../genomes/bacteria/GCF_003600795.1_ASM360079v1_protein.faa
 ../../../../genomes/bacteria/GCF_003601925.1_ASM360192v1_protein.faa
 ../../../../genomes/bacteria/GCF_003601975.1_ASM360197v1_protein.faa
-../../../../genomes/bacteria/GCF_003602055.1_ASM360205v1_protein.faa
 ../../../../genomes/bacteria/GCF_003602095.1_ASM360209v1_protein.faa
 ../../../../genomes/bacteria/GCF_003604195.1_ASM360419v1_protein.faa
 ../../../../genomes/bacteria/GCF_003604215.1_ASM360421v1_protein.faa
@@ -6198,7 +6091,6 @@
 ../../../../genomes/bacteria/GCF_003609995.1_ASM360999v1_protein.faa
 ../../../../genomes/bacteria/GCF_003610015.1_ASM361001v1_protein.faa
 ../../../../genomes/bacteria/GCF_003610355.1_ASM361035v1_protein.faa
-../../../../genomes/bacteria/GCF_003610465.1_ASM361046v1_protein.faa
 ../../../../genomes/bacteria/GCF_003610495.1_ASM361049v1_protein.faa
 ../../../../genomes/bacteria/GCF_003610535.1_ASM361053v1_protein.faa
 ../../../../genomes/bacteria/GCF_003610555.1_ASM361055v1_protein.faa
@@ -6207,7 +6099,6 @@
 ../../../../genomes/bacteria/GCF_003610735.1_ASM361073v1_protein.faa
 ../../../../genomes/bacteria/GCF_003610775.1_ASM361077v1_protein.faa
 ../../../../genomes/bacteria/GCF_003610785.1_ASM361078v1_protein.faa
-../../../../genomes/bacteria/GCF_003610915.1_Rvar_CIP_protein.faa
 ../../../../genomes/bacteria/GCF_003611035.1_ASM361103v1_protein.faa
 ../../../../genomes/bacteria/GCF_003611455.1_ASM361145v1_protein.faa
 ../../../../genomes/bacteria/GCF_003611635.1_ASM361163v1_protein.faa
@@ -6248,7 +6139,6 @@
 ../../../../genomes/bacteria/GCF_003628505.1_ASM362850v1_protein.faa
 ../../../../genomes/bacteria/GCF_003628535.1_ASM362853v1_protein.faa
 ../../../../genomes/bacteria/GCF_003628755.1_ASM362875v1_protein.faa
-../../../../genomes/bacteria/GCF_003633525.1_ASM363352v1_protein.faa
 ../../../../genomes/bacteria/GCF_003633615.1_ASM363361v1_protein.faa
 ../../../../genomes/bacteria/GCF_003633685.1_ASM363368v1_protein.faa
 ../../../../genomes/bacteria/GCF_003633715.1_ASM363371v1_protein.faa
@@ -6264,7 +6154,6 @@
 ../../../../genomes/bacteria/GCF_003634125.1_ASM363412v1_protein.faa
 ../../../../genomes/bacteria/GCF_003634275.1_ASM363427v1_protein.faa
 ../../../../genomes/bacteria/GCF_003634315.1_ASM363431v1_protein.faa
-../../../../genomes/bacteria/GCF_003634345.1_ASM363434v1_protein.faa
 ../../../../genomes/bacteria/GCF_003634455.1_ASM363445v1_protein.faa
 ../../../../genomes/bacteria/GCF_003634525.1_ASM363452v1_protein.faa
 ../../../../genomes/bacteria/GCF_003634555.1_ASM363455v1_protein.faa
@@ -6321,7 +6210,6 @@
 ../../../../genomes/bacteria/GCF_003674095.1_ASM367409v1_protein.faa
 ../../../../genomes/bacteria/GCF_003675385.1_ASM367538v1_protein.faa
 ../../../../genomes/bacteria/GCF_003675895.1_ASM367589v1_protein.faa
-../../../../genomes/bacteria/GCF_003675955.1_ASM367595v1_protein.faa
 ../../../../genomes/bacteria/GCF_003687175.1_ASM368717v1_protein.faa
 ../../../../genomes/bacteria/GCF_003687415.1_ASM368741v1_protein.faa
 ../../../../genomes/bacteria/GCF_003687485.1_ASM368748v1_protein.faa
@@ -6352,7 +6240,6 @@
 ../../../../genomes/bacteria/GCF_003701315.1_ASM370131v1_protein.faa
 ../../../../genomes/bacteria/GCF_003701615.1_ASM370161v1_protein.faa
 ../../../../genomes/bacteria/GCF_003703435.1_ASM370343v1_protein.faa
-../../../../genomes/bacteria/GCF_003703815.1_ASM370381v1_protein.faa
 ../../../../genomes/bacteria/GCF_003703975.1_ASM370397v1_protein.faa
 ../../../../genomes/bacteria/GCF_003704105.1_ASM370410v1_protein.faa
 ../../../../genomes/bacteria/GCF_003709565.1_ASM370956v1_protein.faa
@@ -6504,7 +6391,6 @@
 ../../../../genomes/bacteria/GCF_003865345.1_ASM386534v1_protein.faa
 ../../../../genomes/bacteria/GCF_003865365.1_ASM386536v1_protein.faa
 ../../../../genomes/bacteria/GCF_003865405.1_ASM386540v1_protein.faa
-../../../../genomes/bacteria/GCF_003867075.1_ASM386707v1_protein.faa
 ../../../../genomes/bacteria/GCF_003885045.1_ASM388504v1_protein.faa
 ../../../../genomes/bacteria/GCF_003885105.1_ASM388510v1_protein.faa
 ../../../../genomes/bacteria/GCF_003892345.1_ASM389234v1_protein.faa
@@ -6516,7 +6402,6 @@
 ../../../../genomes/bacteria/GCF_003931855.1_ASM393185v1_protein.faa
 ../../../../genomes/bacteria/GCF_003932295.1_ASM393229v1_protein.faa
 ../../../../genomes/bacteria/GCF_003932505.1_ASM393250v1_protein.faa
-../../../../genomes/bacteria/GCF_003932715.1_ASM393271v1_protein.faa
 ../../../../genomes/bacteria/GCF_003932995.1_ASM393299v1_protein.faa
 ../../../../genomes/bacteria/GCF_003933235.1_ASM393323v1_protein.faa
 ../../../../genomes/bacteria/GCF_003933245.1_ASM393324v1_protein.faa
@@ -6620,7 +6505,6 @@
 ../../../../genomes/bacteria/GCF_003966655.1_ASM396665v1_protein.faa
 ../../../../genomes/bacteria/GCF_003966715.1_ASM396671v1_protein.faa
 ../../../../genomes/bacteria/GCF_003966735.1_ASM396673v1_protein.faa
-../../../../genomes/bacteria/GCF_003966875.1_ASM396687v1_protein.faa
 ../../../../genomes/bacteria/GCF_003966895.1_ASM396689v1_protein.faa
 ../../../../genomes/bacteria/GCF_003966915.1_ASM396691v1_protein.faa
 ../../../../genomes/bacteria/GCF_003966955.1_ASM396695v1_protein.faa
@@ -6657,7 +6541,6 @@
 ../../../../genomes/bacteria/GCF_003987045.1_ASM398704v1_protein.faa
 ../../../../genomes/bacteria/GCF_003987065.1_ASM398706v1_protein.faa
 ../../../../genomes/bacteria/GCF_003987095.1_ASM398709v1_protein.faa
-../../../../genomes/bacteria/GCF_003987105.1_ASM398710v1_protein.faa
 ../../../../genomes/bacteria/GCF_003987135.1_ASM398713v1_protein.faa
 ../../../../genomes/bacteria/GCF_003987145.1_ASM398714v1_protein.faa
 ../../../../genomes/bacteria/GCF_003987175.1_ASM398717v1_protein.faa
@@ -6720,7 +6603,6 @@
 ../../../../genomes/bacteria/GCF_004000255.1_ASM400025v1_protein.faa
 ../../../../genomes/bacteria/GCF_004000275.1_ASM400027v1_protein.faa
 ../../../../genomes/bacteria/GCF_004000605.1_ASM400060v1_protein.faa
-../../../../genomes/bacteria/GCF_004000725.1_ASM400072v1_protein.faa
 ../../../../genomes/bacteria/GCF_004000765.1_ASM400076v1_protein.faa
 ../../../../genomes/bacteria/GCF_004000785.1_ASM400078v1_protein.faa
 ../../../../genomes/bacteria/GCF_004000805.1_ASM400080v1_protein.faa
@@ -6769,8 +6651,6 @@
 ../../../../genomes/bacteria/GCF_004023625.1_ASM402362v1_protein.faa
 ../../../../genomes/bacteria/GCF_004023665.1_ASM402366v1_protein.faa
 ../../../../genomes/bacteria/GCF_004025325.1_ASM402532v1_protein.faa
-../../../../genomes/bacteria/GCF_004025525.1_ASM402552v1_protein.faa
-../../../../genomes/bacteria/GCF_004025845.1_ASM402584v1_protein.faa
 ../../../../genomes/bacteria/GCF_004028095.1_ASM402809v1_protein.faa
 ../../../../genomes/bacteria/GCF_004028155.1_ASM402815v1_protein.faa
 ../../../../genomes/bacteria/GCF_004028235.1_ASM402823v1_protein.faa
@@ -6794,7 +6674,6 @@
 ../../../../genomes/bacteria/GCF_004104115.1_ASM410411v1_protein.faa
 ../../../../genomes/bacteria/GCF_004104375.1_ASM410437v1_protein.faa
 ../../../../genomes/bacteria/GCF_004114535.1_ASM411453v1_protein.faa
-../../../../genomes/bacteria/GCF_004114655.2_ASM411465v2_protein.faa
 ../../../../genomes/bacteria/GCF_004114895.1_ASM411489v1_protein.faa
 ../../../../genomes/bacteria/GCF_004114915.1_ASM411491v1_protein.faa
 ../../../../genomes/bacteria/GCF_004114935.1_ASM411493v1_protein.faa
@@ -6848,7 +6727,6 @@
 ../../../../genomes/bacteria/GCF_004135935.1_ASM413593v1_protein.faa
 ../../../../genomes/bacteria/GCF_004135975.1_ASM413597v1_protein.faa
 ../../../../genomes/bacteria/GCF_004136555.1_ASM413655v1_protein.faa
-../../../../genomes/bacteria/GCF_004136575.1_ASM413657v1_protein.faa
 ../../../../genomes/bacteria/GCF_004136635.1_ASM413663v1_protein.faa
 ../../../../genomes/bacteria/GCF_004137085.1_ASM413708v1_protein.faa
 ../../../../genomes/bacteria/GCF_004137235.1_ASM413723v1_protein.faa
@@ -6907,7 +6785,6 @@
 ../../../../genomes/bacteria/GCF_004217215.1_ASM421721v1_protein.faa
 ../../../../genomes/bacteria/GCF_004217225.1_ASM421722v1_protein.faa
 ../../../../genomes/bacteria/GCF_004217445.1_ASM421744v1_protein.faa
-../../../../genomes/bacteria/GCF_004217455.1_ASM421745v1_protein.faa
 ../../../../genomes/bacteria/GCF_004217495.1_ASM421749v1_protein.faa
 ../../../../genomes/bacteria/GCF_004217545.1_ASM421754v1_protein.faa
 ../../../../genomes/bacteria/GCF_004217555.1_ASM421755v1_protein.faa
@@ -6954,7 +6831,6 @@
 ../../../../genomes/bacteria/GCF_004328625.1_ASM432862v1_protein.faa
 ../../../../genomes/bacteria/GCF_004328865.1_ASM432886v1_protein.faa
 ../../../../genomes/bacteria/GCF_004328885.1_ASM432888v1_protein.faa
-../../../../genomes/bacteria/GCF_004329705.1_ASM432970v1_protein.faa
 ../../../../genomes/bacteria/GCF_004329815.1_ASM432981v1_protein.faa
 ../../../../genomes/bacteria/GCF_004331265.1_ASM433126v1_protein.faa
 ../../../../genomes/bacteria/GCF_004331345.1_ASM433134v1_protein.faa
@@ -6991,7 +6867,6 @@
 ../../../../genomes/bacteria/GCF_004339765.1_ASM433976v1_protein.faa
 ../../../../genomes/bacteria/GCF_004339805.1_ASM433980v1_protein.faa
 ../../../../genomes/bacteria/GCF_004340205.1_ASM434020v1_protein.faa
-../../../../genomes/bacteria/GCF_004340525.1_ASM434052v1_protein.faa
 ../../../../genomes/bacteria/GCF_004340665.1_ASM434066v1_protein.faa
 ../../../../genomes/bacteria/GCF_004340685.1_ASM434068v1_protein.faa
 ../../../../genomes/bacteria/GCF_004340805.1_ASM434080v1_protein.faa
@@ -7034,7 +6909,6 @@
 ../../../../genomes/bacteria/GCF_004343155.1_ASM434315v1_protein.faa
 ../../../../genomes/bacteria/GCF_004343195.1_ASM434319v1_protein.faa
 ../../../../genomes/bacteria/GCF_004343255.1_ASM434325v1_protein.faa
-../../../../genomes/bacteria/GCF_004343305.1_ASM434330v1_protein.faa
 ../../../../genomes/bacteria/GCF_004343345.1_ASM434334v1_protein.faa
 ../../../../genomes/bacteria/GCF_004343355.1_ASM434335v1_protein.faa
 ../../../../genomes/bacteria/GCF_004343505.1_ASM434350v1_protein.faa
@@ -7237,7 +7111,6 @@
 ../../../../genomes/bacteria/GCF_004564155.1_ASM456415v1_protein.faa
 ../../../../genomes/bacteria/GCF_004564235.1_ASM456423v1_protein.faa
 ../../../../genomes/bacteria/GCF_004564275.1_ASM456427v1_protein.faa
-../../../../genomes/bacteria/GCF_004564325.1_ASM456432v1_protein.faa
 ../../../../genomes/bacteria/GCF_004564355.1_ASM456435v1_protein.faa
 ../../../../genomes/bacteria/GCF_004564375.1_ASM456437v1_protein.faa
 ../../../../genomes/bacteria/GCF_004564725.1_ASM456472v1_protein.faa
@@ -7328,7 +7201,6 @@
 ../../../../genomes/bacteria/GCF_004795745.1_ASM479574v1_protein.faa
 ../../../../genomes/bacteria/GCF_004797125.1_ASM479712v1_protein.faa
 ../../../../genomes/bacteria/GCF_004798685.1_ASM479868v1_protein.faa
-../../../../genomes/bacteria/GCF_004798725.1_ASM479872v1_protein.faa
 ../../../../genomes/bacteria/GCF_004798905.1_ASM479890v1_protein.faa
 ../../../../genomes/bacteria/GCF_004798935.1_ASM479893v1_protein.faa
 ../../../../genomes/bacteria/GCF_004798965.1_ASM479896v1_protein.faa
@@ -7574,7 +7446,6 @@
 ../../../../genomes/bacteria/GCF_006351925.1_ASM635192v1_protein.faa
 ../../../../genomes/bacteria/GCF_006352475.1_ASM635247v1_protein.faa
 ../../../../genomes/bacteria/GCF_006363815.1_ASM636381v1_protein.faa
-../../../../genomes/bacteria/GCF_006363825.1_ASM636382v1_protein.faa
 ../../../../genomes/bacteria/GCF_006363915.1_ASM636391v1_protein.faa
 ../../../../genomes/bacteria/GCF_006364355.1_ASM636435v1_protein.faa
 ../../../../genomes/bacteria/GCF_006376675.1_ASM637667v1_protein.faa
@@ -7603,12 +7474,10 @@
 ../../../../genomes/bacteria/GCF_006491995.1_ASM649199v1_protein.faa
 ../../../../genomes/bacteria/GCF_006493105.1_ASM649310v1_protein.faa
 ../../../../genomes/bacteria/GCF_006493595.1_ASM649359v1_protein.faa
-../../../../genomes/bacteria/GCF_006494415.1_ASM649441v1_protein.faa
 ../../../../genomes/bacteria/GCF_006494475.1_ASM649447v1_protein.faa
 ../../../../genomes/bacteria/GCF_006494775.1_ASM649477v1_protein.faa
 ../../../../genomes/bacteria/GCF_006494815.1_ASM649481v1_protein.faa
 ../../../../genomes/bacteria/GCF_006503695.1_ASM650369v1_protein.faa
-../../../../genomes/bacteria/GCF_006517175.1_ASM651717v1_protein.faa
 ../../../../genomes/bacteria/GCF_006517625.1_ASM651762v1_protein.faa
 ../../../../genomes/bacteria/GCF_006519715.1_ASM651971v1_protein.faa
 ../../../../genomes/bacteria/GCF_006523545.1_ASM652354v1_protein.faa
@@ -7735,7 +7604,6 @@
 ../../../../genomes/bacteria/GCF_007095465.1_ASM709546v1_protein.faa
 ../../../../genomes/bacteria/GCF_007097545.1_ASM709754v1_protein.faa
 ../../../../genomes/bacteria/GCF_007115095.1_ASM711509v1_protein.faa
-../../../../genomes/bacteria/GCF_007197645.1_ASM719764v1_protein.faa
 ../../../../genomes/bacteria/GCF_007197735.1_ASM719773v1_protein.faa
 ../../../../genomes/bacteria/GCF_007197755.1_ASM719775v1_protein.faa
 ../../../../genomes/bacteria/GCF_007197885.1_ASM719788v1_protein.faa
@@ -7767,7 +7635,6 @@
 ../../../../genomes/bacteria/GCF_007558815.1_ASM755881v1_protein.faa
 ../../../../genomes/bacteria/GCF_007558865.1_ASM755886v1_protein.faa
 ../../../../genomes/bacteria/GCF_007559235.1_ASM755923v1_protein.faa
-../../../../genomes/bacteria/GCF_007559285.1_ASM755928v1_protein.faa
 ../../../../genomes/bacteria/GCF_007559335.1_ASM755933v1_protein.faa
 ../../../../genomes/bacteria/GCF_007567505.1_ASM756750v1_protein.faa
 ../../../../genomes/bacteria/GCF_007570825.1_ASM757082v1_protein.faa
@@ -7833,8 +7700,6 @@
 ../../../../genomes/bacteria/GCF_007795095.1_ASM779509v1_protein.faa
 ../../../../genomes/bacteria/GCF_007827045.1_ASM782704v1_protein.faa
 ../../../../genomes/bacteria/GCF_007827295.1_ASM782729v1_protein.faa
-../../../../genomes/bacteria/GCF_007827425.1_ASM782742v1_protein.faa
-../../../../genomes/bacteria/GCF_007827505.1_ASM782750v1_protein.faa
 ../../../../genomes/bacteria/GCF_007827555.1_ASM782755v1_protein.faa
 ../../../../genomes/bacteria/GCF_007827695.1_ASM782769v1_protein.faa
 ../../../../genomes/bacteria/GCF_007827765.1_ASM782776v1_protein.faa
@@ -7842,7 +7707,6 @@
 ../../../../genomes/bacteria/GCF_007828155.1_ASM782815v1_protein.faa
 ../../../../genomes/bacteria/GCF_007828635.1_ASM782863v1_protein.faa
 ../../../../genomes/bacteria/GCF_007828725.1_ASM782872v1_protein.faa
-../../../../genomes/bacteria/GCF_007828845.1_ASM782884v1_protein.faa
 ../../../../genomes/bacteria/GCF_007828865.1_ASM782886v1_protein.faa
 ../../../../genomes/bacteria/GCF_007828955.1_ASM782895v1_protein.faa
 ../../../../genomes/bacteria/GCF_007829035.1_ASM782903v1_protein.faa
@@ -7880,7 +7744,6 @@
 ../../../../genomes/bacteria/GCF_007830615.1_ASM783061v1_protein.faa
 ../../../../genomes/bacteria/GCF_007830635.1_ASM783063v1_protein.faa
 ../../../../genomes/bacteria/GCF_007830735.1_ASM783073v1_protein.faa
-../../../../genomes/bacteria/GCF_007830875.1_ASM783087v1_protein.faa
 ../../../../genomes/bacteria/GCF_007833675.1_ASM783367v1_protein.faa
 ../../../../genomes/bacteria/GCF_007844155.1_ASM784415v2_protein.faa
 ../../../../genomes/bacteria/GCF_007845595.1_ASM784559v1_protein.faa
@@ -7963,16 +7826,13 @@
 ../../../../genomes/bacteria/GCF_007990635.1_ASM799063v1_protein.faa
 ../../../../genomes/bacteria/GCF_007990755.1_ASM799075v1_protein.faa
 ../../../../genomes/bacteria/GCF_007990775.1_ASM799077v1_protein.faa
-../../../../genomes/bacteria/GCF_007990935.1_ASM799093v1_protein.faa
 ../../../../genomes/bacteria/GCF_007990975.1_ASM799097v1_protein.faa
 ../../../../genomes/bacteria/GCF_007990995.1_ASM799099v1_protein.faa
-../../../../genomes/bacteria/GCF_007991115.1_ASM799111v1_protein.faa
 ../../../../genomes/bacteria/GCF_007991175.1_ASM799117v1_protein.faa
 ../../../../genomes/bacteria/GCF_007991195.1_ASM799119v1_protein.faa
 ../../../../genomes/bacteria/GCF_007991215.1_ASM799121v1_protein.faa
 ../../../../genomes/bacteria/GCF_007991255.1_ASM799125v1_protein.faa
 ../../../../genomes/bacteria/GCF_007991275.1_ASM799127v1_protein.faa
-../../../../genomes/bacteria/GCF_007991295.1_ASM799129v1_protein.faa
 ../../../../genomes/bacteria/GCF_007991335.1_ASM799133v1_protein.faa
 ../../../../genomes/bacteria/GCF_007991355.1_ASM799135v1_protein.faa
 ../../../../genomes/bacteria/GCF_007991375.1_ASM799137v1_protein.faa
@@ -8076,7 +7936,6 @@
 ../../../../genomes/bacteria/GCF_008118345.1_ASM811834v1_protein.faa
 ../../../../genomes/bacteria/GCF_008119665.1_ASM811966v1_protein.faa
 ../../../../genomes/bacteria/GCF_008121405.1_ASM812140v1_protein.faa
-../../../../genomes/bacteria/GCF_008121455.1_ASM812145v1_protein.faa
 ../../../../genomes/bacteria/GCF_008122265.1_ASM812226v1_protein.faa
 ../../../../genomes/bacteria/GCF_008123425.1_ASM812342v1_protein.faa
 ../../../../genomes/bacteria/GCF_008123515.1_ASM812351v1_protein.faa
@@ -8084,7 +7943,6 @@
 ../../../../genomes/bacteria/GCF_008124625.1_ASM812462v1_protein.faa
 ../../../../genomes/bacteria/GCF_008124715.1_ASM812471v1_protein.faa
 ../../../../genomes/bacteria/GCF_008124765.1_ASM812476v1_protein.faa
-../../../../genomes/bacteria/GCF_008124775.1_ASM812477v1_protein.faa
 ../../../../genomes/bacteria/GCF_008124785.1_ASM812478v1_protein.faa
 ../../../../genomes/bacteria/GCF_008124835.1_ASM812483v1_protein.faa
 ../../../../genomes/bacteria/GCF_008124865.1_ASM812486v1_protein.faa
@@ -8137,7 +7995,6 @@
 ../../../../genomes/bacteria/GCF_008520265.1_ASM852026v1_protein.faa
 ../../../../genomes/bacteria/GCF_008571395.1_ASM857139v1_protein.faa
 ../../../../genomes/bacteria/GCF_008572305.1_ASM857230v1_protein.faa
-../../../../genomes/bacteria/GCF_008630015.1_ASM863001v1_protein.faa
 ../../../../genomes/bacteria/GCF_008630065.1_ASM863006v1_protein.faa
 ../../../../genomes/bacteria/GCF_008630155.1_ASM863015v1_protein.faa
 ../../../../genomes/bacteria/GCF_008630535.1_ASM863053v1_protein.faa
@@ -8189,7 +8046,6 @@
 ../../../../genomes/bacteria/GCF_008710705.1_ASM871070v1_protein.faa
 ../../../../genomes/bacteria/GCF_008710745.1_ASM871074v1_protein.faa
 ../../../../genomes/bacteria/GCF_008711145.1_ASM871114v1_protein.faa
-../../../../genomes/bacteria/GCF_008711285.1_ASM871128v1_protein.faa
 ../../../../genomes/bacteria/GCF_008711325.1_ASM871132v1_protein.faa
 ../../../../genomes/bacteria/GCF_008728085.1_ASM872808v1_protein.faa
 ../../../../genomes/bacteria/GCF_008728195.1_ASM872819v1_protein.faa
@@ -8348,7 +8204,6 @@
 ../../../../genomes/bacteria/GCF_009602535.1_ASM960253v1_protein.faa
 ../../../../genomes/bacteria/GCF_009602705.1_ASM960270v1_protein.faa
 ../../../../genomes/bacteria/GCF_009617855.1_ASM961785v1_protein.faa
-../../../../genomes/bacteria/GCF_009617915.1_ASM961791v1_protein.faa
 ../../../../genomes/bacteria/GCF_009627355.1_ASM962735v1_protein.faa
 ../../../../genomes/bacteria/GCF_009646115.1_ASM964611v1_protein.faa
 ../../../../genomes/bacteria/GCF_009646335.1_ASM964633v1_protein.faa
@@ -8443,7 +8298,6 @@
 ../../../../genomes/bacteria/GCF_009734265.1_ASM973426v1_protein.faa
 ../../../../genomes/bacteria/GCF_009734345.1_ASM973434v1_protein.faa
 ../../../../genomes/bacteria/GCF_009735315.1_ASM973531v1_protein.faa
-../../../../genomes/bacteria/GCF_009735555.1_ASM973555v1_protein.faa
 ../../../../genomes/bacteria/GCF_009735585.1_ASM973558v1_protein.faa
 ../../../../genomes/bacteria/GCF_009735625.1_ASM973562v1_protein.faa
 ../../../../genomes/bacteria/GCF_009735645.1_ASM973564v1_protein.faa
@@ -8571,7 +8425,6 @@
 ../../../../genomes/bacteria/GCF_009874335.1_ASM987433v1_protein.faa
 ../../../../genomes/bacteria/GCF_009877425.1_ASM987742v1_protein.faa
 ../../../../genomes/bacteria/GCF_009877435.1_ASM987743v1_protein.faa
-../../../../genomes/bacteria/GCF_009881095.1_ASM988109v1_protein.faa
 ../../../../genomes/bacteria/GCF_009883735.1_ASM988373v1_protein.faa
 ../../../../genomes/bacteria/GCF_009884975.1_ASM988497v1_protein.faa
 ../../../../genomes/bacteria/GCF_009900765.1_ASM990076v1_protein.faa
@@ -8743,7 +8596,6 @@
 ../../../../genomes/bacteria/GCF_010977575.1_ASM1097757v1_protein.faa
 ../../../../genomes/bacteria/GCF_010993745.1_ASM1099374v1_protein.faa
 ../../../../genomes/bacteria/GCF_010993935.1_ASM1099393v1_protein.faa
-../../../../genomes/bacteria/GCF_010994055.1_ASM1099405v1_protein.faa
 ../../../../genomes/bacteria/GCF_010994085.1_ASM1099408v1_protein.faa
 ../../../../genomes/bacteria/GCF_010994095.1_ASM1099409v1_protein.faa
 ../../../../genomes/bacteria/GCF_010994165.1_ASM1099416v1_protein.faa
@@ -8930,7 +8782,6 @@
 ../../../../genomes/bacteria/GCF_012223425.1_ASM1222342v1_protein.faa
 ../../../../genomes/bacteria/GCF_012225885.1_ASM1222588v1_protein.faa
 ../../../../genomes/bacteria/GCF_012241385.1_ASM1224138v1_protein.faa
-../../../../genomes/bacteria/GCF_012241495.1_ASM1224149v1_protein.faa
 ../../../../genomes/bacteria/GCF_012271765.1_ASM1227176v1_protein.faa
 ../../../../genomes/bacteria/GCF_012273015.1_ASM1227301v1_protein.faa
 ../../../../genomes/bacteria/GCF_012273295.1_ASM1227329v1_protein.faa
@@ -8960,7 +8811,6 @@
 ../../../../genomes/bacteria/GCF_012396505.1_ASM1239650v1_protein.faa
 ../../../../genomes/bacteria/GCF_012396535.1_ASM1239653v1_protein.faa
 ../../../../genomes/bacteria/GCF_012396585.1_ASM1239658v1_protein.faa
-../../../../genomes/bacteria/GCF_012396605.1_ASM1239660v1_protein.faa
 ../../../../genomes/bacteria/GCF_012396635.1_ASM1239663v1_protein.faa
 ../../../../genomes/bacteria/GCF_012427705.1_ASM1242770v1_protein.faa
 ../../../../genomes/bacteria/GCF_012427845.1_ASM1242784v1_protein.faa
@@ -8974,13 +8824,11 @@
 ../../../../genomes/bacteria/GCF_012689435.1_ASM1268943v1_protein.faa
 ../../../../genomes/bacteria/GCF_012720095.1_ASM1272009v1_protein.faa
 ../../../../genomes/bacteria/GCF_012720115.1_ASM1272011v1_protein.faa
-../../../../genomes/bacteria/GCF_012720125.1_ASM1272012v1_protein.faa
 ../../../../genomes/bacteria/GCF_012790675.1_ASM1279067v1_protein.faa
 ../../../../genomes/bacteria/GCF_012843505.1_ASM1284350v1_protein.faa
 ../../../../genomes/bacteria/GCF_012844085.1_ASM1284408v1_protein.faa
 ../../../../genomes/bacteria/GCF_012844185.1_ASM1284418v1_protein.faa
 ../../../../genomes/bacteria/GCF_012844305.1_ASM1284430v1_protein.faa
-../../../../genomes/bacteria/GCF_012844565.1_ASM1284456v1_protein.faa
 ../../../../genomes/bacteria/GCF_012863495.1_ASM1286349v1_protein.faa
 ../../../../genomes/bacteria/GCF_012910705.1_ASM1291070v1_protein.faa
 ../../../../genomes/bacteria/GCF_012910785.1_ASM1291078v1_protein.faa
@@ -9001,14 +8849,12 @@
 ../../../../genomes/bacteria/GCF_012931585.1_ASM1293158v1_protein.faa
 ../../../../genomes/bacteria/GCF_012932215.1_ASM1293221v1_protein.faa
 ../../../../genomes/bacteria/GCF_012932565.1_ASM1293256v1_protein.faa
-../../../../genomes/bacteria/GCF_012932875.1_ASM1293287v1_protein.faa
 ../../../../genomes/bacteria/GCF_012933385.1_ASM1293338v1_protein.faa
 ../../../../genomes/bacteria/GCF_012933655.1_ASM1293365v1_protein.faa
 ../../../../genomes/bacteria/GCF_012971725.1_ASM1297172v1_protein.faa
 ../../../../genomes/bacteria/GCF_012979235.1_ASM1297923v1_protein.faa
 ../../../../genomes/bacteria/GCF_012979275.1_ASM1297927v1_protein.faa
 ../../../../genomes/bacteria/GCF_012979535.1_ASM1297953v1_protein.faa
-../../../../genomes/bacteria/GCF_012986145.1_ASM1298614v1_protein.faa
 ../../../../genomes/bacteria/GCF_012986205.1_ASM1298620v1_protein.faa
 ../../../../genomes/bacteria/GCF_012986865.1_ASM1298686v1_protein.faa
 ../../../../genomes/bacteria/GCF_012999515.1_ASM1299951v1_protein.faa
@@ -9053,7 +8899,6 @@
 ../../../../genomes/bacteria/GCF_013179575.1_ASM1317957v1_protein.faa
 ../../../../genomes/bacteria/GCF_013184075.1_ASM1318407v1_protein.faa
 ../../../../genomes/bacteria/GCF_013184735.1_ASM1318473v1_protein.faa
-../../../../genomes/bacteria/GCF_013185185.1_ASM1318518v1_protein.faa
 ../../../../genomes/bacteria/GCF_013185195.1_ASM1318519v1_protein.faa
 ../../../../genomes/bacteria/GCF_013185915.1_ASM1318591v1_protein.faa
 ../../../../genomes/bacteria/GCF_013201605.1_ASM1320160v1_protein.faa
@@ -9083,7 +8928,6 @@
 ../../../../genomes/bacteria/GCF_013265585.1_ASM1326558v1_protein.faa
 ../../../../genomes/bacteria/GCF_013266665.1_ASM1326666v1_protein.faa
 ../../../../genomes/bacteria/GCF_013266765.1_ASM1326676v1_protein.faa
-../../../../genomes/bacteria/GCF_013267215.1_ASM1326721v1_protein.faa
 ../../../../genomes/bacteria/GCF_013267375.1_ASM1326737v1_protein.faa
 ../../../../genomes/bacteria/GCF_013267415.1_ASM1326741v1_protein.faa
 ../../../../genomes/bacteria/GCF_013267435.1_ASM1326743v1_protein.faa
@@ -9131,7 +8975,6 @@
 ../../../../genomes/bacteria/GCF_013358405.1_ASM1335840v1_protein.faa
 ../../../../genomes/bacteria/GCF_013359755.1_ASM1335975v1_protein.faa
 ../../../../genomes/bacteria/GCF_013359775.1_ASM1335977v1_protein.faa
-../../../../genomes/bacteria/GCF_013359795.1_ASM1335979v1_protein.faa
 ../../../../genomes/bacteria/GCF_013359825.1_ASM1335982v1_protein.faa
 ../../../../genomes/bacteria/GCF_013359905.1_ASM1335990v1_protein.faa
 ../../../../genomes/bacteria/GCF_013359935.1_ASM1335993v1_protein.faa
@@ -9196,7 +9039,6 @@
 ../../../../genomes/bacteria/GCF_013404085.1_ASM1340408v1_protein.faa
 ../../../../genomes/bacteria/GCF_013407765.1_ASM1340776v1_protein.faa
 ../../../../genomes/bacteria/GCF_013407805.1_ASM1340780v1_protein.faa
-../../../../genomes/bacteria/GCF_013407835.1_ASM1340783v1_protein.faa
 ../../../../genomes/bacteria/GCF_013407855.1_ASM1340785v1_protein.faa
 ../../../../genomes/bacteria/GCF_013407865.1_ASM1340786v1_protein.faa
 ../../../../genomes/bacteria/GCF_013407905.1_ASM1340790v1_protein.faa
@@ -9231,7 +9073,6 @@
 ../../../../genomes/bacteria/GCF_013409125.2_ASM1340912v2_protein.faa
 ../../../../genomes/bacteria/GCF_013409135.1_ASM1340913v1_protein.faa
 ../../../../genomes/bacteria/GCF_013409205.1_ASM1340920v1_protein.faa
-../../../../genomes/bacteria/GCF_013409225.1_ASM1340922v1_protein.faa
 ../../../../genomes/bacteria/GCF_013409305.1_ASM1340930v1_protein.faa
 ../../../../genomes/bacteria/GCF_013409325.1_ASM1340932v1_protein.faa
 ../../../../genomes/bacteria/GCF_013409345.1_ASM1340934v1_protein.faa
@@ -9244,13 +9085,11 @@
 ../../../../genomes/bacteria/GCF_013409625.1_ASM1340962v1_protein.faa
 ../../../../genomes/bacteria/GCF_013409645.1_ASM1340964v1_protein.faa
 ../../../../genomes/bacteria/GCF_013409745.1_ASM1340974v1_protein.faa
-../../../../genomes/bacteria/GCF_013409775.1_ASM1340977v1_protein.faa
 ../../../../genomes/bacteria/GCF_013409785.1_ASM1340978v1_protein.faa
 ../../../../genomes/bacteria/GCF_013409865.1_ASM1340986v1_protein.faa
 ../../../../genomes/bacteria/GCF_013409875.1_ASM1340987v1_protein.faa
 ../../../../genomes/bacteria/GCF_013409905.1_ASM1340990v1_protein.faa
 ../../../../genomes/bacteria/GCF_013409935.1_ASM1340993v1_protein.faa
-../../../../genomes/bacteria/GCF_013409965.1_ASM1340996v1_protein.faa
 ../../../../genomes/bacteria/GCF_013410065.1_ASM1341006v1_protein.faa
 ../../../../genomes/bacteria/GCF_013410185.1_ASM1341018v1_protein.faa
 ../../../../genomes/bacteria/GCF_013410215.1_ASM1341021v1_protein.faa
@@ -9262,7 +9101,6 @@
 ../../../../genomes/bacteria/GCF_013410445.1_ASM1341044v1_protein.faa
 ../../../../genomes/bacteria/GCF_013410455.1_ASM1341045v1_protein.faa
 ../../../../genomes/bacteria/GCF_013410525.1_ASM1341052v1_protein.faa
-../../../../genomes/bacteria/GCF_013410545.1_ASM1341054v1_protein.faa
 ../../../../genomes/bacteria/GCF_013410565.1_ASM1341056v1_protein.faa
 ../../../../genomes/bacteria/GCF_013410595.1_ASM1341059v1_protein.faa
 ../../../../genomes/bacteria/GCF_013410615.1_ASM1341061v1_protein.faa
@@ -9278,7 +9116,6 @@
 ../../../../genomes/bacteria/GCF_013415125.1_ASM1341512v1_protein.faa
 ../../../../genomes/bacteria/GCF_013415235.1_ASM1341523v1_protein.faa
 ../../../../genomes/bacteria/GCF_013415845.1_ASM1341584v1_protein.faa
-../../../../genomes/bacteria/GCF_013416295.1_ASM1341629v1_protein.faa
 ../../../../genomes/bacteria/GCF_013416545.1_ASM1341654v1_protein.faa
 ../../../../genomes/bacteria/GCF_013416885.1_ASM1341688v1_protein.faa
 ../../../../genomes/bacteria/GCF_013421525.1_ASM1342152v1_protein.faa
@@ -9298,8 +9135,6 @@
 ../../../../genomes/bacteria/GCF_013607875.1_ASM1360787v1_protein.faa
 ../../../../genomes/bacteria/GCF_013618475.1_ASM1361847v1_protein.faa
 ../../../../genomes/bacteria/GCF_013618545.1_ASM1361854v1_protein.faa
-../../../../genomes/bacteria/GCF_013618915.1_ASM1361891v1_protein.faa
-../../../../genomes/bacteria/GCF_013618945.1_ASM1361894v1_protein.faa
 ../../../../genomes/bacteria/GCF_013623835.1_ASM1362383v1_protein.faa
 ../../../../genomes/bacteria/GCF_013623905.1_ASM1362390v1_protein.faa
 ../../../../genomes/bacteria/GCF_013626205.1_ASM1362620v1_protein.faa
@@ -9393,7 +9228,6 @@
 ../../../../genomes/bacteria/GCF_014191055.1_ASM1419105v1_protein.faa
 ../../../../genomes/bacteria/GCF_014191235.1_ASM1419123v1_protein.faa
 ../../../../genomes/bacteria/GCF_014191245.1_ASM1419124v1_protein.faa
-../../../../genomes/bacteria/GCF_014191255.1_ASM1419125v1_protein.faa
 ../../../../genomes/bacteria/GCF_014191305.1_ASM1419130v1_protein.faa
 ../../../../genomes/bacteria/GCF_014191425.1_ASM1419142v1_protein.faa
 ../../../../genomes/bacteria/GCF_014191495.1_ASM1419149v1_protein.faa
@@ -9423,7 +9257,6 @@
 ../../../../genomes/bacteria/GCF_014192415.1_ASM1419241v1_protein.faa
 ../../../../genomes/bacteria/GCF_014192475.1_ASM1419247v1_protein.faa
 ../../../../genomes/bacteria/GCF_014192515.1_ASM1419251v1_protein.faa
-../../../../genomes/bacteria/GCF_014192995.1_ASM1419299v1_protein.faa
 ../../../../genomes/bacteria/GCF_014193375.1_ASM1419337v1_protein.faa
 ../../../../genomes/bacteria/GCF_014193425.1_ASM1419342v1_protein.faa
 ../../../../genomes/bacteria/GCF_014193515.1_ASM1419351v1_protein.faa
@@ -9446,12 +9279,10 @@
 ../../../../genomes/bacteria/GCF_014196125.1_ASM1419612v1_protein.faa
 ../../../../genomes/bacteria/GCF_014196195.1_ASM1419619v1_protein.faa
 ../../../../genomes/bacteria/GCF_014196205.1_ASM1419620v1_protein.faa
-../../../../genomes/bacteria/GCF_014196255.1_ASM1419625v1_protein.faa
 ../../../../genomes/bacteria/GCF_014196295.1_ASM1419629v1_protein.faa
 ../../../../genomes/bacteria/GCF_014196305.1_ASM1419630v1_protein.faa
 ../../../../genomes/bacteria/GCF_014196335.1_ASM1419633v1_protein.faa
 ../../../../genomes/bacteria/GCF_014196345.1_ASM1419634v1_protein.faa
-../../../../genomes/bacteria/GCF_014196395.1_ASM1419639v1_protein.faa
 ../../../../genomes/bacteria/GCF_014196425.1_ASM1419642v1_protein.faa
 ../../../../genomes/bacteria/GCF_014196455.1_ASM1419645v1_protein.faa
 ../../../../genomes/bacteria/GCF_014196495.1_ASM1419649v1_protein.faa
@@ -9487,7 +9318,6 @@
 ../../../../genomes/bacteria/GCF_014197445.1_ASM1419744v1_protein.faa
 ../../../../genomes/bacteria/GCF_014197665.1_ASM1419766v1_protein.faa
 ../../../../genomes/bacteria/GCF_014197755.1_ASM1419775v1_protein.faa
-../../../../genomes/bacteria/GCF_014197785.1_ASM1419778v1_protein.faa
 ../../../../genomes/bacteria/GCF_014197795.1_ASM1419779v1_protein.faa
 ../../../../genomes/bacteria/GCF_014197805.1_ASM1419780v1_protein.faa
 ../../../../genomes/bacteria/GCF_014197915.1_ASM1419791v1_protein.faa
@@ -9524,7 +9354,6 @@
 ../../../../genomes/bacteria/GCF_014200235.1_ASM1420023v1_protein.faa
 ../../../../genomes/bacteria/GCF_014200295.1_ASM1420029v1_protein.faa
 ../../../../genomes/bacteria/GCF_014200305.1_ASM1420030v1_protein.faa
-../../../../genomes/bacteria/GCF_014200395.1_ASM1420039v1_protein.faa
 ../../../../genomes/bacteria/GCF_014200405.1_ASM1420040v1_protein.faa
 ../../../../genomes/bacteria/GCF_014200435.1_ASM1420043v1_protein.faa
 ../../../../genomes/bacteria/GCF_014200505.1_ASM1420050v1_protein.faa
@@ -9581,7 +9410,6 @@
 ../../../../genomes/bacteria/GCF_014202705.1_ASM1420270v1_protein.faa
 ../../../../genomes/bacteria/GCF_014202755.1_ASM1420275v1_protein.faa
 ../../../../genomes/bacteria/GCF_014202765.1_ASM1420276v1_protein.faa
-../../../../genomes/bacteria/GCF_014202815.1_ASM1420281v1_protein.faa
 ../../../../genomes/bacteria/GCF_014202825.1_ASM1420282v1_protein.faa
 ../../../../genomes/bacteria/GCF_014202895.1_ASM1420289v1_protein.faa
 ../../../../genomes/bacteria/GCF_014202905.1_ASM1420290v1_protein.faa
@@ -9713,7 +9541,6 @@
 ../../../../genomes/bacteria/GCF_014230465.1_ASM1423046v1_protein.faa
 ../../../../genomes/bacteria/GCF_014243395.1_ASM1424339v1_protein.faa
 ../../../../genomes/bacteria/GCF_014243445.1_ASM1424344v1_protein.faa
-../../../../genomes/bacteria/GCF_014252945.1_ASM1425294v1_protein.faa
 ../../../../genomes/bacteria/GCF_014253025.1_ASM1425302v1_protein.faa
 ../../../../genomes/bacteria/GCF_014263315.1_ASM1426331v1_protein.faa
 ../../../../genomes/bacteria/GCF_014269345.1_ASM1426934v1_protein.faa
@@ -9788,7 +9615,6 @@
 ../../../../genomes/bacteria/GCF_014623485.1_ASM1462348v1_protein.faa
 ../../../../genomes/bacteria/GCF_014634745.1_ASM1463474v1_protein.faa
 ../../../../genomes/bacteria/GCF_014634865.1_ASM1463486v1_protein.faa
-../../../../genomes/bacteria/GCF_014634985.1_ASM1463498v1_protein.faa
 ../../../../genomes/bacteria/GCF_014635025.1_ASM1463502v1_protein.faa
 ../../../../genomes/bacteria/GCF_014635065.1_ASM1463506v1_protein.faa
 ../../../../genomes/bacteria/GCF_014635085.1_ASM1463508v1_protein.faa
@@ -9878,7 +9704,6 @@
 ../../../../genomes/bacteria/GCF_014640655.1_ASM1464065v1_protein.faa
 ../../../../genomes/bacteria/GCF_014640675.1_ASM1464067v1_protein.faa
 ../../../../genomes/bacteria/GCF_014640815.1_ASM1464081v1_protein.faa
-../../../../genomes/bacteria/GCF_014640905.1_ASM1464090v1_protein.faa
 ../../../../genomes/bacteria/GCF_014640975.1_ASM1464097v1_protein.faa
 ../../../../genomes/bacteria/GCF_014641075.1_ASM1464107v1_protein.faa
 ../../../../genomes/bacteria/GCF_014641195.1_ASM1464119v1_protein.faa
@@ -9986,7 +9811,6 @@
 ../../../../genomes/bacteria/GCF_014646815.1_ASM1464681v1_protein.faa
 ../../../../genomes/bacteria/GCF_014646895.1_ASM1464689v1_protein.faa
 ../../../../genomes/bacteria/GCF_014646915.1_ASM1464691v1_protein.faa
-../../../../genomes/bacteria/GCF_014646935.1_ASM1464693v1_protein.faa
 ../../../../genomes/bacteria/GCF_014646995.1_ASM1464699v1_protein.faa
 ../../../../genomes/bacteria/GCF_014647015.1_ASM1464701v1_protein.faa
 ../../../../genomes/bacteria/GCF_014647035.1_ASM1464703v1_protein.faa
@@ -10027,7 +9851,6 @@
 ../../../../genomes/bacteria/GCF_014648275.1_ASM1464827v1_protein.faa
 ../../../../genomes/bacteria/GCF_014648295.1_ASM1464829v1_protein.faa
 ../../../../genomes/bacteria/GCF_014648315.1_ASM1464831v1_protein.faa
-../../../../genomes/bacteria/GCF_014648335.1_ASM1464833v1_protein.faa
 ../../../../genomes/bacteria/GCF_014648355.1_ASM1464835v1_protein.faa
 ../../../../genomes/bacteria/GCF_014648375.1_ASM1464837v1_protein.faa
 ../../../../genomes/bacteria/GCF_014648395.1_ASM1464839v1_protein.faa
@@ -10038,7 +9861,6 @@
 ../../../../genomes/bacteria/GCF_014648515.1_ASM1464851v1_protein.faa
 ../../../../genomes/bacteria/GCF_014648575.1_ASM1464857v1_protein.faa
 ../../../../genomes/bacteria/GCF_014648595.1_ASM1464859v1_protein.faa
-../../../../genomes/bacteria/GCF_014648615.1_ASM1464861v1_protein.faa
 ../../../../genomes/bacteria/GCF_014648635.1_ASM1464863v1_protein.faa
 ../../../../genomes/bacteria/GCF_014648655.1_ASM1464865v1_protein.faa
 ../../../../genomes/bacteria/GCF_014648695.1_ASM1464869v1_protein.faa
@@ -10173,7 +9995,6 @@
 ../../../../genomes/bacteria/GCF_014652675.1_ASM1465267v1_protein.faa
 ../../../../genomes/bacteria/GCF_014652695.1_ASM1465269v1_protein.faa
 ../../../../genomes/bacteria/GCF_014652715.1_ASM1465271v1_protein.faa
-../../../../genomes/bacteria/GCF_014652775.1_ASM1465277v1_protein.faa
 ../../../../genomes/bacteria/GCF_014652795.1_ASM1465279v1_protein.faa
 ../../../../genomes/bacteria/GCF_014652815.1_ASM1465281v1_protein.faa
 ../../../../genomes/bacteria/GCF_014652835.1_ASM1465283v1_protein.faa
@@ -10208,7 +10029,6 @@
 ../../../../genomes/bacteria/GCF_014655715.1_ASM1465571v1_protein.faa
 ../../../../genomes/bacteria/GCF_014655855.1_ASM1465585v1_protein.faa
 ../../../../genomes/bacteria/GCF_014655955.1_ASM1465595v1_protein.faa
-../../../../genomes/bacteria/GCF_014656035.1_ASM1465603v1_protein.faa
 ../../../../genomes/bacteria/GCF_014656055.1_ASM1465605v1_protein.faa
 ../../../../genomes/bacteria/GCF_014656075.1_ASM1465607v1_protein.faa
 ../../../../genomes/bacteria/GCF_014656095.1_ASM1465609v1_protein.faa
@@ -10306,7 +10126,6 @@
 ../../../../genomes/bacteria/GCF_014874065.1_ASM1487406v1_protein.faa
 ../../../../genomes/bacteria/GCF_014874095.1_ASM1487409v1_protein.faa
 ../../../../genomes/bacteria/GCF_014874165.1_ASM1487416v1_protein.faa
-../../../../genomes/bacteria/GCF_014875845.1_ASM1487584v1_protein.faa
 ../../../../genomes/bacteria/GCF_014878255.1_ASM1487825v1_protein.faa
 ../../../../genomes/bacteria/GCF_014883105.1_ASM1488310v1_protein.faa
 ../../../../genomes/bacteria/GCF_014884185.1_ASM1488418v1_protein.faa
@@ -10329,7 +10148,6 @@
 ../../../../genomes/bacteria/GCF_014982515.1_ASM1498251v1_protein.faa
 ../../../../genomes/bacteria/GCF_015069875.1_ASM1506987v1_protein.faa
 ../../../../genomes/bacteria/GCF_015070375.1_ASM1507037v1_protein.faa
-../../../../genomes/bacteria/GCF_015070765.1_ASM1507076v1_protein.faa
 ../../../../genomes/bacteria/GCF_015071205.1_ASM1507120v1_protein.faa
 ../../../../genomes/bacteria/GCF_015074805.1_ASM1507480v1_protein.faa
 ../../../../genomes/bacteria/GCF_015143395.1_ASM1514339v1_protein.faa
@@ -10404,7 +10222,6 @@
 ../../../../genomes/bacteria/GCF_015565955.1_ASM1556595v1_protein.faa
 ../../../../genomes/bacteria/GCF_015582655.1_ASM1558265v1_protein.faa
 ../../../../genomes/bacteria/GCF_015594485.1_ASM1559448v1_protein.faa
-../../../../genomes/bacteria/GCF_015645455.1_ASM1564545v1_protein.faa
 ../../../../genomes/bacteria/GCF_015645465.1_ASM1564546v1_protein.faa
 ../../../../genomes/bacteria/GCF_015654285.1_ASM1565428v1_protein.faa
 ../../../../genomes/bacteria/GCF_015668515.1_ASM1566851v1_protein.faa
@@ -10473,7 +10290,6 @@
 ../../../../genomes/bacteria/GCF_900010755.1_Pseudoclavibacter_helvolus_strain_W3_protein.faa
 ../../../../genomes/bacteria/GCF_900015005.1_Lactobacillus_oligofermentans_LMG_22743_genome_protein.faa
 ../../../../genomes/bacteria/GCF_900015215.1_CRIB_assembly_V1_protein.faa
-../../../../genomes/bacteria/GCF_900018365.1_IMG-taxon_2615840617_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900018785.1_Xanthomonas_massiliensis_protein.faa
 ../../../../genomes/bacteria/GCF_900019265.1_BN2475-7296_protein.faa
 ../../../../genomes/bacteria/GCF_900021165.1_Paenibacillus_phoceensis_protein.faa
@@ -10561,16 +10377,13 @@
 ../../../../genomes/bacteria/GCF_900094585.1_IMG-taxon_2615840698_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900094605.1_IMG-taxon_2617270735_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900094625.1_IMG-taxon_2615840624_annotated_assembly_protein.faa
-../../../../genomes/bacteria/GCF_900094765.1_IMG-taxon_2615840625_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900094795.1_IMG-taxon_2616644846_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900094835.1_IMG-taxon_2615840608_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900094885.1_IMG-taxon_2616644832_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900094925.1_IMG-taxon_2617270737_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900094935.1_IMG-taxon_2617270738_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900094945.1_IMG-taxon_2617270739_annotated_assembly_protein.faa
-../../../../genomes/bacteria/GCF_900094955.1_IMG-taxon_2616645019_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900094965.1_IMG-taxon_2616644833_annotated_assembly_protein.faa
-../../../../genomes/bacteria/GCF_900094975.1_IMG-taxon_2617270721_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900095025.1_IMG-taxon_2671180230_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900095135.1_M36_protein.faa
 ../../../../genomes/bacteria/GCF_900095155.1_BR141012304v1_protein.faa
@@ -10587,11 +10400,9 @@
 ../../../../genomes/bacteria/GCF_900096675.1_R.p.6600698_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900096715.1_TFUB22_protein.faa
 ../../../../genomes/bacteria/GCF_900096765.1_PPGSP_Eae1_chr_protein.faa
-../../../../genomes/bacteria/GCF_900096885.1_IMG-taxon_2616644834_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900096895.1_IMG-taxon_2671180219_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900096905.1_IMG-taxon_2671180221_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900096915.1_IMG-taxon_2671180220_annotated_assembly_protein.faa
-../../../../genomes/bacteria/GCF_900096925.1_IMG-taxon_2616645037_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900096945.1_IMG-taxon_2675903067_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900096955.1_IMG-taxon_2671180229_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900096965.1_IMG-taxon_2671180223_annotated_assembly_protein.faa
@@ -10676,7 +10487,6 @@
 ../../../../genomes/bacteria/GCF_900101165.1_IMG-taxon_2619619006_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900101185.1_IMG-taxon_2636416191_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900101285.1_IMG-taxon_2599185176_annotated_assembly_protein.faa
-../../../../genomes/bacteria/GCF_900101365.1_IMG-taxon_2596583511_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900101385.1_IMG-taxon_2675903149_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900101395.1_IMG-taxon_2619619035_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900101415.1_IMG-taxon_2636416187_annotated_assembly_protein.faa
@@ -10737,7 +10547,6 @@
 ../../../../genomes/bacteria/GCF_900102625.1_IMG-taxon_2615840716_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900102665.1_IMG-taxon_2663763601_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900102685.1_IMG-taxon_2615840705_annotated_assembly_protein.faa
-../../../../genomes/bacteria/GCF_900102695.1_IMG-taxon_2595699009_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900102725.1_IMG-taxon_2634166280_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900102745.1_IMG-taxon_2602042050_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900102815.1_IMG-taxon_2671180087_annotated_assembly_protein.faa
@@ -10751,7 +10560,6 @@
 ../../../../genomes/bacteria/GCF_900102945.1_IMG-taxon_2599185144_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900103005.1_IMG-taxon_2599185234_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900103035.1_NSMM_protein.faa
-../../../../genomes/bacteria/GCF_900103065.1_IMG-taxon_2599185148_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900103085.1_LMG29880_protein.faa
 ../../../../genomes/bacteria/GCF_900103135.1_IMG-taxon_2639762507_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900103185.1_IMG-taxon_2622736527_annotated_assembly_protein.faa
@@ -10801,7 +10609,6 @@
 ../../../../genomes/bacteria/GCF_900104245.1_IMG-taxon_2596583643_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900104265.1_IMG-taxon_2663762796_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900104305.1_IMG-taxon_2617270918_annotated_assembly_protein.faa
-../../../../genomes/bacteria/GCF_900104315.1_IMG-taxon_2634166551_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900104365.1_IMG-taxon_2639762715_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900104415.1_IMG-taxon_2593339221_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900104445.1_IMG-taxon_2596583525_annotated_assembly_protein.faa
@@ -10846,7 +10653,6 @@
 ../../../../genomes/bacteria/GCF_900105155.1_IMG-taxon_2663762789_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900105165.1_IMG-taxon_2667528181_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900105185.1_IMG-taxon_2667528183_annotated_assembly_protein.faa
-../../../../genomes/bacteria/GCF_900105195.1_IMG-taxon_2630969012_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900105255.1_IMG-taxon_2675902958_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900105315.1_IMG-taxon_2634166531_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900105335.1_IMG-taxon_2634166897_annotated_assembly_protein.faa
@@ -10926,7 +10732,6 @@
 ../../../../genomes/bacteria/GCF_900107275.1_IMG-taxon_2675903024_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900107285.1_IMG-taxon_2675903034_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900107355.1_IMG-taxon_2693429861_annotated_assembly_protein.faa
-../../../../genomes/bacteria/GCF_900107385.1_IMG-taxon_2671180235_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900107405.1_IMG-taxon_2651870111_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900107415.1_IMG-taxon_2693429889_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900107435.1_IMG-taxon_2667527392_annotated_assembly_protein.faa
@@ -10973,13 +10778,11 @@
 ../../../../genomes/bacteria/GCF_900108395.1_IMG-taxon_2596583585_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900108405.1_IMG-taxon_2617270733_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900108425.1_Tibet_protein.faa
-../../../../genomes/bacteria/GCF_900108455.1_IMG-taxon_2600254955_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900108475.1_IMG-taxon_2597490343_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900108485.1_IMG-taxon_2599185208_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900108515.1_IMG-taxon_2651870103_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900108535.1_IMG-taxon_2675902960_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900108565.1_IMG-taxon_2636415969_annotated_assembly_protein.faa
-../../../../genomes/bacteria/GCF_900108585.1_IMG-taxon_2634166369_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900108595.1_IMG-taxon_2667527230_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900108855.1_IMG-taxon_2622736476_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900108915.1_IMG-taxon_2675903151_annotated_assembly_protein.faa
@@ -11100,7 +10903,6 @@
 ../../../../genomes/bacteria/GCF_900111775.1_ASM90011177v1_protein.faa
 ../../../../genomes/bacteria/GCF_900111785.1_IMG-taxon_2617270913_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900111795.1_IMG-taxon_2654588147_annotated_assembly_protein.faa
-../../../../genomes/bacteria/GCF_900111805.1_IMG-taxon_2693429870_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900111815.1_PRJEB17078_protein.faa
 ../../../../genomes/bacteria/GCF_900111865.1_IMG-taxon_2654588109_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900111875.1_IMG-taxon_2687453774_annotated_assembly_protein.faa
@@ -11159,7 +10961,6 @@
 ../../../../genomes/bacteria/GCF_900113035.1_IMG-taxon_2634166330_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900113045.1_IMG-taxon_2636415974_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900113055.1_IMG-taxon_2622736429_annotated_assembly_protein.faa
-../../../../genomes/bacteria/GCF_900113065.1_IMG-taxon_2654587881_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900113085.1_IMG-taxon_2622736503_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900113125.1_IMG-taxon_2654587900_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900113135.1_IMG-taxon_2622736526_annotated_assembly_protein.faa
@@ -11187,12 +10988,10 @@
 ../../../../genomes/bacteria/GCF_900113695.1_IMG-taxon_2667527406_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900113745.1_IMG-taxon_2667527413_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900113805.1_IMG-taxon_2684622856_annotated_assembly_protein.faa
-../../../../genomes/bacteria/GCF_900113825.1_IMG-taxon_2671180118_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900113865.1_IMG-taxon_2667527412_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900113875.1_IMG-taxon_2622736536_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900113905.1_IMG-taxon_2671180085_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900113935.1_IMG-taxon_2595699008_annotated_assembly_protein.faa
-../../../../genomes/bacteria/GCF_900113945.1_IMG-taxon_2684622849_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900113955.1_IMG-taxon_2617270870_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900113965.1_IMG-taxon_2606217736_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900114005.1_IMG-taxon_2693429874_annotated_assembly_protein.faa
@@ -11301,12 +11100,10 @@
 ../../../../genomes/bacteria/GCF_900116565.1_IMG-taxon_2600255258_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900116575.1_IMG-taxon_2693429873_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900116615.1_IMG-taxon_2639762564_annotated_assembly_protein.faa
-../../../../genomes/bacteria/GCF_900116625.1_IMG-taxon_2642422567_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900116635.1_IMG-taxon_2684622845_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900116645.1_IMG-taxon_2671180040_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900116665.1_IMG-taxon_2663762752_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900116705.1_IMG-taxon_2617270784_annotated_assembly_protein.faa
-../../../../genomes/bacteria/GCF_900116765.1_IMG-taxon_2675903158_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900116805.1_IMG-taxon_2675903231_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900116825.1_IMG-taxon_2634166357_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900116905.1_IMG-taxon_2617270780_annotated_assembly_protein.faa
@@ -11352,15 +11149,12 @@
 ../../../../genomes/bacteria/GCF_900128995.1_IMG-taxon_2695420928_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900129025.1_IMG-taxon_2695420943_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900129035.1_IMG-taxon_2695420935_annotated_assembly_protein.faa
-../../../../genomes/bacteria/GCF_900129045.1_IMG-taxon_2563366502_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900129055.1_IMG-taxon_2582581266_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900129065.1_IMG-taxon_2695420934_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900129075.1_IMG-taxon_2582581265_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900129085.1_IMG-taxon_2582581273_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900129095.1_IMG-taxon_2619618825_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900129115.1_IMG-taxon_2582581276_annotated_assembly_protein.faa
-../../../../genomes/bacteria/GCF_900129125.1_IMG-taxon_2582581264_annotated_assembly_protein.faa
-../../../../genomes/bacteria/GCF_900129135.1_IMG-taxon_2585428044_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900129155.1_IMG-taxon_2582581270_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900129175.1_IMG-taxon_2585428042_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900129185.1_IMG-taxon_2582581274_annotated_assembly_protein.faa
@@ -11427,7 +11221,6 @@
 ../../../../genomes/bacteria/GCF_900130115.1_PRJEB18266_protein.faa
 ../../../../genomes/bacteria/GCF_900130125.1_PRJEB18268_protein.faa
 ../../../../genomes/bacteria/GCF_900130135.1_PRJEB18269_protein.faa
-../../../../genomes/bacteria/GCF_900141625.1_IMG-taxon_2698536695_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900141715.1_IMG-taxon_2667528186_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900141735.1_IMG-taxon_2695421046_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900141765.1_IMG-taxon_2695421044_annotated_assembly_protein.faa
@@ -11519,7 +11312,6 @@
 ../../../../genomes/bacteria/GCF_900143195.1_501571.5_protein.faa
 ../../../../genomes/bacteria/GCF_900143205.1_IMG-taxon_2582580726_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900143235.1_IMG-taxon_2582580729_annotated_assembly_protein.faa
-../../../../genomes/bacteria/GCF_900143245.1_IMG-taxon_2695420925_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900143255.1_IMG-taxon_2582580730_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900143265.1_IMG-taxon_2582580731_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900143275.1_IMG-taxon_2588253501_annotated_assembly_protein.faa
@@ -11562,7 +11354,6 @@
 ../../../../genomes/bacteria/GCF_900155985.1_IMG-taxon_2681813549_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900156065.1_IMG-taxon_2681813563_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900156105.1_IMG-taxon_2706795025_annotated_assembly_protein.faa
-../../../../genomes/bacteria/GCF_900156125.1_IMG-taxon_2708742528_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900156155.1_IMG-taxon_2681812808_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900156225.1_IMG-taxon_2681812864_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900156255.1_IMG-taxon_2681812813_annotated_assembly_protein.faa
@@ -11575,7 +11366,6 @@
 ../../../../genomes/bacteria/GCF_900156505.1_IMG-taxon_2681812930_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900156525.1_IMG-taxon_2681812934_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900156535.1_IMG-taxon_2681812935_annotated_assembly_protein.faa
-../../../../genomes/bacteria/GCF_900156575.1_IMG-taxon_2681813504_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900156595.1_IMG-taxon_2681813506_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900156605.1_IMG-taxon_2681813507_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900156625.1_IMG-taxon_2681813510_annotated_assembly_protein.faa
@@ -11584,9 +11374,7 @@
 ../../../../genomes/bacteria/GCF_900156655.1_IMG-taxon_2681813516_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900156665.1_IMG-taxon_2681813517_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900156675.1_IMG-taxon_2681813515_annotated_assembly_protein.faa
-../../../../genomes/bacteria/GCF_900156685.1_IMG-taxon_2681813514_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900156705.1_IMG-taxon_2681813520_annotated_assembly_protein.faa
-../../../../genomes/bacteria/GCF_900156715.1_IMG-taxon_2681813519_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900156725.1_IMG-taxon_2681813521_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900156735.1_IMG-taxon_2681813509_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900156755.1_IMG-taxon_2681813550_annotated_assembly_protein.faa
@@ -11750,7 +11538,6 @@
 ../../../../genomes/bacteria/GCF_900182595.1_IMG-taxon_2724679782_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900182605.1_IMG-taxon_2724679709_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900182615.1_IMG-taxon_2724679780_annotated_assembly_protein.faa
-../../../../genomes/bacteria/GCF_900182645.1_IMG-taxon_2724679687_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900182655.1_IMG-taxon_2724679795_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900182685.1_IMG-taxon_2724679793_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900182695.1_IMG-taxon_2724679710_annotated_assembly_protein.faa
@@ -11813,7 +11600,6 @@
 ../../../../genomes/bacteria/GCF_900187315.1_52087_C01_protein.faa
 ../../../../genomes/bacteria/GCF_900187325.1_PRJEB20996_protein.faa
 ../../../../genomes/bacteria/GCF_900187355.1_51342_E02_protein.faa
-../../../../genomes/bacteria/GCF_900187365.1_IMG-taxon_2724679731_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900187375.1_IMG-taxon_2728369218_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900187395.1_IMG-taxon_2734482797_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900187855.1_PRJEB20853_protein.faa
@@ -11835,7 +11621,6 @@
 ../../../../genomes/bacteria/GCF_900188145.1_IMG-taxon_2706794911_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900188155.1_IMG-taxon_2671180091_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900188165.1_IMG-taxon_2706794917_annotated_assembly_protein.faa
-../../../../genomes/bacteria/GCF_900188175.1_IMG-taxon_2706794922_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900188185.1_IMG-taxon_2706795027_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900188205.1_IMG-taxon_2622736631_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900188225.1_IMG-taxon_2622736540_annotated_assembly_protein.faa
@@ -11858,7 +11643,6 @@
 ../../../../genomes/bacteria/GCF_900188485.1_IMG-taxon_2675903059_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900197575.1_IMG-taxon_2690315601_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900197685.1_427351_3_protein.faa
-../../../../genomes/bacteria/GCF_900197775.1_56878_6_protein.faa
 ../../../../genomes/bacteria/GCF_900197855.1_329937_4_protein.faa
 ../../../../genomes/bacteria/GCF_900197875.1_FRACA_ARgP5_protein.faa
 ../../../../genomes/bacteria/GCF_900198195.1_Tjejuense_V1_protein.faa
@@ -11907,8 +11691,6 @@
 ../../../../genomes/bacteria/GCF_900217795.1_IMG-taxon_2740891832_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900217815.1_IMG-taxon_2739368070_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900217905.1_IMG-taxon_2740891819_annotated_assembly_protein.faa
-../../../../genomes/bacteria/GCF_900218015.1_IMG-taxon_2740891836_annotated_assembly_protein.faa
-../../../../genomes/bacteria/GCF_900218025.1_IMG-taxon_2724679791_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900218035.1_IMG-taxon_2596583532_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900220965.1_IMG-taxon_2740891860_annotated_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_900220975.1_IMG-taxon_2740891857_annotated_assembly_protein.faa
@@ -12005,7 +11787,6 @@
 ../../../../genomes/bacteria/GCF_900445535.1_57948_H01_protein.faa
 ../../../../genomes/bacteria/GCF_900445655.1_51184_H02_protein.faa
 ../../../../genomes/bacteria/GCF_900445875.1_55312_A01_protein.faa
-../../../../genomes/bacteria/GCF_900445945.1_52067_A01_protein.faa
 ../../../../genomes/bacteria/GCF_900445995.1_48290_B02_protein.faa
 ../../../../genomes/bacteria/GCF_900446125.1_57572_C01_protein.faa
 ../../../../genomes/bacteria/GCF_900446395.1_55609_G01_protein.faa
@@ -12079,12 +11860,9 @@
 ../../../../genomes/bacteria/GCF_900455935.1_50624_C01_protein.faa
 ../../../../genomes/bacteria/GCF_900456835.1_57530_C01_protein.faa
 ../../../../genomes/bacteria/GCF_900457115.1_59352_D01_protein.faa
-../../../../genomes/bacteria/GCF_900457375.1_41556_H01_protein.faa
 ../../../../genomes/bacteria/GCF_900457435.1_43295_C02_protein.faa
-../../../../genomes/bacteria/GCF_900458195.1_41315_F01_protein.faa
 ../../../../genomes/bacteria/GCF_900458355.1_50305_E01_protein.faa
 ../../../../genomes/bacteria/GCF_900458435.1_50279_A02_protein.faa
-../../../../genomes/bacteria/GCF_900458545.1_42197_D02_protein.faa
 ../../../../genomes/bacteria/GCF_900458665.1_50305_H01_protein.faa
 ../../../../genomes/bacteria/GCF_900458695.1_50305_G01_protein.faa
 ../../../../genomes/bacteria/GCF_900458705.1_50432_E01_protein.faa
@@ -12095,7 +11873,6 @@
 ../../../../genomes/bacteria/GCF_900459365.1_45296_H02_protein.faa
 ../../../../genomes/bacteria/GCF_900459405.1_41965_B01_protein.faa
 ../../../../genomes/bacteria/GCF_900459445.1_44927_G01_protein.faa
-../../../../genomes/bacteria/GCF_900459485.1_44738_A02_protein.faa
 ../../../../genomes/bacteria/GCF_900460135.1_41686_D01_protein.faa
 ../../../../genomes/bacteria/GCF_900460155.1_52700_E01_protein.faa
 ../../../../genomes/bacteria/GCF_900460175.1_50592_A01_protein.faa
@@ -12160,7 +11937,6 @@
 ../../../../genomes/bacteria/GCF_900537995.1_Roseburia_intestinalis_strain_L1-82_protein.faa
 ../../../../genomes/bacteria/GCF_900538055.1_ERZ1024078_protein.faa
 ../../../../genomes/bacteria/GCF_900538275.1_PRJNA448822_chromosome_protein.faa
-../../../../genomes/bacteria/GCF_900560965.1_PPRCHA0_protein.faa
 ../../../../genomes/bacteria/GCF_900566055.1_LAUMK13_protein.faa
 ../../../../genomes/bacteria/GCF_900566065.1_LAUMK136_protein.faa
 ../../../../genomes/bacteria/GCF_900566075.1_MK142_protein.faa
@@ -12255,7 +12031,6 @@
 ../../../../genomes/bacteria/GCF_900639875.1_Leg_impletisoli_OA1-1.v1_protein.faa
 ../../../../genomes/bacteria/GCF_900639915.1_Leg_nagasakiensis_JCM_15315.v1_protein.faa
 ../../../../genomes/bacteria/GCF_900639985.1_Leg_rowbothamii_LLAP6.v1_protein.faa
-../../../../genomes/bacteria/GCF_900640015.1_Leg_rubrilucens_WA-270A-C2.v1_protein.faa
 ../../../../genomes/bacteria/GCF_900640035.1_Leg_tucsonensis_1087-AZ-H.v1_protein.faa
 ../../../../genomes/bacteria/GCF_900640075.1_Leg_drozanskii_LLAP-1.v1_protein.faa
 ../../../../genomes/bacteria/GCF_900640115.1_Leg_yabuuchiae_OA1-2.v1_protein.faa
@@ -12305,8 +12080,6 @@
 ../../../../genomes/bacteria/GCF_901544385.1_42912_F01_protein.faa
 ../../../../genomes/bacteria/GCF_901553735.1_41965_D01_protein.faa
 ../../../../genomes/bacteria/GCF_901687125.1_Actino_spades_protein.faa
-../../../../genomes/bacteria/GCF_901764975.1_5970_8_11_v2_protein.faa
-../../../../genomes/bacteria/GCF_901764995.1_5970_8_10_v2_protein.faa
 ../../../../genomes/bacteria/GCF_901905185.1_MicrobesNG_protein.faa
 ../../../../genomes/bacteria/GCF_902141825.1_CECT_9533_protein.faa
 ../../../../genomes/bacteria/GCF_902141845.1_CECT_9862_protein.faa
@@ -12405,7 +12178,6 @@
 ../../../../genomes/bacteria/GCF_902506355.1_MARI151_assembly_protein.faa
 ../../../../genomes/bacteria/GCF_902506685.1_Q0888_protein.faa
 ../../../../genomes/bacteria/GCF_902702935.1_FRC0190_protein.faa
-../../../../genomes/bacteria/GCF_902726625.1_Plasmid_T2.3D-1.1_protein.faa
 ../../../../genomes/bacteria/GCF_902726645.1_Q1234_protein.faa
 ../../../../genomes/bacteria/GCF_902726655.1_PRJEB35829_protein.faa
 ../../../../genomes/bacteria/GCF_902804485.1_CECT7796_protein.faa
@@ -12424,7 +12196,6 @@
 ../../../../genomes/bacteria/GCF_902833485.1_ASM90283348v1_protein.faa
 ../../../../genomes/bacteria/GCF_902833575.1_ASM90283357v1_protein.faa
 ../../../../genomes/bacteria/GCF_902833845.1_ASM90283384v1_protein.faa
-../../../../genomes/bacteria/GCF_902858935.1_Ssal_L25_protein.faa
 ../../../../genomes/bacteria/GCF_902859595.1_LMG_3441_protein.faa
 ../../../../genomes/bacteria/GCF_902859625.1_LMG_3431_protein.faa
 ../../../../genomes/bacteria/GCF_902859635.1_LMG_26219_protein.faa
@@ -12432,7 +12203,6 @@
 ../../../../genomes/bacteria/GCF_902859775.1_LMG_27174_protein.faa
 ../../../../genomes/bacteria/GCF_902859805.1_LMG_24238_protein.faa
 ../../../../genomes/bacteria/GCF_902859815.1_LMG_24076_protein.faa
-../../../../genomes/bacteria/GCF_902859825.1_LMG_22037_protein.faa
 ../../../../genomes/bacteria/GCF_902859845.1_LMG_29660_protein.faa
 ../../../../genomes/bacteria/GCF_902859855.1_LMG_29542_protein.faa
 ../../../../genomes/bacteria/GCF_902859875.1_LMG_29739_protein.faa
@@ -12457,5 +12227,4 @@
 ../../../../genomes/bacteria/GCF_903994055.1_CIP111750_protein.faa
 ../../../../genomes/bacteria/GCF_903994065.1_CIP111751_protein.faa
 ../../../../genomes/bacteria/GCF_904423815.1_G1764_protein.faa
-../../../../genomes/bacteria/GCF_904425415.1_CIP_105534_protein.faa
 ../../../../genomes/bacteria/GCF_905109855.1_As-56-U15_protein.faa

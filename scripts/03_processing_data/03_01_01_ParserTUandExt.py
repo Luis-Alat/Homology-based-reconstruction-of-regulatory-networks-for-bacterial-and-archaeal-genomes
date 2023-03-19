@@ -53,39 +53,39 @@ if __name__ == "__main__":
     network_df = network_df.astype(str)
     
     tus_df = pd.read_csv(args.input_tus, **args.arguments_read_tus)
-    tus_df.rename({0:"id", 1:"TU", 2:"strand"}, axis=1, inplace=True)
+    tus_df.rename({0:"id", 1:"tu", 2:"strand"}, axis=1, inplace=True)
     tus_df = tus_df.astype(str)
     
     print("Cross network-tus info...")
     
-    final_output = []
+    final_output = pd.DataFrame(columns=["strand","TF","TG","id"])
+
     for TF, TG in zip(network_df["TF"], network_df["TG"]):
-        for index_tus, TU in enumerate(tus_df["TU"]):
-            
+        for index_tus, current_unit in enumerate(tus_df["tu"]):
+        
             if args.use_first_match:
-            
-                tus_as_list = TU.replace(" ","").split(",")
-                if tus_as_list[0].find(TG) > -1:
                 
-                    # Iterating over the genes inside the TU
-                    for gene in tus_as_list:
-                    
-                        # Giving a format to the output: STRAIN-TF-TG-TU_id
-                        final_output.append( [tus_df.iloc[index_tus]["strand"], TF, gene, tus_df.iloc[index_tus]["id"] + "_tu"] )
+                tgs_splitted = current_unit.split(",")
+
+                if TG in tgs_splitted[0]:
+                    expected_format = {"strand": tus_df["strand"].iloc[index_tus],
+                                        "TF": TF,
+                                        "TG": tgs_splitted,
+                                        "id": tus_df["id"].iloc[index_tus] + "_tu"}
+
+                    final_output = pd.concat([final_output, pd.DataFrame(expected_format)])
+
             else:
-            
-                tus_as_str = TU.replace(" ", "")
-                tus_as_list = TU.replace(" ","").split(",")
-    
-                if tus_as_str.find(TG) > -1:
-                
-                    # Iterating over the genes inside the TU
-                    for gene in tus_as_list:
-                    
-                        # Giving a format to the output: STRAIN-TF-TG-TU_id
-                        final_output.append( [tus_df.iloc[index_tus]["strand"], TF, gene, tus_df.iloc[index_tus]["id"] + "_tu"] )
-    
-    final_output = pd.DataFrame(final_output).drop_duplicates()
+
+                if TG in current_unit:
+                    expected_format = {"strand": tus_df["strand"].iloc[index_tus],
+                                        "TF": TF,
+                                        "TG": current_unit.split(","),
+                                        "id": tus_df["id"].iloc[index_tus] + "_tu"}
+
+                    final_output = pd.concat([final_output, pd.DataFrame(expected_format)])
+
+    final_output.drop_duplicates(inplace=True)
 
     print(f"Making {args.output_path_name}")
     final_output.to_csv(args.output_path_name, header=False, index=False, sep="\t")

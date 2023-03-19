@@ -62,8 +62,8 @@ RunProteinortho() {
 # Run current script if it was called directly
 if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
 
-        source ../../utils/tracking.sh
-        source ../../utils/bash_messages.sh
+        source ./../utils/tracking.sh
+        source ./../utils/bash_messages.sh
 
         # Stop execution and show on screen line number and bash command if there is any error
         trap ' TrackFailure ${LINENO} "$BASH_COMMAND" ' ERR

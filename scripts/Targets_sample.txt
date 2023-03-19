@@ -1,0 +1,10 @@
+../genomes/bacteria/GCF_000005825.2_ASM582v2_protein.faa
+../genomes/bacteria/GCF_000005845.2_ASM584v2_protein.faa
+../genomes/bacteria/GCF_000006685.1_ASM668v1_protein.faa
+../genomes/bacteria/GCF_000006765.1_ASM676v1_protein.faa
+../genomes/bacteria/GCF_000006925.2_ASM692v2_protein.faa
+../genomes/bacteria/GCF_000006945.2_ASM694v2_protein.faa
+../genomes/bacteria/GCF_000006985.1_ASM698v1_protein.faa
+../genomes/bacteria/GCF_000007025.1_ASM702v1_protein.faa
+../genomes/bacteria/GCF_000007085.1_ASM708v1_protein.faa
+../genomes/bacteria/GCF_000007105.1_ASM710v1_protein.faa

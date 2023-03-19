@@ -6,15 +6,15 @@
 
 set -e
 
-#bash main_bac_arch.sh -g GENOMES.txt -t TARGETS.txt -n NETS.txt -l LABELS.txt --proteinortho_output ../../../../proteinortho/bacteria --extended_nets_output ../../../../network/predicted_nets/bacteria--batches 20
+#bash main_BacArc.sh -g Fasta_files_path.txt -t Targets_sample.txt -n Nets_files_path.txt -l Labels_organism.txt -u Tus_sample.txt --proteinortho_output ../proteinortho/bacteria --extended_nets_output ../network/predicted_nets/bacteria --batches 100
 
 # Current script path
 SCRIPT_DIR=$(cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd)
 
-source $SCRIPT_DIR/../../../utils/bash_messages.sh
-source $SCRIPT_DIR/../../../utils/tracking.sh
-source $SCRIPT_DIR/01_RunProteinortho.sh
-source $SCRIPT_DIR/02_ExtendNetworks.sh
+source $SCRIPT_DIR/utils/bash_messages.sh
+source $SCRIPT_DIR/utils/tracking.sh
+source $SCRIPT_DIR/01_acquisition_data/01_01_RunProteinortho_BacArc.sh
+source $SCRIPT_DIR/03_processing_data/03_01_ExtendNetworks_BacArc.sh
 
 trap ' TrackFailure ${LINENO} "$BASH_COMMAND" ' ERR
 
@@ -49,12 +49,12 @@ while [[ $# -gt 0 ]]; do
             readarray -t LABELS_VALUES < $2
             shift 2
             ;;
-        -t|--transcription_units_path)
-            TUS_PATH=$2
+        -u|--transcription_units)
+            readarray -t TUS_PATH_VALUES < $2
             shift 2
             ;;
         --proteinortho_output)
-            PROTEINORTHO_OUTPUT=$2
+            PROTEINORTHO_OUTPUT=$(echo $2 | sed 's/\/*$/\//g')
             shift 2
             ;;
         --batches)
@@ -62,11 +62,11 @@ while [[ $# -gt 0 ]]; do
             shift 2
             ;;
         --extended_nets_output)
-            EXTENDED_NETWORKS_OUTPUT=$2
+            EXTENDED_NETWORKS_OUTPUT=$(echo $2 | sed 's/\/*$/\//g')
             shift 2
             ;;
         --networkx_output)
-            NETX_OUTPUT=$2
+            NETX_OUTPUT=$(echo $2 | sed 's/\/*$/\//g')
             shift 2
             ;;
         -h|--help)
@@ -86,5 +86,6 @@ ShowArguments ARGUMENTS
 #RunProteinortho GENOMES_REF_FILE_PATH_VALUES LABELS_VALUES GENOMES_TAR_FILE_PATH_VALUES $PROTEINORTHO_OUTPUT
 
 ExtendNetworksByOtho $EXTENDED_NETWORKS_OUTPUT LABELS_VALUES $PROTEINORTHO_OUTPUT GENOMES_TAR_FILE_PATH_VALUES NETWORK_FILE_PATH_VALUES $BATCHES_NUMBER     
+ExtendNetworksByTranscriptionUnit GENOMES_TAR_FILE_PATH_VALUES TUS_PATH_VALUES $EXTENDED_NETWORKS_OUTPUT "${EXTENDED_NETWORKS_OUTPUT}Merge" $BATCHES_NUMBER
 #MakeExtentionTU
 #AnalyzeNetx

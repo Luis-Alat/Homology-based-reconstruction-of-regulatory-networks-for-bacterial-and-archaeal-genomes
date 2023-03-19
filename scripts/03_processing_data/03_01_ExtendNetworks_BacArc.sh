@@ -31,7 +31,7 @@ ExtendNetworksByOtho() {
 
     # Run for in N batches
     [ -z $6 ] && local BATCHES=1 || local BATCHES=$6
-    local COUNT_BATCHES=1
+    local COUNT_BATCHES=0
 
     # Current script path
     SCRIPT_DIR=$(cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd)
@@ -49,21 +49,13 @@ ExtendNetworksByOtho() {
 
 		# Defining paths to place files
         local REFERENCE_OUTPUT_PATH_ORTHO_FILES=$(echo "${OUTPUT}${LABELS[$i]}/ortoFiles/")
-        local REFERENCE_OUTPUT_PATH_PRE_NEW_INT=$(echo "${OUTPUT}${LABELS[$i]}/PreNewInteractionsFiles/")
+        local REFERENCE_OUTPUT_PATH_PRE_NEW_INT=$(echo "${OUTPUT}${LABELS[$i]}/PreNewInteractionsFiles/")W
 
         # Iterating in every "blast-graph" file created by proteinortho using the names of the target organism
 		local CURRENT_NUMBER=1
 		for ORG in ${TARGET_GENOMES[@]}; do
-
-            local TARGET_BASENAME=$(basename $ORG)
-
-            if [ ! -f "${INPUT_PROTEINORTHO}${LABELS[$i]}/${TARGET_BASENAME}"*"blast-graph" ]; then
-
-                printf "  ${YELLOW_COLOR} File ${INPUT_PROTEINORTHO}${LABELS[$i]}/${TARGET_BASENAME}*blast-graph was not found${RESET_COLOR}\n"
-                continue
-
-            fi
-
+            
+            ( local TARGET_BASENAME=$(basename $ORG)
 			local BLAST_FILE_PROTEINORTHO=$(ls ${INPUT_PROTEINORTHO}${LABELS[$i]}/${TARGET_BASENAME}*blast-graph)
 
 			# New files to be created
@@ -81,22 +73,19 @@ ExtendNetworksByOtho() {
             # Reording the columns
             # Pasting in this order the column described in ${COLUMN_RIGTH_ORDER_ARRAY[0]} (model organism) and later ${COLUMN_RIGTH_ORDER_ARRAY[1]} (model target)
             # Replacing "|" by TAB and saving the id of the interaction and TF-TG
-            paste <( grep -v "#" $BLAST_FILE_PROTEINORTHO | cut -f${COLUMN_RIGTH_ORDER_ARRAY[0]} ) <( grep -v "#" $BLAST_FILE_PROTEINORTHO | cut -f${COLUMN_RIGTH_ORDER_ARRAY[1]} ) | 
+            paste <( grep -vE "^#" $BLAST_FILE_PROTEINORTHO | cut -f${COLUMN_RIGTH_ORDER_ARRAY[0]} ) <( grep -vE "^#" $BLAST_FILE_PROTEINORTHO | cut -f${COLUMN_RIGTH_ORDER_ARRAY[1]} ) | 
                 sed -r 's/\|/\t/g' |
                 cut -f1,3 > "${REFERENCE_OUTPUT_PATH_ORTHO_FILES}${OUTPUT_FILE_NAME_ORTHO}"
 
             # Given the new file, get a previous file useful to find the new interactions. For this purpose will be searched and replaced (in the modified networks) every match into a $OutFileOrtho format and add the organism where the interaction came from
-            sed -r 's/^/s\/\\</g' "${REFERENCE_OUTPUT_PATH_ORTHO_FILES}${OUTPUT_FILE_NAME_ORTHO}" | 
-                sed -r 's/\t/\\>\//g; s/$/MATCH\/gI;/g; s/\./\\./g' |
-                sed -f - <( cut -f1-3 "${NETWORKS[$i]}" ) | 
-                perl -F"\t" -nae 'if(($F[1] =~ /MATCH/) and ($F[2] =~ /MATCH/)){print $_}' | 
-                sed -r 's/MATCH//g' | 
-                awk -F $'\t' -v organism=${LABELS[$i]} 'BEGIN{OFS = FS} {print organism,$0}' > "${REFERENCE_OUTPUT_PATH_PRE_NEW_INT}${OUTPUT_FILE_NAME_INTER}" &
+            perl -lne '$_ =~ s/^/s\/\\</; $_ =~ s/\t/\\>\//g; $_ =~ s/$/MATCH\/gpI\;/g; $_ =~ s/\./\\./g; print $_' "${REFERENCE_OUTPUT_PATH_ORTHO_FILES}${OUTPUT_FILE_NAME_ORTHO}" |
+                sed -n -f - <( cut -f2,3 "${NETWORKS[$i]}" ) | paste <( cut -f1 "${NETWORKS[$i]}" ) - |
+                perl -F"\t" -nase 'if( ($F[1] =~ /MATCH/) and ($F[2] =~ /MATCH/) ){ $_ =~ s/MATCH//g; print($organism, "\t", $_) }' -- -organism="${LABELS[$i]}" > "${REFERENCE_OUTPUT_PATH_PRE_NEW_INT}${OUTPUT_FILE_NAME_INTER}" ) &
 
             ((++CURRENT_NUMBER))
 
 			# Wait if there are N processes in background
-			((++COUNT_BATCHES)); [ "${COUNT_BATCHES}" -eq "${BATCHES}" ] && COUNT_BATCHES=1 && wait
+			((++COUNT_BATCHES)); [ "${COUNT_BATCHES}" -eq "${BATCHES}" ] && echo "${COUNT_BATCHES} is equal to ${BATCHES}" && COUNT_BATCHES=0 && wait
 	
         done
 	
@@ -131,7 +120,7 @@ ExtendNetworksByOtho() {
         printf "  Making file ${PREDICTED_NET_FILE_NAME}\n"
 
         # This line calls an sql implementation to group the columns associated with regulatory interactions to describe (1) transcription factor, (2) target, (3) organism where that interaction was found and (4), line number associated with that interaction found in modified networks. In addition adds a number indicating in how many organism that interactions was found
-        bash "${SCRIPT_DIR}/../../../utils/sqlite_grouper.sh" "LINE_NUMBER_REF, ORG_REF, TF, TG" "TF, TG" " TF, TG, group_concat(LINE_NUMBER_REF) , group_concat(ORG_REF)" "${OUTPUT}Merge/tmp" |
+        bash "${SCRIPT_DIR}/../utils/sqlite_grouper.sh" "LINE_NUMBER_REF, ORG_REF, TF, TG" "TF, TG" " TF, TG, group_concat(LINE_NUMBER_REF) , group_concat(ORG_REF)" "${OUTPUT}Merge/tmp" |
             perl -F"\t" -nae 'chomp($_);
                             @array=split(",", $F[2]);
                             %seen=();
@@ -149,65 +138,77 @@ ExtendNetworksByTranscriptionUnit() {
 
     printf "${GREEN_COLOR}  Using transcriptional units files${RESET_COLOR}\n\n"
 
+    local -n TARGET_GENOMES=$1
+    local -n TUS_FILES=$2
+    local OUTPUT=$(echo $3 | sed 's/\/*$/\//g')
+    local INPUT_NETS=$(echo $4 | sed 's/\/*$/\//g')
+
+    [ -z $5 ] && local BATCHES=1 || local BATCHES=$5
+    local COUNT_BATCHES=0
+
+    # Current script path
+    SCRIPT_DIR=$(cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd)
+
     # Creating folder if it doesn't exist
-    if [ ! -d "${OutputPath}net/Merge_plus_TU" ]; then
-        mkdir "${OutputPath}net/Merge_plus_TU" "${OutputPath}net/Merge_plus_TU/tmp"
-    fi
+    [ ! -d "${OUTPUT}Merge_plus_TU" ] && mkdir -p "${OUTPUT}Merge_plus_TU" "${OUTPUT}Merge_plus_TU/tmp"
 
-	# Count iterations
-	count_batches=1
-	# Run for in N batches
-        Batches=500
+    local i
+    local TARGET_BASENAME
+    local TMP_OUTPUT_FILE
+    local OUTPUT_FILE_PATH_NAME
+    local CURRENT_NETWORK
 
-	for file in ${TargetGenomes[@]}; do
+    for ((i=0; i < ${#TARGET_GENOMES[@]}; i++)); do
 
-		# Removing "faa" extention
-		local file_cp=$(printf $file | sed -r 's/\.faa$//g')
+        echo "  Current genome ${TARGET_GENOMES[$i]}"
 
-        	# Verifying if the file exists
-	        ( if [ -f $PathTu$file_cp* ]; then
+        ( TARGET_BASENAME=$(basename ${TARGET_GENOMES[$i]}) 
+        CURRENT_NETWORK=$(ls -d "${INPUT_NETS}${TARGET_BASENAME}"*)
 
-			# Getting input files (full name)
-			local InputExt=$(find "${OutputPath}net/Merge/${file_cp}"*)
-			local InputTU=$(find "${PathTu}${file_cp}"*)
-			local OutputF=$(printf "${OutputPath}net/Merge_plus_TU/tmp/${file}_net_predictions_TU")
-			local OutputFinal=$(printf "${OutputPath}net/Merge_plus_TU/${file}_net_predictions_TU")
+		TMP_OUTPUT_FILE=$(printf "${OUTPUT}Merge_plus_TU/tmp/${TARGET_BASENAME}_net_predictions_TU")
+		OUTPUT_FILE_PATH_NAME=$(printf "${OUTPUT}Merge_plus_TU/${TARGET_BASENAME}_net_predictions_TU")
 
-			# Maping "new" interactions
-        	        python3 "${SCRIPTPATH}/ParserTUandExt.py" $InputExt $InputTU $OutputF 2
+		# Maping "new" interactions
+        python "${SCRIPT_DIR}/03_01_01_ParserTUandExt.py" --input_net $CURRENT_NETWORK --input_tus "${TUS_FILES[$i]}" --output_path_name $TMP_OUTPUT_FILE --arguments_read_net '{"header":None, "sep":"\t", "usecols":[0,1]}' --arguments_read_tus '{"header":None, "sep":"\t"}'
 
-			# Giving a new format to the earlier output
-			tmp_1=$(printf "${file}_tmp_1")
-			awk -F$"\t" 'BEGIN{OFS=FS}{print $3,$4,"NOT_REFR_ORG","NOT_REFR_NUM","NULL",$2,$5}' $OutputF > "${OutputPath}net/Merge_plus_TU/tmp/${tmp_1}"
+        sed -r 's/^/NULL\t/g' $TMP_OUTPUT_FILE > "${TMP_OUTPUT_FILE}_tmp" && rm $TMP_OUTPUT_FILE
+        mv "${TMP_OUTPUT_FILE}_tmp" $TMP_OUTPUT_FILE
 
-			# Giving a new format to the extended network
-			tmp_2=$(printf "${file}_tmp_2")
-			awk -F$"\t" 'BEGIN{OFS=FS}{print $0,"NOT_STRAND","NOT_TU_REFER"}' $InputExt > "${OutputPath}net/Merge_plus_TU/tmp/${tmp_2}"
+		# Giving a new format to the earlier output
+		TMP_1=$(printf "${TARGET_BASENAME}_tmp_1")
+		awk -F$"\t" 'BEGIN{OFS=FS}{print $3,$4,"NOT_REFR_ORG","NOT_REFR_NUM","NULL",$2,$5}' $TMP_OUTPUT_FILE > "${OUTPUT}Merge_plus_TU/tmp/${TMP_1}"
 
-			# Merging results and eliminating information not relevant (labels no longer used)
-			tmp_3=$(printf "${file}_tmp_3")
-			cat "${OutputPath}net/Merge_plus_TU/tmp/${tmp_2}" "${OutputPath}net/Merge_plus_TU/tmp/${tmp_1}" > "${OutputPath}net/Merge_plus_TU/tmp/${tmp_3}"
-			bash "${SCRIPTPATH}/sqlite_group_tu_without_reference.sh" "${OutputPath}net/Merge_plus_TU/tmp/${tmp_3}" | sed -r 's/,NOT_REFR_ORG//g' | sed -r 's/,NOT_REFR_NUM//g' | sed -r 's/,NULL//g' | sed -r 's/NOT_STRAND,//g' | sed -r 's/NOT_TU_REFER,//g' | sed -r 's/,\w+_tu//g' > $OutputFinal
+		# Giving a new format to the extended network
+		TMP_2=$(printf "${TARGET_BASENAME}_tmp_2")
+		awk -F$"\t" 'BEGIN{OFS=FS}{print $0,"NOT_STRAND","NOT_TU_REFER"}' $CURRENT_NETWORK > "${OUTPUT}Merge_plus_TU/tmp/${TMP_2}"
 
-			rm "${OutputPath}net/Merge_plus_TU/tmp/${tmp_1}" "${OutputPath}net/Merge_plus_TU/tmp/${tmp_2}" "${OutputPath}net/Merge_plus_TU/tmp/${tmp_3}"
+		# Merging results and eliminating information not relevant (labels no longer used)
+		TMP_3=$(printf "${TARGET_BASENAME}_tmp_3")
+		cat "${OUTPUT}Merge_plus_TU/tmp/${TMP_2}" "${OUTPUT}Merge_plus_TU/tmp/${TMP_1}" > "${OUTPUT}Merge_plus_TU/tmp/${TMP_3}"
+			
+        bash "${SCRIPT_DIR}/../utils/sqlite_grouper.sh" "a,b,c,d,e,f,g" "a, b" "a, b, group_concat(c), group_concat(d), group_concat(e), group_concat(f), group_concat(g)" "${OUTPUT}Merge_plus_TU/tmp/${TMP_3}" | 
+            sed -r 's/,NOT_REFR_ORG//g' | 
+            sed -r 's/,NOT_REFR_NUM//g' | 
+            sed -r 's/,NULL//g' | 
+            sed -r 's/NOT_STRAND,//g' | 
+            sed -r 's/NOT_TU_REFER,//g' | 
+            sed -r 's/,\w+_tu//g' > $OUTPUT_FILE_PATH_NAME
 
-	        fi ) &
+		rm "${OUTPUT}Merge_plus_TU/tmp/${TMP_1}" "${OUTPUT}Merge_plus_TU/tmp/${TMP_2}" "${OUTPUT}Merge_plus_TU/tmp/${TMP_3}" ) &
 
-		((++count_batches)); [ "${count_batches}" -eq "${Batches}" ] && count_batches=1 && wait
+		((++COUNT_BATCHES)); [ "${COUNT_BATCHES}" -eq "${BATCHES}" ] && COUNT_BATCHES=0 && wait
 
 	done
 
 	wait
-
-
 
 }
 
 # Run current script if it "${OutputPath}net/Merge/tmp"was called directly
 if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
 
-        source ../../utils/tracking.sh
-        source ../../utils/bash_messages.sh
+        source ./../utils/tracking.sh
+        source ./../utils/bash_messages.sh
 
         # Stop execution and show on screen line number and bash command if there is any error
         trap ' TrackFailure ${LINENO} "$BASH_COMMAND" ' ERR
