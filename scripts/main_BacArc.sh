@@ -24,9 +24,9 @@ BATCHES_NUMBER=1
 
 # Parsing argument values
 
-#if [[ $# -eq 0 ]]; then
-#    ShowHelp
-#fi
+if [[ $# -eq 0 ]]; then
+    ShowHelp
+fi
 
 while [[ $# -gt 0 ]]; do
 

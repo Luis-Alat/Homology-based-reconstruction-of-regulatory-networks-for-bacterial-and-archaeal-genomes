@@ -187,12 +187,7 @@ ExtendNetworksByTranscriptionUnit() {
 		cat "${OUTPUT}Merge_plus_TU/tmp/${TMP_2}" "${OUTPUT}Merge_plus_TU/tmp/${TMP_1}" > "${OUTPUT}Merge_plus_TU/tmp/${TMP_3}"
 			
         bash "${SCRIPT_DIR}/../utils/sqlite_grouper.sh" "a,b,c,d,e,f,g" "a, b" "a, b, group_concat(c), group_concat(d), group_concat(e), group_concat(f), group_concat(g)" "${OUTPUT}Merge_plus_TU/tmp/${TMP_3}" | 
-            sed -r 's/,NOT_REFR_ORG//g' | 
-            sed -r 's/,NOT_REFR_NUM//g' | 
-            sed -r 's/,NULL//g' | 
-            sed -r 's/NOT_STRAND,//g' | 
-            sed -r 's/NOT_TU_REFER,//g' | 
-            sed -r 's/,\w+_tu//g' > $OUTPUT_FILE_PATH_NAME
+            perl -lne '$_ =~ s/,NOT_REFR_ORG//g; $_ =~ s/,NOT_REFR_NUM//g; $_ =~ s/,NULL//g; $_ =~ s/NOT_STRAND,//g; $_ =~ s/NOT_TU_REFER,//g; $_ =~ s/,\w+_tu//g; print $_' > $OUTPUT_FILE_PATH_NAME
 
 		rm "${OUTPUT}Merge_plus_TU/tmp/${TMP_1}" "${OUTPUT}Merge_plus_TU/tmp/${TMP_2}" "${OUTPUT}Merge_plus_TU/tmp/${TMP_3}" ) &
 

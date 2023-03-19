@@ -2,13 +2,15 @@
 
 ShowHelp() {
 
-	# This function shows on screen the help guide for the main script
+	# This function shows on screen the help guide for the main scripts
+	
+	if [[ $(basename "$0") == "main.sh" ]]; then
 	
 	local help="
 
 -- Script to predict transciptional networks based on orthologs ($(basename "$0")) 
 
-Arguments Type: 
+Argument Type: 
 
 		[-h|--help] [-g|--genomes STR] [-n|--nets STR] [-l|--labels STR]
 		[--proteinortho_output STR] [--batches INT] [--extended_nets_output STR]
@@ -40,6 +42,40 @@ Arguments:
 	--literature_input -> File name containing the search queries to do on PubMed
 
 "
+	else
+
+	local help="
+
+-- Script to predict transciptional networks based on orthologs for organism without a reference network ($(basename "$0")) 
+
+Argument Type:
+
+		[-g|--genomes_ref STR] [-t|--genomes_tar STR] [-n|--nets STR] [-l|--labels STR]
+		[-u|--transcription_units STR] [--proteinortho_output STR] [--batches INT]
+		[--extended_nets_output STR] [--networkx_output STR] [-h|--help]
+
+NOTE: It is expected that the content of the files supplied matches in order. For example, the first line in the 
+      genomes file describing an organism X must match with the first line in the network file describing also
+      the organism X
+
+Arguments:
+
+	-h|--help -> Show this message
+	-g|--genomes_ref -> File name containing both the path and name of the fasta files to be read. One organism per line.
+	-t|--genomes_tar -> File name containing both the path and name of the fasta files of the organism without network. One organism per line
+	-n|--nets -> File name containing both the path and name of the networks in TSV format to be read. One organism per line.
+	-l|--labels -> File name containing labels to identify the respective organism rather than using the file name in -g.
+	-u|--transcription_units -> Path to read the transcription units. In this case, It is expected the same order as the genomes_tar file
+	--proteinortho_output -> Path Name to create and place proteinortho final outputs
+	--batches -> Number of baches for running paralized process
+	--extended_nets_output -> Path to place the networks with the TUs and orthologs information added
+	--networkx_output -> Path to place networkx output
+
+
+"
+
+	fi
+
 	printf "${help}"
 	exit 1
 
