@@ -49,7 +49,7 @@ ExtendNetworksByOtho() {
 
 		# Defining paths to place files
         local REFERENCE_OUTPUT_PATH_ORTHO_FILES=$(echo "${OUTPUT}${LABELS[$i]}/ortoFiles/")
-        local REFERENCE_OUTPUT_PATH_PRE_NEW_INT=$(echo "${OUTPUT}${LABELS[$i]}/PreNewInteractionsFiles/")W
+        local REFERENCE_OUTPUT_PATH_PRE_NEW_INT=$(echo "${OUTPUT}${LABELS[$i]}/PreNewInteractionsFiles/")
 
         # Iterating in every "blast-graph" file created by proteinortho using the names of the target organism
 		local CURRENT_NUMBER=1

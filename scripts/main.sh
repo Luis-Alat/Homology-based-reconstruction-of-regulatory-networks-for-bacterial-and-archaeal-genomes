@@ -69,11 +69,11 @@ while [[ $# -gt 0 ]]; do
             shift 2
             ;;
         -t|--transcription_units_path)
-            TUS_PATH=$2
+            TUS_PATH=$(echo $2 | sed 's/\/*$/\//g')
             shift 2
             ;;
         --proteinortho_output)
-            PROTEINORTHO_OUTPUT=$2
+            PROTEINORTHO_OUTPUT=$(echo $2 | sed 's/\/*$/\//g')
             shift 2
             ;;
         --batches)
@@ -81,31 +81,31 @@ while [[ $# -gt 0 ]]; do
             shift 2
             ;;
         --extended_nets_output)
-            EXTENDED_NETWORKS_OUTPUT=$2
+            EXTENDED_NETWORKS_OUTPUT=$(echo $2 | sed 's/\/*$/\//g')
             shift 2
             ;;
         --cytoscape_output)
-            CYTO_OUTPUT=$2
+            CYTO_OUTPUT=$(echo $2 | sed 's/\/*$/\//g')
             shift 2
             ;;
         --tables_output)
-            TABLE_OUTPUT=$2
+            TABLE_OUTPUT=$(echo $2 | sed 's/\/*$/\//g')
             shift 2
             ;;
         --coreg_output)
-            COREG_OUTPUT=$2
+            COREG_OUTPUT=$(echo $2 | sed 's/\/*$/\//g')
             shift 2
             ;;
         --networkx_output)
-            NETX_OUTPUT=$2
+            NETX_OUTPUT=$(echo $2 | sed 's/\/*$/\//g')
             shift 2
             ;;
         --g_test_output)
-            G_TEST_OUTPUT=$2
+            G_TEST_OUTPUT=$(echo $2 | sed 's/\/*$/\//g')
             shift 2
             ;;
         --literature_output)
-            PUBMED_OUTPUT=$2
+            PUBMED_OUTPUT=$(echo $2 | sed 's/\/*$/\//g')
             shift 2
             ;;
         --literature_input)
