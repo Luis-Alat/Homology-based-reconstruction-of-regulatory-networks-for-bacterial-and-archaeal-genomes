@@ -19,4 +19,4 @@ dependencies:
   - certifi
   - openssl
   - r-easypubmed
-prefix: /home/lromero/mambaforge/envs/homology_project
+prefix:

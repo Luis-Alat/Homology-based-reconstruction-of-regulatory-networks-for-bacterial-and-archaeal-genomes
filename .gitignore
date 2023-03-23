@@ -9,6 +9,9 @@ network/predicted_nets/bacteria/
 network/predicted_nets/models/*
 !network/predicted_nets/models/results_plus_TU
 
+network/predicted_nets/models_operon/*
+!network/predicted_nets/models_operon/results_plus_TU
+
 network/predicted_nets/models/results_plus_TU/tmp/*
 
 proteinortho/models/*/*
