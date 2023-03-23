@@ -2,7 +2,9 @@
 
 genomes/models/*diamond.dmnd
 genomes/bacteria/
+genomes/archaeal/
 
+network/predicted_nets/archael/
 network/predicted_nets/bacteria/
 network/predicted_nets/models/*
 !network/predicted_nets/models/results_plus_TU
