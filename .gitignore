@@ -25,6 +25,9 @@ tus/.operon_mapper_tus_raw_models
 analysis/models/cytoscape/tmp/*
 analysis/models/coreg/tmp/*
 
+analysis/archaeal
+analysis/bacteria
+
 tus/moreno_models/models/.retrieve_moreron_tus_models.sh
 tus/moreno_models/archaeal
 tus/moreno_models/bacteria
