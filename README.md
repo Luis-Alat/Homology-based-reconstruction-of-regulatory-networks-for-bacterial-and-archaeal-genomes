@@ -2,6 +2,8 @@
 
 In this work, we have inferred the gene regulatory network of 12230 bacterial and 649 archaeal genomes, by considering as reference six organisms with well-known regulatory interactions. Here, the repository of results/programs is presented, as well as a brief description of the folders associated with the project.
 
+More information is avilable at [doi.org/10.3389](https://doi.org/10.3389/fmicb.2022.923105)
+
 ## Getting started
 
 A large part of this repository (results) can be obtained by executing some files as shown below and those are already available here but, because of the limited size to storage all the files created in this project (mainly for the bacteria and archaeal genomes), most of them are not avilable here, but can be downloaded _**[here](insertart drive)**_
@@ -57,10 +59,6 @@ or
 bash main.sh --help
 ```
 
-```
-bash scripts/pipeline_bact_arch.sh
-```
-
 On the other hand, *main_BacArc.sh* will do something similar, but this time for the 12000 bacterial genomes and 650 archaea approximately.
 
 To run the script with the bacteria, you can run the following:
@@ -69,7 +67,7 @@ To run the script with the bacteria, you can run the following:
 bash main_BacArc.sh -g Fasta_files_path.txt -t Targets_bacteria.txt -n Nets_files_path.txt -l Labels_organism.txt -u Tus_bacteria.txt --proteinortho_output ../proteinortho/bacteria --extended_nets_output ../network/predicted_nets/bacteria
 ```
 
-In order to execute the above script, multiprocessing is available and, therefore, multiple processes can be launched at the same time. Therefore, an argument called _--batches_ can be set, by default, it is not multiprocessing or _--bactches 1_ .
+In order to execute the above script, multiprocessing is available and, therefore, multiple processes can be launched at the same time in batches. Therefore, an argument called _--batches_ can be set, by default, it is not multiprocessing or _--bactches 1_ .
 
 For a device with 8GB RAM and 8 cores, I recommend _--batches 90_ . Although be aware that this could leave your device unavailable for a few hours.
 
