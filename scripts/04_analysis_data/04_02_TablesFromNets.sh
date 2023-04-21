@@ -35,8 +35,8 @@ CreateNetworkTableMetrics() {
         for ORG in ${ORG_LABELS[@]}; do
                 header=$(printf "${header}${ORG},")
         done
-        printf "${header}Total of new interactions\n" > "${OUTPUT}Table_of_percentage_of_news.csv"
-        printf "${header}Reconstruction\n" > "${OUTPUT}Table_of_percentage_of_reconstruction.csv"
+        printf "${header}TU,Total of new interactions\n" > "${OUTPUT}Table_of_percentage_of_news.csv"
+        printf "${header}TU,Total of reconstructions,Total Known interactions\n" > "${OUTPUT}Table_of_percentage_of_reconstruction.csv"
 
         for ((i=0; i < ${#ORG_LABELS[@]}; i++)); do
 
@@ -44,7 +44,15 @@ CreateNetworkTableMetrics() {
                 local VALUES_ROW_REC_TABLE=()
 
                 local COUNT_NEW_INTERACTIONS=$(grep "New" "${INPUT}${GENOMES[$i]}"* | wc -l)
+                local TU=$(grep "New" "${INPUT}${GENOMES[$i]}"* | grep -v "NOT_TU_REFER" | wc -l)
+                local COUNT_NEW_TU=$(echo "scale=2; (${TU}*100)/${COUNT_NEW_INTERACTIONS}" | bc)
+                local NEW_TU_FORMAT=$(echo -n "${TU} (${COUNT_NEW_TU}%)")
+
                 local COUNT_KNOWN_RECONSTRUCTION=$(grep "Known" "${INPUT}${GENOMES[$i]}"* | grep -vP "(?=.*NOT_REFR_ORG)(?=.*NOT_TU_REFER)" | wc -l)
+                local COUNT_KNOWN_INTERACTIONS=$(grep "Known" "${INPUT}${GENOMES[$i]}"* | wc -l)
+                TU=$(grep "Known" "${INPUT}${GENOMES[$i]}"* | grep -v "NOT_TU_REFER" | wc -l)
+                local COUNT_KNOWN_TU=$(echo "scale=2; (${TU}*100)/${COUNT_KNOWN_RECONSTRUCTION}" | bc)
+                local KNOWN_TU_FORMAT=$(echo -n "${TU} (${COUNT_KNOWN_TU}%)")
 
                 for ((j=0; j < ${#ORG_LABELS[@]}; j++)) do
 
@@ -59,8 +67,10 @@ CreateNetworkTableMetrics() {
 
                                 # Getting new interactions per organism and number of it
                                 local ORG_VALUE=$(grep "New" "${INPUT}${GENOMES[$i]}"* | grep ${ORG_LABELS[$j]} | wc -l)
+                                
                                 # Getting percentage
                                 local PCG_VALUE=$(echo "scale=2; (${ORG_VALUE}*100)/${COUNT_NEW_INTERACTIONS}" | bc)
+                                
                                 # Giving format to save in array, useful later to save results into file
                                 CURRENT_COUNT=$(echo -n "${ORG_VALUE} (${PCG_VALUE}%),")
                                 VALUES_ROW_NEW_TABLE+=($CURRENT_COUNT)
@@ -68,6 +78,7 @@ CreateNetworkTableMetrics() {
                                 # Similar as above, but now with the Known interactions
                                 ORG_VALUE=$(grep "Known" "${INPUT}${GENOMES[$i]}"* | grep ${ORG_LABELS[$j]} | wc -l)
                                 PCG_VALUE=$(echo "scale=2; (${ORG_VALUE}*100)/${COUNT_KNOWN_RECONSTRUCTION}" | bc)
+                                
                                 CURRENT_COUNT=$(echo -n "${ORG_VALUE} (${PCG_VALUE}%),")
                                 VALUES_ROW_REC_TABLE+=($CURRENT_COUNT)
 
@@ -76,8 +87,8 @@ CreateNetworkTableMetrics() {
                 done
 
                 # Append in files created above
-                echo "${ORG_LABELS[$i]},${VALUES_ROW_NEW_TABLE[*]}${COUNT_NEW_INTERACTIONS}" >> "${OUTPUT}Table_of_percentage_of_news.csv"
-                echo "${ORG_LABELS[$i]},${VALUES_ROW_REC_TABLE[*]}${COUNT_KNOWN_RECONSTRUCTION}" >> "${OUTPUT}Table_of_percentage_of_reconstruction.csv"
+                echo "${ORG_LABELS[$i]},${VALUES_ROW_NEW_TABLE[*]}${NEW_TU_FORMAT},${COUNT_NEW_INTERACTIONS}" >> "${OUTPUT}Table_of_percentage_of_news.csv"
+                echo "${ORG_LABELS[$i]},${VALUES_ROW_REC_TABLE[*]}${KNOWN_TU_FORMAT},${COUNT_KNOWN_RECONSTRUCTION},${COUNT_KNOWN_INTERACTIONS}" >> "${OUTPUT}Table_of_percentage_of_reconstruction.csv"
         done
 
 }
