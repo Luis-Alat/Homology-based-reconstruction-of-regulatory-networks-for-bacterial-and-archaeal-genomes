@@ -19,8 +19,6 @@ CreateNetworkTableMetrics() {
         local -n GENOMES=$2
         local INPUT=$(echo $3 | sed 's/\/*$/\//g')
         local OUTPUT=$(echo $4 | sed 's/\/*$/\//g')
-        local i
-        local j
 
         [ ! -d $OUTPUT ] && mkdir $OUTPUT
 
@@ -50,7 +48,7 @@ CreateNetworkTableMetrics() {
 
                 local COUNT_KNOWN_RECONSTRUCTION=$(grep "Known" "${INPUT}${GENOMES[$i]}"* | grep -vP "(?=.*NOT_REFR_ORG)(?=.*NOT_TU_REFER)" | wc -l)
                 local COUNT_KNOWN_INTERACTIONS=$(grep "Known" "${INPUT}${GENOMES[$i]}"* | wc -l)
-                TU=$(grep "Known" "${INPUT}${GENOMES[$i]}"* | grep -v "NOT_TU_REFER" | wc -l)
+                local TU=$(grep "Known" "${INPUT}${GENOMES[$i]}"* | grep -v "NOT_TU_REFER" | wc -l)
                 local COUNT_KNOWN_TU=$(echo "scale=2; (${TU}*100)/${COUNT_KNOWN_RECONSTRUCTION}" | bc)
                 local KNOWN_TU_FORMAT=$(echo -n "${TU} (${COUNT_KNOWN_TU}%)")
 

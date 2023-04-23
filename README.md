@@ -4,6 +4,11 @@ In this work, we have inferred the gene regulatory network of 12230 bacterial an
 
 More information is avilable at [doi.org/10.3389](https://doi.org/10.3389/fmicb.2022.923105)
 
+UPDATE:
+
+* Mapping from TUs it's already based on presence/absent of TG orthologues rather than the first match
+* _B.subtillis_ network was replaced by the network provided by SubtiWiki
+
 ## Getting started
 
 A large part of this repository (results) can be obtained by executing some files as shown below and those are already available here but, because of the limited size to storage all the files created in this project (mainly for the bacteria and archaeal genomes), most of them are not avilable here, but can be downloaded _**[here](insertart drive)**_

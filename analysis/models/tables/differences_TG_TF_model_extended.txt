@@ -1,0 +1,18 @@
+../../network/predicted_nets/models/results_plus_TU/GCF_000005845.2_E_coli_K12_genomic.faa_extended_network_plus_tu
+	TF REF:196 EXT:245 DIFF:49
+	TG REF:1618 EXT:2400 DIFF:782
+../../network/predicted_nets/models/results_plus_TU/GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_extended_network_plus_tu
+	TF REF:124 EXT:227 DIFF:103
+	TG REF:604 EXT:2159 DIFF:1555
+../../network/predicted_nets/models/results_plus_TU/GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa_extended_network_plus_tu
+	TF REF:131 EXT:216 DIFF:85
+	TG REF:1640 EXT:2661 DIFF:1021
+../../network/predicted_nets/models/results_plus_TU/GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa_extended_network_plus_tu
+	TF REF:154 EXT:197 DIFF:43
+	TG REF:1430 EXT:2387 DIFF:957
+../../network/predicted_nets/models/results_plus_TU/GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa_extended_network_plus_tu
+	TF REF:51 EXT:98 DIFF:47
+	TG REF:584 EXT:1061 DIFF:477
+../../network/predicted_nets/models/results_plus_TU/GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_extended_network_plus_tu
+	TF REF:76 EXT:108 DIFF:32
+	TG REF:1405 EXT:1930 DIFF:525

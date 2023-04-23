@@ -4,7 +4,7 @@
 #### Homology based-reconstruction pipeline ####
 ################################################
 
-#bash main.sh -g Fasta_files_path.txt -n Nets_files_path.txt -l Labels_organism.txt -t ../tus/operon_mapper/models/ --extended_nets_output ../network/predicted_nets/models/ --proteinortho_output ../proteinortho/models/ --tables_output ../analysis/models/tables --cytoscape_output ../analysis/models/cytoscape --coreg_output ../analysis/models/coreg/ --networkx_output ../analysis/models/hits/ --g_test_output ../analysis/models/gtest/ --literature_output ../analysis/models/pubmed/ --literature_input Ecoli_Rules_PubMed.txt
+#bash main.sh -g Fasta_files_path.txt -n Nets_files_path.txt -l Labels_organism.txt -t ../tus/moreno_models --extended_nets_output ../network/predicted_nets/models --proteinortho_output ../proteinortho/models/ --tables_output ../analysis/models/tables --cytoscape_output ../analysis/models/cytoscape --coreg_output ../analysis/models/coreg/ --networkx_output ../analysis/models/hits/ --g_test_output ../analysis/models/gtest/ --literature_output ../analysis/models/pubmed/ --literature_input Ecoli_Rules_PubMed.txt
 
 set -e
 
@@ -129,19 +129,19 @@ ShowArguments ARGUMENTS
 # and for that reason is more suitable to be ran separately
 # for a deep view about that, check 02_preprocessing folder
 
-#RunProteinortho $PROTEINORTHO_OUTPUT GENOMES_FILE_PATH_VALUES LABELS_VALUES $BATCHES_NUMBER
+RunProteinortho $PROTEINORTHO_OUTPUT GENOMES_FILE_PATH_VALUES LABELS_VALUES $BATCHES_NUMBER
 
 # Deprecated in the future
 #RunOperonMapper
 
-#ExtendNetworksByOtho $EXTENDED_NETWORKS_OUTPUT LABELS_VALUES $PROTEINORTHO_OUTPUT GENOMES_FILE_PATH_VALUES NETWORK_FILE_PATH_VALUES
-#ExtendNetworksByTranscriptionUnit $EXTENDED_NETWORKS_OUTPUT GENOMES_FILE_PATH_VALUES $TUS_PATH
-#AnalyzeByCytoscape GENOMES_FILE_PATH_VALUES $CYTO_OUTPUT "${EXTENDED_NETWORKS_OUTPUT}results" "${EXTENDED_NETWORKS_OUTPUT}results_plus_TU"
+ExtendNetworksByOtho $EXTENDED_NETWORKS_OUTPUT LABELS_VALUES $PROTEINORTHO_OUTPUT GENOMES_FILE_PATH_VALUES NETWORK_FILE_PATH_VALUES
+ExtendNetworksByTranscriptionUnit $EXTENDED_NETWORKS_OUTPUT GENOMES_FILE_PATH_VALUES $TUS_PATH
+AnalyzeByCytoscape GENOMES_FILE_PATH_VALUES $CYTO_OUTPUT "${EXTENDED_NETWORKS_OUTPUT}results" "${EXTENDED_NETWORKS_OUTPUT}results_plus_TU"
 CreateNetworkTableMetrics LABELS_VALUES GENOMES_FILE_PATH_VALUES "${EXTENDED_NETWORKS_OUTPUT}results_plus_TU" $TABLE_OUTPUT
-#RunCoreg GENOMES_FILE_PATH_VALUES "${EXTENDED_NETWORKS_OUTPUT}results_plus_TU" $COREG_OUTPUT
-#GetHubs "${EXTENDED_NETWORKS_OUTPUT}results_plus_TU" $NETX_OUTPUT
-#RunGtest "${EXTENDED_NETWORKS_OUTPUT}results_plus_TU" $G_TEST_OUTPUT
+RunCoreg GENOMES_FILE_PATH_VALUES "${EXTENDED_NETWORKS_OUTPUT}results_plus_TU" $COREG_OUTPUT
+GetHubs "${EXTENDED_NETWORKS_OUTPUT}results_plus_TU" $NETX_OUTPUT
+RunGtest "${EXTENDED_NETWORKS_OUTPUT}results_plus_TU" $G_TEST_OUTPUT
 
 # Literature is only ran for E.coli now
 
-#SearchOnPubMed $PUBMED_INPUT $PUBMED_OUTPUT
+SearchOnPubMed $PUBMED_INPUT $PUBMED_OUTPUT
