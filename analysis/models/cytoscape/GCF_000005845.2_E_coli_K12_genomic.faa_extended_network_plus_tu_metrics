@@ -1,8 +1,6 @@
 #networkTitle	GCF_000005845.2_E_coli_K12_genomic.faa_extended_network_plus_tu (directed)
 #Target_counts	2400
 #TF_counts	245
-#Target_counts	2080
-#TF_counts	245
 #nodeCount	2438
 #edgeCount	6080
 #avNeighbors	4.828547990155865
@@ -14,7 +12,7 @@
 #ncc	23
 #mnp	21
 #nsl	173
-#time	23.53
+#time	43.09
 SUID	shared name	name	selected	id	category	AverageShortestPathLength	ClusteringCoefficient	ClosenessCentrality	IsSingleNode	PartnerOfMultiEdgedNodePairs	SelfLoops	Eccentricity	Stress	EdgeCount	Indegree	Outdegree	BetweennessCentrality	NeighborhoodConnectivity
 14269	NP_417816.1	NP_417816.1	FALSE	NP_417816.1	New	2.32539682539683	0.00198713331180606	0.430034129692833	FALSE	1	1	8	41799672	638	3	635	6.85975968360598	6.45826771653543
 14264	NP_417727.1	NP_417727.1	FALSE	NP_417727.1	New	2.95704948646125	0.00237413016782644	0.338174928954847	FALSE	1	1	9	4667031	353	2	351	0.779382733664018	6.84285714285714

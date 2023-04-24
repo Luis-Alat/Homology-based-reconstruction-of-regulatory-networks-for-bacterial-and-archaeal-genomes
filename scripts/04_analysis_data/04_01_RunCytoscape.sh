@@ -41,14 +41,14 @@ AnalyzeByCytoscape() {
                 local BASENAME_OUTPUT_CYTO_TUS=$(basename ${INPUT_PLUS_TU_NETS})
 
                 local TFCounts=$(cut -f2 "${INPUT_ORTHO_NETS}" | sort | uniq | wc -l | sed -r 's/^/#TF_counts\t/g')
-                sed -i "2i\\$TFCounts" "${OUTPUT}${BASENAME_OUTPUT_CYTO_ORTHO}"*"metrics"
+                sed -i "2i\\$TFCounts" "${OUTPUT}${BASENAME_OUTPUT_CYTO_ORTHO}_metrics"
                 local TargetCounts=$(cut -f3 "${INPUT_ORTHO_NETS}" | sort | uniq | wc -l | sed -r 's/^/#Target_counts\t/g')
-                sed -i "2i\\$TargetCounts" "${OUTPUT}${BASENAME_OUTPUT_CYTO_ORTHO}"*"metrics"
+                sed -i "2i\\$TargetCounts" "${OUTPUT}${BASENAME_OUTPUT_CYTO_ORTHO}_metrics"
 
-                TFCounts=$(cut -f2 "${INPUT_PLUS_TU_NETS}" | sort | uniq | wc -l | sed -r 's/^/#TF_counts\t/g')
-                sed -i "2i\\$TFCounts" "${OUTPUT}${BASENAME_OUTPUT_CYTO_TUS}"*"metrics"
-                TargetCounts=$(cut -f3 "${INPUT_PLUS_TU_NETS}" | sort | uniq | wc -l | sed -r 's/^/#Target_counts\t/g')
-                sed -i "2i\\$TargetCounts" "${OUTPUT}${BASENAME_OUTPUT_CYTO_TUS}"*"metrics"
+                local TFCounts=$(cut -f2 "${INPUT_PLUS_TU_NETS}" | sort | uniq | wc -l | sed -r 's/^/#TF_counts\t/g')
+                sed -i "2i\\$TFCounts" "${OUTPUT}${BASENAME_OUTPUT_CYTO_TUS}_metrics"
+                local TargetCounts=$(cut -f3 "${INPUT_PLUS_TU_NETS}" | sort | uniq | wc -l | sed -r 's/^/#Target_counts\t/g')
+                sed -i "2i\\$TargetCounts" "${OUTPUT}${BASENAME_OUTPUT_CYTO_TUS}_metrics"
 
         done
 

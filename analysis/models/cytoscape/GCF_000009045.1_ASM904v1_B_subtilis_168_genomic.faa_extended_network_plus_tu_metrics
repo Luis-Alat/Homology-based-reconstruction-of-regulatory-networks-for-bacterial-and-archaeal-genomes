@@ -1,8 +1,6 @@
 #networkTitle	GCF_000009045.1_ASM904v1_B_subtilis_168_genomic.faa_extended_network_plus_tu (directed)
 #Target_counts	2387
 #TF_counts	197
-#Target_counts	1794
-#TF_counts	197
 #nodeCount	2428
 #edgeCount	5523
 #avNeighbors	4.43492586490939
@@ -14,7 +12,7 @@
 #ncc	27
 #mnp	6
 #nsl	133
-#time	17.513
+#time	31.441
 SUID	shared name	name	selected	id	category	AverageShortestPathLength	ClusteringCoefficient	ClosenessCentrality	IsSingleNode	PartnerOfMultiEdgedNodePairs	SelfLoops	Eccentricity	Stress	EdgeCount	Indegree	Outdegree	BetweennessCentrality	NeighborhoodConnectivity
 97069	NP_390852.1	NP_390852.1	FALSE	NP_390852.1	New	2.4219384793964	0.00136032900980702	0.412892403546609	FALSE	0	1	7	0	438	1	437	0	5.53440366972477
 97016	NP_389499.1	NP_389499.1	FALSE	NP_389499.1	New	3.48871695680206	0.00170777988614801	0.286638329329144	FALSE	0	1	8	15771923	343	4	339	2.70100672252953	6.02052785923754

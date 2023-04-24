@@ -1,8 +1,6 @@
 #networkTitle	GCF_000006765.1_ASM676v1_P_aeruginosa_PA01_genomic.faa_extended_network_plus_tu (directed)
 #Target_counts	2159
 #TF_counts	227
-#Target_counts	1423
-#TF_counts	227
 #nodeCount	2195
 #edgeCount	4994
 #avNeighbors	4.3690205011389525
@@ -14,7 +12,7 @@
 #ncc	28
 #mnp	30
 #nsl	169
-#time	1.679605261495E9
+#time	1.68235543782E9
 SUID	shared name	name	selected	id	category	AverageShortestPathLength	ClusteringCoefficient	ClosenessCentrality	IsSingleNode	PartnerOfMultiEdgedNodePairs	SelfLoops	Eccentricity	Stress	EdgeCount	Indegree	Outdegree	BetweennessCentrality	NeighborhoodConnectivity
 39749	NP_249343.1	NP_249343.1	FALSE	NP_249343.1	New	2.10840108401084	0.00195115070876137	0.474293059125964	FALSE	0	1	5	11598490	415	2	413	2.25319101840678	6.15496368038741
 39786	NP_250235.1	NP_250235.1	FALSE	NP_250235.1	New	2.38157894736842	0.00424879849550742	0.419889502762431	FALSE	2	1	7	9837697	298	5	293	1.84249088574732	6.73809523809524

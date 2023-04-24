@@ -1,8 +1,6 @@
 #networkTitle	GCF_000006945.2_ASM694v2_S_enterica_LT2_genomic.faa_extended_network_plus_tu (directed)
 #Target_counts	2661
 #TF_counts	216
-#Target_counts	2155
-#TF_counts	216
 #nodeCount	2693
 #edgeCount	6573
 #avNeighbors	4.752320831786112
@@ -14,7 +12,7 @@
 #ncc	15
 #mnp	20
 #nsl	154
-#time	26.339
+#time	42.078
 SUID	shared name	name	selected	id	category	AverageShortestPathLength	ClusteringCoefficient	ClosenessCentrality	IsSingleNode	PartnerOfMultiEdgedNodePairs	SelfLoops	Eccentricity	Stress	EdgeCount	Indegree	Outdegree	BetweennessCentrality	NeighborhoodConnectivity
 68208	NP_462369.1	NP_462369.1	FALSE	NP_462369.1	New	2.28712427097353	0.00203915171288744	0.437230286386818	FALSE	1	1	6	30867350	616	3	613	3.51892172703523	6.69983686786297
 68203	NP_462295.1	NP_462295.1	FALSE	NP_462295.1	New	2.84253028263795	0.00135218065133502	0.351799242424242	FALSE	1	1	7	4999756	442	2	440	0.660141570794516	5.68109339407745

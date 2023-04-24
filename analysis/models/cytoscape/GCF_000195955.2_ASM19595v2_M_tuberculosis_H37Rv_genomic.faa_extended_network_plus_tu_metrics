@@ -1,8 +1,6 @@
 #networkTitle	GCF_000195955.2_ASM19595v2_M_tuberculosis_H37Rv_genomic.faa_extended_network_plus_tu (directed)
 #Target_counts	1930
 #TF_counts	108
-#Target_counts	1534
-#TF_counts	108
 #nodeCount	1950
 #edgeCount	4098
 #avNeighbors	4.126153846153846
@@ -14,7 +12,7 @@
 #ncc	13
 #mnp	5
 #nsl	70
-#time	13.029
+#time	22.864
 SUID	shared name	name	selected	id	category	AverageShortestPathLength	ClusteringCoefficient	ClosenessCentrality	IsSingleNode	PartnerOfMultiEdgedNodePairs	SelfLoops	Eccentricity	Stress	EdgeCount	Indegree	Outdegree	BetweennessCentrality	NeighborhoodConnectivity
 132174	NP_218193.1	NP_218193.1	FALSE	NP_218193.1	New	2.58130348913759	0.00108810800601128	0.38740117317011	FALSE	0	1	6	0	496	1	495	0	4.19635627530364
 132084	NP_214862.1	NP_214862.1	FALSE	NP_214862.1	New	1.09625668449198	0.00117819552809342	0.91219512195122	FALSE	0	1	2	2253210	341	2	339	0.549328622525111	4.45132743362832

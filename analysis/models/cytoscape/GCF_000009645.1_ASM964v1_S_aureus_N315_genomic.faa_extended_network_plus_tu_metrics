@@ -1,8 +1,6 @@
 #networkTitle	GCF_000009645.1_ASM964v1_S_aureus_N315_genomic.faa_extended_network_plus_tu (directed)
 #Target_counts	1061
 #TF_counts	98
-#Target_counts	859
-#TF_counts	98
 #nodeCount	1082
 #edgeCount	1748
 #avNeighbors	3.0961182994454712
@@ -14,7 +12,7 @@
 #ncc	23
 #mnp	2
 #nsl	71
-#time	2.657
+#time	4.556
 SUID	shared name	name	selected	id	category	AverageShortestPathLength	ClusteringCoefficient	ClosenessCentrality	IsSingleNode	PartnerOfMultiEdgedNodePairs	SelfLoops	Eccentricity	Stress	EdgeCount	Indegree	Outdegree	BetweennessCentrality	NeighborhoodConnectivity
 117253	WP_000219066.1	WP_000219066.1	FALSE	WP_000219066.1	New	1.32542372881356	0.00199004975124378	0.754475703324808	FALSE	0	1	3	0	203	1	202	0	3.30845771144279
 117237	WP_000055337.1	WP_000055337.1	FALSE	WP_000055337.1	New	1.73051948051948	0.00110934122198202	0.577861163227017	FALSE	0	1	4	0	190	1	189	0	2.35106382978723
