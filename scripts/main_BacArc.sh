@@ -8,6 +8,7 @@ set -e
 
 #bash main_BacArc.sh -g Fasta_files_path.txt -t Targets_sample.txt -n Nets_files_path.txt -l Labels_organism.txt -u Tus_sample.txt --proteinortho_output ../proteinortho/bacteria --extended_nets_output ../network/predicted_nets/bacteria --batches 100
 #bash main_BacArc.sh -g Fasta_files_path.txt -t Targets_bacteria.txt -n Nets_files_path.txt -l Labels_organism.txt -u Tus_bacteria.txt --proteinortho_output ../proteinortho/bacteria --extended_nets_output ../network/predicted_nets/bacteria --networkx_output ../analysis/bacteria/topology --batches 1
+
 # Current script path
 SCRIPT_DIR=$(cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd)
 
@@ -86,6 +87,6 @@ ShowArguments ARGUMENTS
 # The following function has not been tested here. It was ran somewhere else
 #RunProteinortho GENOMES_REF_FILE_PATH_VALUES LABELS_VALUES GENOMES_TAR_FILE_PATH_VALUES $PROTEINORTHO_OUTPUT
 
-#ExtendNetworksByOtho $EXTENDED_NETWORKS_OUTPUT LABELS_VALUES $PROTEINORTHO_OUTPUT GENOMES_TAR_FILE_PATH_VALUES NETWORK_FILE_PATH_VALUES $BATCHES_NUMBER
-#ExtendNetworksByTranscriptionUnit GENOMES_TAR_FILE_PATH_VALUES TUS_PATH_VALUES $EXTENDED_NETWORKS_OUTPUT "${EXTENDED_NETWORKS_OUTPUT}Merge" $BATCHES_NUMBER
+ExtendNetworksByOtho $EXTENDED_NETWORKS_OUTPUT LABELS_VALUES $PROTEINORTHO_OUTPUT GENOMES_TAR_FILE_PATH_VALUES NETWORK_FILE_PATH_VALUES $BATCHES_NUMBER
+ExtendNetworksByTranscriptionUnit GENOMES_TAR_FILE_PATH_VALUES TUS_PATH_VALUES $EXTENDED_NETWORKS_OUTPUT "${EXTENDED_NETWORKS_OUTPUT}Merge" $BATCHES_NUMBER
 AnalyzeByNetworkx "${EXTENDED_NETWORKS_OUTPUT}Merge_plus_TU" $NETX_OUTPUT $BATCHES_NUMBER

@@ -108,7 +108,7 @@ ExtendNetworksByOtho() {
         echo -n > "${OUTPUT}Merge/tmp"
 
         # Add a column specifying the organism where the new interaction came from
-        for ((i=1; i < ${#LABELS[@]}; i++)); do
+        for ((i=0; i < ${#LABELS[@]}; i++)); do
 
             printf "  Creating a tmp file using ${TARGET_BASENAME} found in ${LABELS[$i]}\n"
 
