@@ -25,13 +25,16 @@ AnalyzeByNetworkx() {
 
 	for NET in "${NETWORK_PATH[@]}"*; do
 		
-		NETWORK_BASENAME=$(basename $NET)
-		OUTPUT_FILE_NAME=$(printf "${OUPUT_PATH}${NETWORK_BASENAME}_topology")
+		if [ -f $NET ]; then
 
-		python $SCRIPT_DIR/04_04_02_RunNetworkx_NO_MODEL.py --inputFile $NET --outputFile $OUTPUT_FILE_NAME &
+			NETWORK_BASENAME=$(basename $NET)
+			OUTPUT_FILE_NAME=$(printf "${OUPUT_PATH}${NETWORK_BASENAME}_topology")
 
-		((++COUNT_BATCHES)); [ "${COUNT_BATCHES}" -eq "${BATCHES}" ] && COUNT_BATCHES=0 && wait
+			python $SCRIPT_DIR/04_04_02_RunNetworkx_NO_MODEL.py --inputFile $NET --outputFile $OUTPUT_FILE_NAME &
 
+			((++COUNT_BATCHES)); [ "${COUNT_BATCHES}" -eq "${BATCHES}" ] && COUNT_BATCHES=0 && wait
+
+		fi
 	done
 
 	wait

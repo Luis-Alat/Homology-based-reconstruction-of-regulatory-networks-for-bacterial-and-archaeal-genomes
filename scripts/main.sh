@@ -24,6 +24,7 @@ source $SCRIPT_DIR/04_analysis_data/04_03_GetCoregulates.sh
 source $SCRIPT_DIR/04_analysis_data/04_04_RunNetworkx.sh
 source $SCRIPT_DIR/04_analysis_data/04_05_RunGtest.sh
 source $SCRIPT_DIR/04_analysis_data/04_06_SearchPubMed.sh
+source $SCRIPT_DIR/04_analysis_data/04_07_RunLoTo.sh
 
 # Stop execution and show on screen line number and bash command if there is any error
 trap ' TrackFailure ${LINENO} "$BASH_COMMAND" ' ERR
@@ -112,6 +113,10 @@ while [[ $# -gt 0 ]]; do
             PUBMED_INPUT=$2
             shift 2
             ;;
+        --loto_output)
+            $LOTO_OUTPUT=$2
+            shift 2
+            ;;
         -h|--help)
             ShowHelp
             ;;
@@ -141,6 +146,7 @@ CreateNetworkTableMetrics LABELS_VALUES GENOMES_FILE_PATH_VALUES "${EXTENDED_NET
 RunCoreg GENOMES_FILE_PATH_VALUES "${EXTENDED_NETWORKS_OUTPUT}results_plus_TU" $COREG_OUTPUT
 GetHubs "${EXTENDED_NETWORKS_OUTPUT}results_plus_TU" $NETX_OUTPUT
 RunGtest "${EXTENDED_NETWORKS_OUTPUT}results_plus_TU" $G_TEST_OUTPUT
+RunLoTo "${EXTENDED_NETWORKS_OUTPUT}results_plus_TU" $LOTO_OUTPUT
 
 # Literature is only ran for E.coli now
 

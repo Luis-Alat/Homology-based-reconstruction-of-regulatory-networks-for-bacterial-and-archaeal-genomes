@@ -6,8 +6,9 @@
 
 set -e
 
-#bash main_BacArc.sh -g Fasta_files_path.txt -t Targets_sample.txt -n Nets_files_path.txt -l Labels_organism.txt -u Tus_sample.txt --proteinortho_output ../proteinortho/bacteria --extended_nets_output ../network/predicted_nets/bacteria --batches 100
-#bash main_BacArc.sh -g Fasta_files_path.txt -t Targets_bacteria.txt -n Nets_files_path.txt -l Labels_organism.txt -u Tus_bacteria.txt --proteinortho_output ../proteinortho/bacteria --extended_nets_output ../network/predicted_nets/bacteria --networkx_output ../analysis/bacteria/topology --batches 1
+#bash main_BacArc.sh -g Fasta_files_path.txt -t Targets_sample.txt -n Nets_files_path.txt -l Labels_organism.txt -u Tus_sample.txt --proteinortho_output ../proteinortho/bacteria --extended_nets_output ../network/predicted_nets/bacteria --networkx_output ../analysis/bacteria/topology --batches 1
+#bash main_BacArc.sh -g Fasta_files_path.txt -t Targets_archaeal.txt -n Nets_files_path.txt -l Labels_organism.txt -u Tus_archaeal.txt --proteinortho_output ../proteinortho/archael --extended_nets_output ../network/predicted_nets/archael --networkx_output ../analysis/archaeal/topology --batches 80
+#bash main_BacArc.sh -g Fasta_files_path.txt -t Targets_bacteria.txt -n Nets_files_path.txt -l Labels_organism.txt -u Tus_bacteria.txt --proteinortho_output ../proteinortho/bacteria --extended_nets_output ../network/predicted_nets/bacteria --networkx_output ../analysis/bacteria/topology --batches 100
 
 # Current script path
 SCRIPT_DIR=$(cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd)

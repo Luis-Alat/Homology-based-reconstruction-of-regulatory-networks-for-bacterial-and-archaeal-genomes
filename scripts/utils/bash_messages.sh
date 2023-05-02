@@ -16,7 +16,7 @@ Argument Type:
 		[--proteinortho_output STR] [--batches INT] [--extended_nets_output STR]
 		[--cytoscape_output STR] [--tables_output STR] [--coreg_output STR]
 		[--networkx_output STR] [--g_test_output STR] [--literature_output STR]
-		[--literature_input STR]
+		[--literature_input STR] [--loto_output STR]
 
 NOTE: It is expected that the content of the files supplied matches in order. For example, the first line in the 
       genomes file describing an organism X must match with the first line in the network file describing also
@@ -40,6 +40,7 @@ Arguments:
 	--g_test_output -> Path to place G-test results.
 	--literature_output -> Path to place results from PubMed
 	--literature_input -> File name containing the search queries to do on PubMed
+	--loto_output -> Path to place LoTo results
 
 "
 	else

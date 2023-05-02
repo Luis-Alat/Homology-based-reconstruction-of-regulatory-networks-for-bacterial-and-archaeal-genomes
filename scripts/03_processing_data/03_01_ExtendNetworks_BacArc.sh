@@ -78,8 +78,8 @@ ExtendNetworksByOtho() {
                 cut -f1,3 > "${REFERENCE_OUTPUT_PATH_ORTHO_FILES}${OUTPUT_FILE_NAME_ORTHO}"
 
             # Given the new file, get a previous file useful to find the new interactions. For this purpose will be searched and replaced (in the modified networks) every match into a $OutFileOrtho format and add the organism where the interaction came from
-            perl -lne '$_ =~ s/^/s\/\\</; $_ =~ s/\t/\\>\//g; $_ =~ s/$/MATCH\/gpI\;/g; $_ =~ s/\./\\./g; print $_' "${REFERENCE_OUTPUT_PATH_ORTHO_FILES}${OUTPUT_FILE_NAME_ORTHO}" |
-                sed -n -f - <( cut -f2,3 "${NETWORKS[$i]}" ) | paste <( cut -f1 "${NETWORKS[$i]}" ) - |
+            perl -lne '$_ =~ s/^/s\/\\</; $_ =~ s/\t/\\>\//g; $_ =~ s/$/MATCH\/gI\;/g; $_ =~ s/\./\\./g; print $_' "${REFERENCE_OUTPUT_PATH_ORTHO_FILES}${OUTPUT_FILE_NAME_ORTHO}" |
+                sed -f - <( cut -f2,3 "${NETWORKS[$i]}" ) | paste <( cut -f1 "${NETWORKS[$i]}" ) - |
                 perl -F"\t" -nase 'if( ($F[1] =~ /MATCH/) and ($F[2] =~ /MATCH/) ){ $_ =~ s/MATCH//g; print($organism, "\t", $_) }' -- -organism="${LABELS[$i]}" > "${REFERENCE_OUTPUT_PATH_PRE_NEW_INT}${OUTPUT_FILE_NAME_INTER}" ) &
 
             ((++CURRENT_NUMBER))
