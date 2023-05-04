@@ -1,4 +1,7 @@
+# Do not delete
 .env
+
+upload_drive/*
 
 genomes/models/*diamond.dmnd
 genomes/bacteria/
