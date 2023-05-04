@@ -4,7 +4,7 @@
 #### Homology based-reconstruction pipeline ####
 ################################################
 
-#bash main.sh -g Fasta_files_path.txt -n Nets_files_path.txt -l Labels_organism.txt -t ../tus/moreno_models --extended_nets_output ../network/predicted_nets/models --proteinortho_output ../proteinortho/models/ --tables_output ../analysis/models/tables --cytoscape_output ../analysis/models/cytoscape --coreg_output ../analysis/models/coreg/ --networkx_output ../analysis/models/hits/ --g_test_output ../analysis/models/gtest/ --literature_output ../analysis/models/pubmed/ --literature_input Ecoli_Rules_PubMed.txt
+#bash main.sh -g Fasta_files_path.txt -n Nets_files_path.txt -l Labels_organism.txt -t ../tus/moreno_models --extended_nets_output ../network/predicted_nets/models --proteinortho_output ../proteinortho/models/ --tables_output ../analysis/models/tables --cytoscape_output ../analysis/models/cytoscape --coreg_output ../analysis/models/coreg/ --networkx_output ../analysis/models/hits/ --g_test_output ../analysis/models/gtest/ --literature_output ../analysis/models/pubmed/ --literature_input Ecoli_Rules_PubMed.txt --loto_output ../analysis/models/loto/
 
 set -e
 
@@ -24,7 +24,7 @@ source $SCRIPT_DIR/04_analysis_data/04_03_GetCoregulates.sh
 source $SCRIPT_DIR/04_analysis_data/04_04_RunNetworkx.sh
 source $SCRIPT_DIR/04_analysis_data/04_05_RunGtest.sh
 source $SCRIPT_DIR/04_analysis_data/04_06_SearchPubMed.sh
-source $SCRIPT_DIR/04_analysis_data/04_07_RunLoTo.sh
+source $SCRIPT_DIR/04_analysis_data/04_07_RunLoto.sh
 
 # Stop execution and show on screen line number and bash command if there is any error
 trap ' TrackFailure ${LINENO} "$BASH_COMMAND" ' ERR
@@ -114,7 +114,7 @@ while [[ $# -gt 0 ]]; do
             shift 2
             ;;
         --loto_output)
-            $LOTO_OUTPUT=$2
+            LOTO_OUTPUT=$2
             shift 2
             ;;
         -h|--help)

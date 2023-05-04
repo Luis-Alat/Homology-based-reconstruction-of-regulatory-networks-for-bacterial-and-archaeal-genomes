@@ -67,6 +67,21 @@ def BinaryMetrics(A:set,B:set) -> pd.DataFrame:
     return df
 
 # %%
+
+def F1_score(P:int, R:int) -> float|int:
+    return 2 * P * R / (P + R)
+
+# %%
+
+def Recall(TP:int, FN:int) -> float|int:
+    return TP / (TP + FN)
+
+# %%
+
+def Precision(TP:int, FP:int) -> float|int:
+    return TP / (TP + FP)
+
+# %%
 def GetContingencyTable(reference_to_random:pd.DataFrame, reference_to_compare, n:int=10000) -> pd.DataFrame:
     
     '''
@@ -126,13 +141,13 @@ def FilterNetworks(graph:pd.DataFrame) -> "(pd.DataFrame, pd.DataFrame)":
     
     '''
     
-    This function filters the "Known" and "New" (a.k.a inferred) interactions between two networks given
+    This function filters the "Known" and "New" (a.k.a inferred) interactions found in a network given
     a specific format
     
     Parameters
     
     graph: pandas dataFrame
-        A pandas dataframe containing the whole network
+        A pandas dataframe containing the whole network (inferred and known interactions)
         
     Returns
     -------
@@ -145,10 +160,7 @@ def FilterNetworks(graph:pd.DataFrame) -> "(pd.DataFrame, pd.DataFrame)":
     print("Filtering networks")
     
     know_net = graph.query("STATUS == 'Known'")
-    mask_new_cond_1 = graph["STATUS"] == "New"
-    mask_new_cond_2 = (graph["STATUS"] == "Known") & ((graph["ORG_REF"] != "NOT_REFR_ORG") | (graph["TU_UNIT"] != "NOT_TU_REFER")) 
-
-    new_net = graph[mask_new_cond_1 | mask_new_cond_2]
+    new_net = graph.query("ORG_REF != 'NOT_REFR_ORG'")
 
     return (know_net, new_net)
 
@@ -282,6 +294,22 @@ if __name__ == "__main__":
     
         Known_versus_inferred_metrics = BinaryMetrics(Interactions_known, Interactions_new)
     
+        # Calculating F1_score, Recall and Precision
+
+        print("\nCalculating binary metrics")
+
+        R = Recall(Known_versus_inferred_metrics.loc["TP"].values[0],
+                    Known_versus_inferred_metrics.loc["FN"].values[0])
+        
+        P = Precision(Known_versus_inferred_metrics.loc["TP"].values[0],
+                    Known_versus_inferred_metrics.loc["FP"].values[0])
+        
+        F1 = F1_score(P, R)
+
+        print(f"F1-score: {F1}")
+        print(f"Recall: {R}")
+        print(f"Precision: {P}\n")
+
         # Getting contingency table and expected values of random networks based on the inferred network
         contingency = GetContingencyTable(New_network, Interactions_known, 10000)
         probabilities = GetExpectedProbability(contingency, 1)
@@ -295,7 +323,7 @@ if __name__ == "__main__":
         G_d, p_value_G_d = stats.power_divergence(Observed, Expected, lambda_ = 0)
         
         print("Tests:")
-        print(f"\tGd:{G_d}; p:{p_value_G_d}")
+        print(f"\tG-score:{G_d}; p:{p_value_G_d}")
         
         print("")
 
@@ -312,6 +340,9 @@ if __name__ == "__main__":
             oFile.write("G-test" + "\n")
             oFile.write("score: " + str(G_d) + "\n")
             oFile.write("P-value: " + str(p_value_G_d) + "\n")
+            oFile.write(f"F1-score: {F1}\n")
+            oFile.write(f"Recall: {R}\n")
+            oFile.write(f"Precision: {P}\n\n")
             oFile.write("df: " + str(int(contingency_frame.shape[0] - 1)) + "\n\n")
             oFile.write("Matrix\n")
 

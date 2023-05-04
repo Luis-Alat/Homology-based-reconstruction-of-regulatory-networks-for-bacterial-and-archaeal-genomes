@@ -30,15 +30,19 @@ RunLoTo() {
 
                         BASENAME=$(basename $INFERRED_NETWORK)
                         OUTPUT_NAME=$(printf "${BASENAME}_LoTo")
+                        OUTPUT_TABLE_NAME=$(printf "${OUTPUT_NAME}_table")
 
                         grep "Known" $INFERRED_NETWORK | cut -f2,3 |
                          perl -ne 'chomp($_); print($_, "\t", 1, "\n")' > "${OUTPUT_PATH}input_files/${BASENAME}_ref"
 
-                        perl -ne 'chomp($_); print($_, "\t", 1, "\n")' <(grep "New" $INFERRED_NETWORK | grep -v "NOT_REFR_ORG" | cut -f2,3) | 
-                         cat - "${OUTPUT_PATH}input_files/${BASENAME}_ref" > "${OUTPUT_PATH}input_files/${BASENAME}_inf"
+                        grep -v "NOT_REFR_ORG" $INFERRED_NETWORK | cut -f2,3 |
+                         perl -ne 'chomp($_); print($_, "\t", 1, "\n")' > "${OUTPUT_PATH}input_files/${BASENAME}_inf"
 
                         perl $SCRIPT_DIR/04_07_01_DoLoto.pl -g "${OUTPUT_PATH}input_files/${BASENAME}_ref" -i "${OUTPUT_PATH}input_files/${BASENAME}_inf" -f "${OUTPUT_PATH}" -o "${OUTPUT_NAME}"
                 
+                        head -n 29 "${OUTPUT_PATH}${OUTPUT_NAME}" | tail -n 20 |
+                         sed -r '/^$/d' | sed -r 's/\s+/\t/g' > "${OUTPUT_PATH}${OUTPUT_TABLE_NAME}"
+
                 fi
 
         done
