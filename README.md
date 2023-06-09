@@ -4,6 +4,8 @@ In this work, we have inferred the gene regulatory network of 12230 bacterial an
 
 More information is avilable at [doi.org/10.3389](https://doi.org/10.3389/fmicb.2022.923105)
 
+The full project can be found on [drive](https://drive.google.com/drive/folders/1n8zZq0-HJg0ULoMiqSr_IhApmJSTgn4h?usp=sharing)
+
 UPDATE:
 
 * Mapping from TUs it's already based on presence/absent of TG orthologues rather than the first match
