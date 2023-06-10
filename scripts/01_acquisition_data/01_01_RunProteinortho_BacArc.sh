@@ -22,29 +22,38 @@ RunProteinortho() {
     [ -z $5 ] && local BATCHES=1 || local BATCHES=$5
     local COUNT_BATCHES=0
 
-	printf "${GREEN_COLOR}  Running Function RunProteinortho${RESET_COLOR}\n\n"
+    printf "${GREEN_COLOR}  Running Function RunProteinortho${RESET_COLOR}\n\n"
 
-	### Creating a new directory if it doesn't exit
-	[ ! -d "${OUTPUT}" ] && mkdir -p "${OUTPUT}"
+    ### Creating a new directory if it doesn't exit
+    [ ! -d "${OUTPUT}" ] && mkdir -p "${OUTPUT}"
 
     local i
     local j
     local COUNTER=1
 
-	for ((i=0; i < ${#GENOMES_REFERENCE[@]}; i++)); do
+    for ((i=0; i < ${#GENOMES_REFERENCE[@]}; i++)); do
 
-        [ ! -d "${OUTPUT}${LABELS}" ] && mkdir "${OUTPUT}${LABELS[$i]}"
+        [ ! -d "${OUTPUT}${LABELS[$i]}" ] && mkdir "${OUTPUT}${LABELS[$i]}"
 
         for ((j=0; j < ${#GENOMES_TARGET[@]}; j++)); do
 
-            ( mkdir "tmp_${COUNTER}" && cd "tmp_${COUNTER}"
+            ( set -e
+
+	    mkdir -p "tmp_${COUNTER}"
+	    cd "tmp_${COUNTER}"
 
             TARGET_GENOME_BASENAME=$(basename "${GENOMES_TARGET[$j]}")
             PROJECT_NAME=$(echo "${TARGET_GENOME_BASENAME}_${LABELS[$i]}" )
 
-            proteinortho6.pl -verbose=1 -cpus=6 --cov=70 -project=$PROJECT_NAME ../$GENOMES_REFERENCE[$i] ../$GENOMES_TARGET[$j]
+	    echo "${PROJECT_NAME}"
+            echo ../${GENOMES_TARGET[$j]}
+            echo ../${GENOMES_REFERENCE[$i]}
 
-            mv ${PROJECT_NAME}* "../${OUTPUT}${LABELS[$i]}" && cd ../ ) &
+            proteinortho6.pl -verbose=1 -cpus=6 --cov=70 -project="${PROJECT_NAME}" ../${GENOMES_TARGET[$j]} ../${GENOMES_REFERENCE[$i]}
+
+            mv * ../"${OUTPUT}${LABELS[$i]}"
+
+	    cd ../ ) &
 
             ((++COUNTER))
             ((++COUNT_BATCHES)); [ "${COUNT_BATCHES}" -eq "${BATCHES}" ] && COUNT_BATCHES=0 && wait
